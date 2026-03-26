@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NCAA Women's Soccer Scouting Board</title>
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="appHeader">
+      <div class="appHeaderMain">
+        <div class="appIntro">
+          <div class="appTagRow">
+            <span class="appTag appTagPrimary">NCAA Soccer Ops</span>
+            <span class="appTag">Frontend-first prototype</span>
+          </div>
+          <h1>Women's Soccer Scouting Dashboard</h1>
+          <p class="sub">
+            A static recruiting board for publicly available 2025 NCAA women's
+            soccer roster and cumulative stat pages across Division I, Division
+            II, and Division III. Same dark-and-gold design family as the
+            basketball dashboard, rebuilt in plain HTML, CSS, and JavaScript so
+            it stays easy to edit.
+          </p>
+        </div>
+        <div class="appControlRail">
+          <span class="appUserMeta" id="headerGenerated">Generated --</span>
+          <span class="badge"><strong id="headerSeason">2025</strong> season</span>
+          <button type="button" class="primary appShellBtn" id="jumpToBoardBtn">
+            Open board
+          </button>
+        </div>
+      </div>
+      <div class="appFocusRow">
+        <span class="appFocusPill">National player pool</span>
+        <span class="appFocusPill">Division + conference filters</span>
+        <span class="appFocusPill">Public production checks</span>
+        <span class="appFocusPill">Player profile modal</span>
+        <span class="appFocusPill">No backend yet</span>
+      </div>
+    </header>
+
+    <nav class="pageNav">
+      <button class="pageNavBtn active" data-page="pageBoard">Board</button>
+      <button class="pageNavBtn" data-page="pageFit">Fit Board</button>
+      <button class="pageNavBtn" data-page="pageCompare">Compare</button>
+      <button class="pageNavBtn" data-page="pageTurnover">Turnover</button>
+    </nav>
+
+    <main class="wrap">
+      <div class="pageSection isActive" id="pageBoard">
+        <section class="opsHero">
+          <div class="opsHeroCopy">
+            <div class="opsEyebrow">Player Evaluation Command Center</div>
+            <div class="opsHeroTitleRow">
+              <h2 class="opsHeroTitle">National Player Board</h2>
+              <span class="opsHeroBadge">Static build</span>
+            </div>
+            <p class="opsHeroText">
+              This version is intentionally frontend first. It lets you test the
+              workflow, filters, table layout, and player-profile flow with real
+              NCAA players before we decide whether a backend is worth building.
+            </p>
+            <div class="opsHeroTags">
+              <span class="opsHeroTag">Roster coverage</span>
+              <span class="opsHeroTag">Cumulative stats</span>
+              <span class="opsHeroTag">Conference-by-conference scan</span>
+              <span class="opsHeroTag">Recruiting preview</span>
+            </div>
+          </div>
+          <div class="opsHeroAside">
+            <div class="opsHeroInsight">
+              <div class="opsHeroInsightLabel">Important note</div>
+              <div class="opsHeroInsightText">
+                This board helps you judge player output and find names faster.
+                It does not tell you whether someone is in the transfer portal or
+                actually available.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card playersControlStage" id="boardAnchor">
+          <div class="playersCompactHead">
+            <div class="playersCompactLabelGroup">
+              <div class="opsEyebrow">Model Setup</div>
+              <div class="playersCompactTitleRow">
+                <div class="playersCompactTitle">Player controls</div>
+                <div class="playersCompactHint">
+                  Filter by division, conference, team, position, class year, or
+                  stat coverage and pressure-test what a national recruiting
+                  workflow should feel like.
+                </div>
+              </div>
+            </div>
+            <button type="button" class="secondary" id="resetFiltersBtn">Reset filters</button>
+          </div>
+
+          <div class="playersControlGrid">
+            <div class="playersControlCell playersSearchBlock">
+              <label for="searchInput">Search</label>
+              <input
+                id="searchInput"
+                class="search"
+                type="text"
+                placeholder="Player, school, hometown, high school..."
+              />
+            </div>
+            <div class="playersControlCell">
+              <label for="divisionFilter">Division</label>
+              <select id="divisionFilter"></select>
+            </div>
+            <div class="playersControlCell">
+              <label for="conferenceFilter">Conference</label>
+              <select id="conferenceFilter"></select>
+            </div>
+            <div class="playersControlCell">
+              <label for="teamFilter">Team</label>
+              <select id="teamFilter"></select>
+            </div>
+            <div class="playersControlCell">
+              <label for="classFilter">Class</label>
+              <select id="classFilter"></select>
+            </div>
+            <div class="playersControlCell">
+              <label for="statsFilter">Stat coverage</label>
+              <select id="statsFilter"></select>
+            </div>
+            <div class="playersControlCell">
+              <label for="sortFilter">Sort by</label>
+              <select id="sortFilter"></select>
+            </div>
+            <div class="playersControlCell rangeCell">
+              <label for="minutesRange">Minimum minutes</label>
+              <div class="rangeMeta">
+                <strong id="minutesValue">250</strong>
+                <span class="muted">minutes</span>
+              </div>
+              <input id="minutesRange" type="range" min="0" max="1800" step="90" value="250" />
+            </div>
+          </div>
+
+          <div class="positionTabs" id="positionTabs"></div>
+        </section>
+
+        <section class="kpiGrid" id="overviewGrid"></section>
+
+        <section class="grid boardGrid">
+          <div class="leftstack">
+            <section class="card playersBoardCard">
+              <div class="playersBoardMeta row">
+                <div>
+                  <div class="opsEyebrow">Player board</div>
+                  <div class="playersPanelTitle">National roster and cumulative stat view</div>
+                  <div class="playersPanelSub">
+                    Click any player row to open the full player profile.
+                  </div>
+                </div>
+                <div class="chipRow">
+                  <span class="chip"><span class="dot"></span><span id="resultsCount">0 matches</span></span>
+                  <span class="chip"><span id="visibleCount">0 shown</span></span>
+                </div>
+              </div>
+              <div class="playersTableShell scrollY">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Player</th>
+                      <th>Team</th>
+                      <th>Conf</th>
+                      <th>Div</th>
+                      <th>Pos</th>
+                      <th>Class</th>
+                      <th>Min</th>
+                      <th>Score</th>
+                      <th>Primary</th>
+                      <th>Context</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="playerTableBody"></tbody>
+                </table>
+              </div>
+              <div class="playersBoardFootnote" id="boardFootnote">
+                Public school roster pages and cumulative stat pages power this
+                view. The table is capped for speed, but the counts still reflect
+                the full filtered national pool.
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="row sectionHead">
+                <div>
+                  <div class="opsEyebrow">Leader lanes</div>
+                  <div class="playersPanelTitle">Fast entry points into the national data</div>
+                </div>
+              </div>
+              <div class="leaderGrid" id="leaderGrid"></div>
+            </section>
+          </div>
+
+          <aside class="rightstack">
+            <section class="card playerSideCard" id="playerDetailCard"></section>
+            <section class="card">
+              <div class="row sectionHead">
+                <div>
+                  <div class="opsEyebrow">Team coverage</div>
+                  <div class="playersPanelTitle">Where the filtered pool is concentrated</div>
+                </div>
+              </div>
+              <div class="bars" id="schoolCoverageBars"></div>
+              <div class="hint">
+                This is still a public-data scouting board, not a transfer-portal
+                feed.
+              </div>
+            </section>
+          </aside>
+        </section>
+      </div>
+
+      <div class="pageSection" id="pageFit" style="display:none">
+        <section class="card fitWorkbench">
+          <div class="row sectionHead">
+            <div>
+              <div class="opsEyebrow">Toledo Fit Board</div>
+              <div class="playersPanelTitle">Coach-ready transfer target board</div>
+              <div class="playersPanelSub">
+                Rank public player profiles against Toledo's roster needs, then export a
+                meeting-ready shortlist without adding a backend.
+              </div>
+            </div>
+            <div class="chipRow">
+              <span class="chip"><span class="dot"></span><span id="fitPoolCount">0 candidates</span></span>
+              <span class="chip"><span id="fitMinLabel">540 min floor</span></span>
+            </div>
+          </div>
+
+          <div class="fitWorkbenchGrid">
+            <section class="fitPanel">
+              <div class="fitPanelTitle">Need filters</div>
+              <div class="fitControlGrid">
+                <div class="playersControlCell">
+                  <label for="fitPositionNeed">Position need</label>
+                  <select id="fitPositionNeed"></select>
+                </div>
+                <div class="playersControlCell">
+                  <label for="fitClassNeed">Class need</label>
+                  <select id="fitClassNeed"></select>
+                </div>
+                <div class="playersControlCell">
+                  <label for="fitDivisionPref">Division preference</label>
+                  <select id="fitDivisionPref"></select>
+                </div>
+                <div class="playersControlCell">
+                  <label for="fitConferencePref">Conference preference</label>
+                  <select id="fitConferencePref"></select>
+                </div>
+                <div class="playersControlCell fitRangeCell">
+                  <label for="fitMinutesRange">Toledo fit minutes floor</label>
+                  <div class="rangeMeta">
+                    <strong id="fitMinutesValue">540</strong>
+                    <span class="muted">minutes</span>
+                  </div>
+                  <input id="fitMinutesRange" type="range" min="0" max="1800" step="90" value="540" />
+                </div>
+              </div>
+            </section>
+
+            <section class="fitPanel scoringPanel" id="scoringModelCard"></section>
+
+            <section class="fitPanel fitActionPanel">
+              <div class="fitPanelTitle">Staff exports</div>
+              <p class="fitActionCopy">
+                Export the current Toledo fit board as a CSV or open a print-friendly
+                report that can be saved as PDF for staff meetings.
+              </p>
+              <div class="fitActionRow">
+                <button type="button" class="primary" id="exportFitCsvBtn">Export shortlist CSV</button>
+                <button type="button" class="secondary" id="exportReportBtn">Open PDF report</button>
+                <button type="button" class="secondary" id="resetFitBtn">Reset fit board</button>
+              </div>
+            </section>
+          </div>
+
+          <div class="fitSummaryGrid" id="fitSummaryGrid"></div>
+          <div class="fitBoardGrid" id="fitBoardGrid"></div>
+        </section>
+      </div>
+
+      <div class="pageSection" id="pageCompare" style="display:none">
+        <section class="card compareWorkbench">
+          <div class="row sectionHead">
+            <div>
+              <div class="opsEyebrow">Compare Center</div>
+              <div class="playersPanelTitle">2-4 player side-by-side comparison</div>
+              <div class="playersPanelSub">
+                Add players from the selected profile card or the modal, then compare
+                production, team context, and Toledo fit score in one table.
+              </div>
+            </div>
+            <div class="chipRow">
+              <span class="chip"><span class="dot"></span><span id="compareCount">0 selected</span></span>
+              <button type="button" class="secondary" id="clearCompareBtn">Clear compare</button>
+            </div>
+          </div>
+          <div class="compareTray" id="compareTray"></div>
+          <div class="compareShell" id="compareShell"></div>
+        </section>
+      </div>
+
+      <div class="pageSection" id="pageTurnover" style="display:none">
+        <section class="card turnoverWorkbench">
+          <div class="row sectionHead">
+            <div>
+              <div class="opsEyebrow">Roster Turnover</div>
+              <div class="playersPanelTitle">University of Toledo outgoing production check</div>
+              <div class="playersPanelSub">
+                Flag senior and graduate departures, estimate lost production, and surface
+                which position groups need to be replaced first.
+              </div>
+            </div>
+            <div class="chipRow">
+              <span class="chip"><span class="dot"></span><span id="turnoverBadge">Toledo review</span></span>
+            </div>
+          </div>
+          <div class="turnoverGrid">
+            <section class="turnoverPanel">
+              <div class="fitPanelTitle">Departure snapshot</div>
+              <div class="turnoverSummaryGrid" id="turnoverSummary"></div>
+            </section>
+            <section class="turnoverPanel">
+              <div class="fitPanelTitle">Positions to replace</div>
+              <div class="bars" id="turnoverPositions"></div>
+            </section>
+          </div>
+          <div class="turnoverTableShell">
+            <table>
+              <thead>
+                <tr>
+                  <th>Player</th>
+                  <th>Pos</th>
+                  <th>Class</th>
+                  <th>Minutes</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                  <th>Share of team goals</th>
+                </tr>
+              </thead>
+              <tbody id="turnoverPlayerList"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="modalBack" id="profileModalBack" aria-hidden="true">
+      <div class="modal profileModal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+        <div class="modalHead">
+          <div>
+            <div class="modalTitle" id="profileModalTitle">Player profile</div>
+            <div class="modalSub" id="profileModalSub">National scouting card</div>
+          </div>
+          <button type="button" class="close" id="profileModalClose">Close</button>
+        </div>
+        <div class="modalBody" id="profileModalBody"></div>
+      </div>
+    </div>
+
+    <script src="./data/soccer-dataset.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
