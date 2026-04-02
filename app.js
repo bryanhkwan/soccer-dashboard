@@ -29,6 +29,18 @@
     UTIL: 'Utility',
   }
 
+  const roleDescriptions = {
+    FWD: 'Forward — primary attacking player focused on scoring goals and creating chances near the opponent\'s goal.',
+    MID: 'Midfielder — links defense to attack, controls possession, creates chances, and covers ground in both directions.',
+    DEF: 'Defender — protects the goal by blocking attacks, winning tackles, and organizing the back line.',
+    GK: 'Goalkeeper — last line of defense; the only player who can use their hands inside the penalty area.',
+    UTIL: 'Utility — versatile player whose listed position is unclear or spans multiple roles.',
+  }
+
+  function getRoleTooltip(roleKey) {
+    return roleDescriptions[roleKey] || roleDescriptions.UTIL
+  }
+
   const classLabels = {
     Fr: 'Freshman',
     So: 'Sophomore',
@@ -96,6 +108,120 @@
       label: roleLabels[role],
     })),
   )
+  const archetypeOrder = [
+    'scorer',
+    'creator',
+    'engine',
+    'defender',
+    'shotStopper',
+    'cleanSheetKeeper',
+  ]
+  const archetypeDefinitions = {
+    scorer: {
+      label: 'Scorer',
+      description: 'Goals, point production, shot volume, and share of a team attack.',
+      minimumScore: 55,
+      eligible(player) {
+        return player.roleKey !== 'GK'
+      },
+      metrics: [
+        { key: 'goalsPer90', label: 'Goals / 90', weight: 0.36, format: 'rate' },
+        { key: 'pointsPer90', label: 'Points / 90', weight: 0.18, format: 'rate' },
+        { key: 'shotsPer90', label: 'Shots / 90', weight: 0.18, format: 'rate' },
+        { key: 'teamGoalShare', label: 'Share of team goals', weight: 0.18, format: 'percent' },
+        { key: 'minuteShare', label: 'Share of available minutes', weight: 0.1, format: 'percent' },
+      ],
+    },
+    creator: {
+      label: 'Passer / creator',
+      description: 'Assist-driven proxy for passing impact using public attacking context.',
+      minimumScore: 55,
+      eligible(player) {
+        return player.roleKey !== 'GK'
+      },
+      metrics: [
+        { key: 'assistsPer90', label: 'Assists / 90', weight: 0.42, format: 'rate' },
+        { key: 'pointsPer90', label: 'Points / 90', weight: 0.16, format: 'rate' },
+        { key: 'teamShotShare', label: 'Share of team shots', weight: 0.18, format: 'percent' },
+        { key: 'teamGoalShare', label: 'Share of team goals', weight: 0.12, format: 'percent' },
+        { key: 'minuteShare', label: 'Share of available minutes', weight: 0.12, format: 'percent' },
+      ],
+    },
+    engine: {
+      label: 'Midfield engine',
+      description: 'High-minute midfield connector with creation and team-usage signals.',
+      minimumScore: 55,
+      eligible(player) {
+        return player.roleKey === 'MID' || player.roleKey === 'UTIL'
+      },
+      metrics: [
+        { key: 'minuteShare', label: 'Share of available minutes', weight: 0.28, format: 'percent' },
+        { key: 'startsRate', label: 'Start rate', weight: 0.16, format: 'percent' },
+        { key: 'assistsPer90', label: 'Assists / 90', weight: 0.22, format: 'rate' },
+        { key: 'pointsPer90', label: 'Points / 90', weight: 0.12, format: 'rate' },
+        { key: 'teamShotShare', label: 'Share of team shots', weight: 0.12, format: 'percent' },
+        { key: 'teamGoalShare', label: 'Share of team goals', weight: 0.1, format: 'percent' },
+      ],
+    },
+    defender: {
+      label: 'Defensive anchor',
+      description: 'Usage-based defender proxy built from minutes, starts, and role context.',
+      minimumScore: 55,
+      eligible(player) {
+        return player.roleKey === 'DEF'
+      },
+      metrics: [
+        { key: 'minuteShare', label: 'Share of available minutes', weight: 0.42, format: 'percent' },
+        { key: 'startsRate', label: 'Start rate', weight: 0.26, format: 'percent' },
+        { key: 'teamShotShare', label: 'Share of team shots', weight: 0.08, format: 'percent' },
+        { key: 'teamGoalShare', label: 'Share of team goals', weight: 0.08, format: 'percent' },
+        { key: 'assistsPer90', label: 'Assists / 90', weight: 0.08, format: 'rate' },
+        { key: 'pointsPer90', label: 'Points / 90', weight: 0.08, format: 'rate' },
+      ],
+    },
+    shotStopper: {
+      label: 'Shot-stopper GK',
+      description: 'Keeper lens emphasizing save rate and shot volume handled.',
+      minimumScore: 55,
+      eligible(player) {
+        return player.roleKey === 'GK'
+      },
+      metrics: [
+        { key: 'savePct', label: 'Save %', weight: 0.4, format: 'percent' },
+        { key: 'savesPer90', label: 'Saves / 90', weight: 0.3, format: 'rate' },
+        { key: 'cleanSheetRate', label: 'Clean-sheet rate', weight: 0.1, format: 'percent' },
+        { key: 'minuteShare', label: 'Share of available minutes', weight: 0.14, format: 'percent' },
+        { key: 'startsRate', label: 'Start rate', weight: 0.06, format: 'percent' },
+      ],
+    },
+    cleanSheetKeeper: {
+      label: 'Clean-sheet GK',
+      description: 'Keeper lens favoring clean-sheet rate, role security, and shot stopping.',
+      minimumScore: 55,
+      eligible(player) {
+        return player.roleKey === 'GK'
+      },
+      metrics: [
+        { key: 'cleanSheetRate', label: 'Clean-sheet rate', weight: 0.42, format: 'percent' },
+        { key: 'savePct', label: 'Save %', weight: 0.26, format: 'percent' },
+        { key: 'minuteShare', label: 'Share of available minutes', weight: 0.18, format: 'percent' },
+        { key: 'startsRate', label: 'Start rate', weight: 0.08, format: 'percent' },
+        { key: 'savesPer90', label: 'Saves / 90', weight: 0.06, format: 'rate' },
+      ],
+    },
+  }
+  const archetypeOptions = [{ value: 'All', label: 'All archetypes' }].concat(
+    archetypeOrder.map((archetypeId) => ({
+      value: archetypeId,
+      label: archetypeDefinitions[archetypeId].label,
+    })),
+  )
+  const fitArchetypeOptions = [{ value: 'Any', label: 'Any archetype' }].concat(
+    archetypeOrder.map((archetypeId) => ({
+      value: archetypeId,
+      label: archetypeDefinitions[archetypeId].label,
+    })),
+  )
   const sortOptions = [
     { value: 'scouting', label: 'Scouting score' },
     { value: 'fit', label: 'Toledo fit score' },
@@ -128,6 +254,7 @@
     teamId: 'All',
     position: 'All',
     classYear: 'All',
+    archetype: 'All',
     statsFilter: 'With stats',
     sort: 'scouting',
     minMinutes: 250,
@@ -139,6 +266,7 @@
     fitClassNeed: 'Any',
     fitDivisionPref: 'Any',
     fitConferencePref: 'Any',
+    fitArchetypeNeed: 'Any',
     fitMinMinutes: 540,
     activePage: 'pageBoard',
   }
@@ -370,6 +498,51 @@
 
   const metricDistributions = buildMetricDistributions(provisionalPlayers)
 
+  function getArchetypeMetricValue(player, metric) {
+    return player[metric.key]
+  }
+
+  function buildArchetypeDistributions(sourcePlayers) {
+    const distributions = {}
+
+    archetypeOrder.forEach((archetypeId) => {
+      distributions[archetypeId] = {}
+      archetypeDefinitions[archetypeId].metrics.forEach((metric) => {
+        distributions[archetypeId][metric.key] = []
+      })
+    })
+
+    sourcePlayers.forEach((player) => {
+      if (!player.hasSeasonStats || player.minutes <= 0) {
+        return
+      }
+
+      archetypeOrder.forEach((archetypeId) => {
+        const definition = archetypeDefinitions[archetypeId]
+        if (!definition.eligible(player)) {
+          return
+        }
+
+        definition.metrics.forEach((metric) => {
+          const value = getArchetypeMetricValue(player, metric)
+          if (value !== null && value !== undefined && !Number.isNaN(value)) {
+            distributions[archetypeId][metric.key].push(value)
+          }
+        })
+      })
+    })
+
+    archetypeOrder.forEach((archetypeId) => {
+      Object.keys(distributions[archetypeId]).forEach((metricKey) => {
+        distributions[archetypeId][metricKey].sort((left, right) => left - right)
+      })
+    })
+
+    return distributions
+  }
+
+  const archetypeDistributions = buildArchetypeDistributions(provisionalPlayers)
+
   function lowerBound(values, target) {
     let low = 0
     let high = values.length
@@ -444,14 +617,82 @@
     return weightedScore * getSampleFactor(player.minutes)
   }
 
+  function computeArchetypeScore(player, archetypeId) {
+    const definition = archetypeDefinitions[archetypeId]
+
+    if (!definition || !player.hasSeasonStats || player.minutes <= 0 || !definition.eligible(player)) {
+      return null
+    }
+
+    const weightedScore = definition.metrics.reduce((total, metric) => {
+      const percentile = getPercentileRank(
+        getArchetypeMetricValue(player, metric),
+        archetypeDistributions[archetypeId][metric.key],
+      )
+      return total + percentile * metric.weight * 100
+    }, 0)
+
+    return weightedScore * getSampleFactor(player.minutes)
+  }
+
   const players = provisionalPlayers
     .map((player) => ({
       ...player,
       scoutingScore: computeScoutingScore(player),
+      archetypeScores: Object.fromEntries(
+        archetypeOrder.map((archetypeId) => [archetypeId, computeArchetypeScore(player, archetypeId)]),
+      ),
+    }))
+    .map((player) => ({
+      ...player,
+      topArchetypes: archetypeOrder
+        .map((archetypeId) => ({
+          id: archetypeId,
+          label: archetypeDefinitions[archetypeId].label,
+          score: player.archetypeScores[archetypeId],
+        }))
+        .filter((match) => match.score !== null && match.score !== undefined && !Number.isNaN(match.score))
+        .sort((left, right) => right.score - left.score),
     }))
     .sort((left, right) => (right.scoutingScore || -1) - (left.scoutingScore || -1))
 
   const playerMap = new Map(players.map((player) => [player.id, player]))
+
+  function getArchetypeScore(player, archetypeId) {
+    return player?.archetypeScores?.[archetypeId] ?? null
+  }
+
+  function getTopArchetypeMatches(player, limit) {
+    if (!player?.topArchetypes?.length) {
+      return []
+    }
+
+    return player.topArchetypes.slice(0, limit)
+  }
+
+  function getArchetypeSummary(player, limit) {
+    const matches = getTopArchetypeMatches(player, limit)
+
+    if (!matches.length) {
+      return 'No public archetype read yet'
+    }
+
+    return matches.map((match) => `${match.label} ${formatScore(match.score)}`).join(' | ')
+  }
+
+  function matchesArchetype(player, archetypeId) {
+    if (!archetypeId || archetypeId === 'All' || archetypeId === 'Any') {
+      return true
+    }
+
+    const definition = archetypeDefinitions[archetypeId]
+    const score = getArchetypeScore(player, archetypeId)
+    return Boolean(definition && score !== null && score >= definition.minimumScore)
+  }
+
+  function getArchetypeLabel(archetypeId, fallback) {
+    return archetypeDefinitions[archetypeId]?.label || fallback
+  }
 
   const metricMaximums = {
     goalsPer90: Math.max(1, ...players.map((player) => player.goalsPer90 || 0)),
@@ -533,6 +774,96 @@
 
   const toledoTurnover = buildToledoTurnoverData()
 
+  function getRolePressureRow(role) {
+    return (
+      toledoTurnover.roleRows.find((row) => row.role === role) || {
+        role,
+        roleLabel: roleLabels[role] || roleLabels.UTIL,
+        playerCount: 0,
+        minutes: 0,
+        goals: 0,
+        assists: 0,
+      }
+    )
+  }
+
+  function formatSignedTenths(value) {
+    const amount = Number(value || 0)
+    return `${amount >= 0 ? '+' : ''}${formatTenths(amount)}`
+  }
+
+  function getFitPreferenceLabel(value, fallback) {
+    return value && value !== 'Any' ? value : fallback
+  }
+
+  function getFitPreferenceSummary() {
+    return [
+      `Division preference: ${getFitPreferenceLabel(state.fitDivisionPref, 'None')}`,
+      `Conference preference: ${getFitPreferenceLabel(state.fitConferencePref, 'None')}`,
+    ].join(' | ')
+  }
+
+  function getFitFormulaText(player) {
+    if (player.teamId === TOLEDO_TEAM_ID) {
+      return 'Current Toledo roster player; external fit bonuses are not applied.'
+    }
+
+    const fitBreakdown = getFitBreakdown(player)
+
+    return [
+      `${formatTenths(fitBreakdown.base)} scout base`,
+      `${formatSignedTenths(fitBreakdown.needBonus)} Toledo need`,
+      `${formatSignedTenths(fitBreakdown.divisionBonus)} division match`,
+      `${formatSignedTenths(fitBreakdown.conferenceBonus)} conference match`,
+      `= ${formatTenths(fitBreakdown.total)} final fit`,
+    ].join(' | ')
+  }
+
+  function getFitCoachSummary(player) {
+    if (player.teamId === TOLEDO_TEAM_ID) {
+      return 'Current Toledo roster player. This report does not add outside fit bonuses to current roster players.'
+    }
+
+    const fitBreakdown = getFitBreakdown(player)
+    const role = getScoringRole(player)
+    const rolePressure = getRolePressureRow(role)
+    const summary = []
+
+    summary.push(`Scout base: ${formatTenths(fitBreakdown.base)}.`)
+
+    if (fitBreakdown.needBonus > 0) {
+      summary.push(
+        `Toledo need at ${rolePressure.roleLabel}: ${wholeNumber.format(rolePressure.playerCount)} outgoing senior/grad player${rolePressure.playerCount === 1 ? '' : 's'}, ${wholeNumber.format(rolePressure.minutes)} lost minutes, and ${wholeNumber.format(rolePressure.goals)} lost goals (${formatSignedTenths(fitBreakdown.needBonus)}).`,
+      )
+    } else {
+      summary.push(`No added Toledo need bonus at ${rolePressure.roleLabel} right now (${formatSignedTenths(fitBreakdown.needBonus)}).`)
+    }
+
+    if (state.fitDivisionPref !== 'Any' && fitBreakdown.divisionBonus > 0) {
+      summary.push(`Matches the preferred division, ${player.divisionLabel} (${formatSignedTenths(fitBreakdown.divisionBonus)}).`)
+    } else if (state.fitDivisionPref !== 'Any') {
+      summary.push(
+        `Does not match the preferred division, ${getFitPreferenceLabel(state.fitDivisionPref, 'No preference')} (${formatSignedTenths(fitBreakdown.divisionBonus)}).`,
+      )
+    }
+
+    if (state.fitConferencePref !== 'Any' && fitBreakdown.conferenceBonus > 0) {
+      summary.push(`Matches the preferred conference, ${player.conference} (${formatSignedTenths(fitBreakdown.conferenceBonus)}).`)
+    } else if (state.fitConferencePref !== 'Any') {
+      summary.push(
+        `Does not match the preferred conference, ${getFitPreferenceLabel(state.fitConferencePref, 'No preference')} (${formatSignedTenths(fitBreakdown.conferenceBonus)}).`,
+      )
+    }
+
+    if (state.fitDivisionPref === 'Any' && state.fitConferencePref === 'Any') {
+      summary.push('No division or conference preference bonus was active.')
+    }
+
+    summary.push(`Final Toledo fit: ${formatTenths(fitBreakdown.total)}.`)
+
+    return summary.join(' ')
+  }
+
   function getFitBreakdown(player) {
     if (!player.hasSeasonStats || player.minutes <= 0) {
       return {
@@ -605,6 +936,15 @@
       .slice()
       .sort((left, right) => right.contribution - left.contribution)
       .slice(0, count)
+  }
+
+  function getArchetypeBadgeMarkup(player, limit, accentFirst) {
+    return getTopArchetypeMatches(player, limit)
+      .map((match, index) => {
+        const badgeClass = accentFirst && index === 0 ? 'detailBadge detailBadge--accent' : 'detailBadge'
+        return `<span class="${badgeClass}">${escapeHtml(match.label)} ${escapeHtml(formatScore(match.score))}</span>`
+      })
+      .join('')
   }
 
   function getAvailableConferenceOptions() {
@@ -697,6 +1037,10 @@
       state.teamId,
     )
     document.getElementById('classFilter').innerHTML = createOptionMarkup(classOptions, state.classYear)
+    document.getElementById('archetypeFilter').innerHTML = createOptionMarkup(
+      archetypeOptions,
+      state.archetype,
+    )
     document.getElementById('statsFilter').innerHTML = createOptionMarkup(statsOptions, state.statsFilter)
     document.getElementById('sortFilter').innerHTML = createOptionMarkup(sortOptions, state.sort)
   }
@@ -723,6 +1067,10 @@
     document.getElementById('fitConferencePref').innerHTML = createOptionMarkup(
       getAvailableFitConferenceOptions(),
       state.fitConferencePref,
+    )
+    document.getElementById('fitArchetypeNeed').innerHTML = createOptionMarkup(
+      fitArchetypeOptions,
+      state.fitArchetypeNeed,
     )
   }
 
@@ -790,6 +1138,7 @@
         const matchesPosition = state.position === 'All' || player.roleKey === state.position
         const matchesClass =
           state.classYear === 'All' || player.normalizedClassShort === state.classYear
+        const matchesArchetypeSelection = matchesArchetype(player, state.archetype)
         const matchesStats =
           state.statsFilter === 'All' ||
           (state.statsFilter === 'With stats' && player.hasSeasonStats) ||
@@ -803,11 +1152,22 @@
           matchesTeam &&
           matchesPosition &&
           matchesClass &&
+          matchesArchetypeSelection &&
           matchesStats &&
           matchesMinutes
         )
       })
       .sort((left, right) => {
+        if (state.archetype !== 'All') {
+          const archetypeDelta =
+            (getArchetypeScore(right, state.archetype) ?? -1) -
+            (getArchetypeScore(left, state.archetype) ?? -1)
+
+          if (archetypeDelta !== 0) {
+            return archetypeDelta
+          }
+        }
+
         const rightValue = getSortValue(right, state.sort)
         const leftValue = getSortValue(left, state.sort)
 
@@ -836,12 +1196,22 @@
         if (state.fitPositionNeed !== 'Any' && getScoringRole(player) !== state.fitPositionNeed) {
           return false
         }
+        if (!matchesArchetype(player, state.fitArchetypeNeed)) {
+          return false
+        }
 
         return matchesFitClassNeed(player)
       })
       .sort((left, right) => {
         const fitDelta = (getToledoFitScore(right) || -1) - (getToledoFitScore(left) || -1)
         if (fitDelta !== 0) return fitDelta
+
+        if (state.fitArchetypeNeed !== 'Any') {
+          const archetypeDelta =
+            (getArchetypeScore(right, state.fitArchetypeNeed) ?? -1) -
+            (getArchetypeScore(left, state.fitArchetypeNeed) ?? -1)
+          if (archetypeDelta !== 0) return archetypeDelta
+        }
 
         const scoutingDelta = (right.scoutingScore || -1) - (left.scoutingScore || -1)
         if (scoutingDelta !== 0) return scoutingDelta
@@ -895,7 +1265,8 @@
       .map((position) => {
         const label = position === 'UTIL' ? 'Utility' : position === 'All' ? 'All roles' : roleLabels[position]
         const activeClass = position === state.position ? 'tab active' : 'tab'
-        return `<button type="button" class="${activeClass}" data-position="${position}">${escapeHtml(label)}</button>`
+        const tooltip = position === 'All' ? 'Show players from every position' : getRoleTooltip(position)
+        return `<button type="button" class="${activeClass}" data-position="${position}" title="${escapeHtml(tooltip)}">${escapeHtml(label)}</button>`
       })
       .join('')
 
@@ -994,7 +1365,7 @@
 
     if (!filteredPlayers.length) {
       body.innerHTML =
-        '<tr><td colspan="11"><div class="emptyState"><h3>No players match these filters</h3><p>Broaden the search or lower the minutes floor to reopen the pool.</p></div></td></tr>'
+        '<tr><td colspan="11"><div class="emptyState"><h3>No players match these filters</h3><p>Broaden the search, open the archetype lens, or lower the minutes floor to reopen the pool.</p></div></td></tr>'
       return
     }
 
@@ -1011,7 +1382,7 @@
             <td>${escapeHtml(player.teamName)}</td>
             <td>${escapeHtml(player.conference)}</td>
             <td>${escapeHtml(player.divisionLabel.replace('Division ', 'D'))}</td>
-            <td>${escapeHtml(player.roleKey)}</td>
+            <td title="${escapeHtml(getRoleTooltip(player.roleKey))}">${escapeHtml(player.roleKey)}</td>
             <td>${escapeHtml(player.normalizedClassShort)}</td>
             <td>${escapeHtml(wholeNumber.format(player.minutes))}</td>
             <td>${getBoardScoreMarkup(player)}</td>
@@ -1188,9 +1559,10 @@
       </div>
       <div class="detailBadgeRow">
         <span class="detailBadge detailBadge--accent">${selectedPlayer.hasSeasonStats ? 'Stats' : 'Roster only'}</span>
-        <span class="detailBadge">${escapeHtml(selectedPlayer.roleLabel)}</span>
+        <span class="detailBadge" title="${escapeHtml(getRoleTooltip(selectedPlayer.roleKey))}">${escapeHtml(selectedPlayer.roleLabel)}</span>
         <span class="detailBadge">${escapeHtml(selectedPlayer.normalizedClassLabel)}</span>
         <span class="detailBadge">${escapeHtml(displayValue(selectedPlayer.position, selectedPlayer.roleLabel))}</span>
+        ${getArchetypeBadgeMarkup(selectedPlayer, 2, false)}
       </div>
       <div class="detailNote">
         ${escapeHtml(displayValue(selectedPlayer.hometown, 'Hometown N/A'))} | ${escapeHtml(displayValue(selectedPlayer.highSchool, 'High school N/A'))}
@@ -1239,6 +1611,7 @@
               ? `${formatPercent(selectedPlayer.cleanSheetRate)} clean-sheet rate | ${formatPercent(selectedPlayer.minuteShare)} minute share`
               : `${formatPercent(selectedPlayer.teamGoalShare)} share of team goals | ${formatPercent(selectedPlayer.teamShotShare)} share of team shots | ${formatPercent(selectedPlayer.minuteShare)} minute share`,
           )}</li>
+          <li>Archetype reads: ${escapeHtml(getArchetypeSummary(selectedPlayer, 2))}</li>
           <li>Minutes reliability reaches full strength at 900 minutes using a square-root ramp.</li>
         </ul>
       </section>
@@ -1417,6 +1790,17 @@
         Toledo fit score starts with scouting score, then adds a roster-need bonus from Toledo's
         outgoing production and optional preference bonuses for division (+5) and conference (+3).
       </p>
+      <p class="scoringHint">
+        Archetype filters sit on top of that same public data. Scorer leans on goals and shot load,
+        passer / creator leans on assists and team-attack involvement, defensive anchor is a
+        usage-based defender proxy, and the goalkeeper lenses split into shot-stopping vs clean-sheet
+        security.
+      </p>
+      <p class="scoringHint">
+        Important caveat: this dataset does not have passes completed, key passes, tackles,
+        interceptions, duels, or progressive carries, so "great passer" and "great defender" are
+        directional scouting filters, not full event-data grades.
+      </p>
       <div class="scoringRoleGrid">
         ${roleOrder
           .map((role) => {
@@ -1489,7 +1873,9 @@
               }`,
         text: `Division: ${
           state.fitDivisionPref === 'Any' ? 'open' : state.fitDivisionPref
-        } | Conference: ${state.fitConferencePref === 'Any' ? 'open' : state.fitConferencePref}`,
+        } | Conference: ${state.fitConferencePref === 'Any' ? 'open' : state.fitConferencePref} | Archetype: ${
+          state.fitArchetypeNeed === 'Any' ? 'open' : getArchetypeLabel(state.fitArchetypeNeed, 'open')
+        }`,
       },
     ]
 
@@ -1532,7 +1918,7 @@
 
     if (!fitCandidates.length) {
       container.innerHTML =
-        '<div class="emptyState"><h3>No Toledo-fit candidates yet</h3><p>Lower the minutes floor or open up the role and class filters.</p></div>'
+        '<div class="emptyState"><h3>No Toledo-fit candidates yet</h3><p>Lower the minutes floor or open up the role, class, or archetype filters.</p></div>'
       return
     }
 
@@ -1547,7 +1933,7 @@
               <span class="candidateFitBadge">Fit ${escapeHtml(formatScore(fitBreakdown.total))}</span>
             </div>
             <div class="candidateName">${escapeHtml(player.name)}</div>
-            <div class="candidateMeta">${escapeHtml(player.teamName)} | ${escapeHtml(player.conference)} | ${escapeHtml(player.roleLabel)} | ${escapeHtml(player.normalizedClassLabel)}</div>
+            <div class="candidateMeta">${escapeHtml(player.teamName)} | ${escapeHtml(player.conference)} | <span title="${escapeHtml(getRoleTooltip(player.roleKey))}">${escapeHtml(player.roleLabel)}</span> | ${escapeHtml(player.normalizedClassLabel)}</div>
             <div class="candidateScoreRow">
               <article class="candidateScoreBlock">
                 <div class="candidateScoreLabel">Scouting</div>
@@ -1562,6 +1948,13 @@
                 <div class="candidateScoreValue">+${escapeHtml(formatTenths(fitBreakdown.divisionBonus + fitBreakdown.conferenceBonus))}</div>
               </article>
             </div>
+            <div class="candidateSubContext">${escapeHtml(
+              state.fitArchetypeNeed === 'Any'
+                ? `Archetypes: ${getArchetypeSummary(player, 2)}`
+                : `${getArchetypeLabel(state.fitArchetypeNeed, 'Archetype')} match ${formatScore(
+                    getArchetypeScore(player, state.fitArchetypeNeed),
+                  )}`,
+            )}</div>
             <div class="candidateContext">${escapeHtml(getFitCardContext(player))}</div>
             <div class="candidateSubContext">${escapeHtml(getFitCardSecondary(player))}</div>
             <div class="candidateActions">
@@ -1599,7 +1992,7 @@
                 <div class="comparePlayerHead">
                   <div>
                     <div class="comparePlayerName">${escapeHtml(player.name)}</div>
-                    <div class="comparePlayerMeta">${escapeHtml(player.teamName)} | ${escapeHtml(player.roleLabel)} | ${escapeHtml(player.normalizedClassLabel)}</div>
+                    <div class="comparePlayerMeta">${escapeHtml(player.teamName)} | <span title="${escapeHtml(getRoleTooltip(player.roleKey))}">${escapeHtml(player.roleLabel)}</span> | ${escapeHtml(player.normalizedClassLabel)}</div>
                   </div>
                   <button type="button" class="compareRemoveBtn" data-remove-compare="${escapeHtml(player.id)}">Remove</button>
                 </div>
@@ -1651,6 +2044,12 @@
         label: 'Role / Class',
         value(player) {
           return `${player.roleLabel} | ${player.normalizedClassLabel}`
+        },
+      },
+      {
+        label: 'Archetype read',
+        value(player) {
+          return getArchetypeSummary(player, 2)
         },
       },
       {
@@ -1846,7 +2245,7 @@
             return `
               <article class="barItem">
                 <div class="barTop">
-                  <b>${escapeHtml(row.roleLabel)}</b>
+                  <b title="${escapeHtml(roleDescriptions[row.role] || '')}">${escapeHtml(row.roleLabel)}</b>
                   <span class="barMeta">${escapeHtml(row.playerCount)} players | ${escapeHtml(wholeNumber.format(row.minutes))} minutes | ${escapeHtml(wholeNumber.format(row.goals))} goals</span>
                 </div>
                 <div class="barTrack">
@@ -1864,7 +2263,7 @@
             (player) => `
               <tr>
                 <td>${escapeHtml(player.name)}</td>
-                <td>${escapeHtml(player.roleKey)}</td>
+                <td title="${escapeHtml(getRoleTooltip(player.roleKey))}">${escapeHtml(player.roleKey)}</td>
                 <td>${escapeHtml(player.normalizedClassShort)}</td>
                 <td>${escapeHtml(wholeNumber.format(player.minutes))}</td>
                 <td>${escapeHtml(wholeNumber.format(player.goals))}</td>
@@ -1914,6 +2313,12 @@
               <span class="chip">${escapeHtml(player.divisionLabel)}</span>
               <span class="chip">${escapeHtml(displayValue(player.height, 'Height N/A'))}</span>
               <span class="chip">${escapeHtml(player.hasSeasonStats ? 'Public stats available' : 'Roster only')}</span>
+              ${getTopArchetypeMatches(player, 2)
+                .map(
+                  (match) =>
+                    `<span class="chip">${escapeHtml(match.label)} ${escapeHtml(formatScore(match.score))}</span>`,
+                )
+                .join('')}
             </div>
           </div>
         </div>
@@ -1971,12 +2376,13 @@
         <section class="panel">
           <div class="panelHead">Background</div>
           <div class="panelBody">
-            <div class="statRow"><span class="k">Role</span><span>${escapeHtml(player.roleLabel)}</span></div>
+            <div class="statRow"><span class="k">Role</span><span title="${escapeHtml(getRoleTooltip(player.roleKey))}">${escapeHtml(player.roleLabel)}</span></div>
             <div class="statRow"><span class="k">Class</span><span>${escapeHtml(player.normalizedClassLabel)}</span></div>
             <div class="statRow"><span class="k">Hometown</span><span>${escapeHtml(displayValue(player.hometown, 'N/A'))}</span></div>
             <div class="statRow"><span class="k">High school</span><span>${escapeHtml(displayValue(player.highSchool, 'N/A'))}</span></div>
             <div class="statRow"><span class="k">Team site</span><span>${escapeHtml(teamSiteUrl ? 'Linked below' : 'Unavailable')}</span></div>
             <div class="statRow"><span class="k">Public status</span><span>${escapeHtml(player.hasSeasonStats ? 'Roster + cumulative stats' : 'Roster only')}</span></div>
+            <div class="statRow"><span class="k">Archetype read</span><span>${escapeHtml(getArchetypeSummary(player, 2))}</span></div>
           </div>
         </section>
       </div>
@@ -2008,6 +2414,7 @@
             <div class="statRow"><span class="k">Division bonus</span><span>+${escapeHtml(formatTenths(fitBreakdown.divisionBonus))}</span></div>
             <div class="statRow"><span class="k">Conference bonus</span><span>+${escapeHtml(formatTenths(fitBreakdown.conferenceBonus))}</span></div>
             <div class="statRow"><span class="k">Minutes factor</span><span>${escapeHtml(formatTenths(getSampleFactor(player.minutes)))}</span></div>
+            <div class="statRow"><span class="k">Archetypes</span><span>${escapeHtml(getArchetypeSummary(player, 2))}</span></div>
             <div class="statRow"><span class="k">Top drivers</span><span>${escapeHtml(
               getTopDrivers(player, 2)
                 .map((driver) => driver.label)
@@ -2105,9 +2512,16 @@
         'Division',
         'Role',
         'Class',
+        'Archetype Read',
         'Minutes',
         'Scouting Score',
         'Toledo Fit Score',
+        'Fit Base (Scout)',
+        'Fit Need Bonus',
+        'Fit Division Bonus',
+        'Fit Conference Bonus',
+        'Fit Formula',
+        'Why Toledo',
         'Goals',
         'Assists',
         'Points',
@@ -2123,6 +2537,8 @@
     ]
 
     fitCandidates.forEach((player, index) => {
+      const fitBreakdown = getFitBreakdown(player)
+
       rows.push([
         index + 1,
         player.name,
@@ -2131,9 +2547,16 @@
         player.divisionLabel,
         player.roleLabel,
         player.normalizedClassLabel,
+        getArchetypeSummary(player, 2),
         player.minutes,
         formatScore(player.scoutingScore),
-        formatScore(getToledoFitScore(player)),
+        formatTenths(fitBreakdown.total),
+        formatTenths(fitBreakdown.base),
+        formatTenths(fitBreakdown.needBonus),
+        formatTenths(fitBreakdown.divisionBonus),
+        formatTenths(fitBreakdown.conferenceBonus),
+        getFitFormulaText(player),
+        getFitCoachSummary(player),
         player.goals,
         player.assists,
         player.points,
@@ -2180,32 +2603,42 @@
       return
     }
 
-    const fitRows = fitCandidates.map((player, index) => [
-      `${index + 1}`,
-      player.name,
-      player.teamName,
-      player.roleLabel,
-      player.normalizedClassLabel,
-      formatScore(player.scoutingScore),
-      formatScore(getToledoFitScore(player)),
-      wholeNumber.format(player.minutes),
-      player.roleKey === 'GK'
-        ? `${formatRate(player.savesPer90)} SV/90 | ${formatPercent(player.savePct)} SV%`
-        : `${formatRate(player.goalsPer90)} G/90 | ${formatRate(player.assistsPer90)} A/90`,
-    ])
+    const fitRows = fitCandidates.map((player, index) => {
+      const fitBreakdown = getFitBreakdown(player)
 
-    const compareRows = comparePlayers.map((player) => [
-      player.name,
-      player.teamName,
-      player.roleLabel,
-      player.normalizedClassLabel,
-      formatScore(player.scoutingScore),
-      player.teamId === TOLEDO_TEAM_ID ? 'Roster' : formatScore(getToledoFitScore(player)),
-      wholeNumber.format(player.minutes),
-      player.roleKey === 'GK'
-        ? `${formatPercent(player.savePct)} SV% | ${formatPercent(player.cleanSheetRate)} CS`
-        : `${formatRate(player.goalsPer90)} G/90 | ${formatPercent(player.teamGoalShare)} goal share`,
-    ])
+      return [
+        `${index + 1}`,
+        player.name,
+        player.teamName,
+        player.roleLabel,
+        player.normalizedClassLabel,
+        wholeNumber.format(player.minutes),
+        formatTenths(fitBreakdown.base),
+        formatTenths(fitBreakdown.needBonus),
+        formatTenths(fitBreakdown.divisionBonus),
+        formatTenths(fitBreakdown.conferenceBonus),
+        formatTenths(fitBreakdown.total),
+        getFitCoachSummary(player),
+      ]
+    })
+
+    const compareRows = comparePlayers.map((player) => {
+      const fitBreakdown = getFitBreakdown(player)
+
+      return [
+        player.name,
+        player.teamName,
+        player.roleLabel,
+        player.normalizedClassLabel,
+        wholeNumber.format(player.minutes),
+        player.teamId === TOLEDO_TEAM_ID ? 'Roster' : formatTenths(fitBreakdown.base),
+        player.teamId === TOLEDO_TEAM_ID ? 'Roster' : formatTenths(fitBreakdown.needBonus),
+        player.teamId === TOLEDO_TEAM_ID ? 'Roster' : formatTenths(fitBreakdown.divisionBonus),
+        player.teamId === TOLEDO_TEAM_ID ? 'Roster' : formatTenths(fitBreakdown.conferenceBonus),
+        player.teamId === TOLEDO_TEAM_ID ? 'Roster' : formatTenths(fitBreakdown.total),
+        getFitCoachSummary(player),
+      ]
+    })
 
     reportWindow.document.write(`
       <!doctype html>
@@ -2266,6 +2699,14 @@
             th {
               background: #f3f4f6;
             }
+            .note {
+              background: #eff6ff;
+              border: 1px solid #bfdbfe;
+              border-radius: 12px;
+              padding: 14px 16px;
+              margin-top: 12px;
+              line-height: 1.6;
+            }
             section {
               margin-top: 28px;
             }
@@ -2302,14 +2743,25 @@
               Scouting score is a 0-100 grade built from same-role percentile ranks and role-specific
               weights. The score is then scaled by a minutes reliability factor of sqrt(minutes / 900),
               capped at 1.0. Toledo fit score adds a role-need bonus from Toledo's outgoing production,
-              plus optional division and conference preference bonuses.
+              plus optional division and conference preference bonuses. Archetype filters reuse the same
+              public stat base to surface scorers, creators, defensive anchors, and goalkeeper profiles.
             </p>
+            <p>
+              "Passer / creator" and "defensive anchor" are proxy reads, because this public dataset
+              does not include pass-completion, key-pass, tackle, interception, or duel data.
+            </p>
+            <div class="note">
+              <strong>How to read Toledo fit:</strong> Start with the scouting base, then add a small Toledo
+              role-need bonus, then add any active division or conference match bonus. In this report,
+              fit pieces are shown to one decimal so the numbers are easy to explain from left to right.<br />
+              <strong>Current coach preferences:</strong> ${escapeHtml(getFitPreferenceSummary())}
+            </div>
           </section>
 
           <section>
             <h2>Top Toledo fit candidates</h2>
             ${buildReportTable(
-              ['Rank', 'Player', 'Team', 'Role', 'Class', 'Scout', 'Fit', 'Minutes', 'Context'],
+              ['Rank', 'Player', 'Team', 'Role', 'Class', 'Minutes', 'Scout base', 'Need', 'Division', 'Conference', 'Final fit', 'Why Toledo'],
               fitRows,
             )}
           </section>
@@ -2336,7 +2788,7 @@
                 <section>
                   <h2>Compare set</h2>
                   ${buildReportTable(
-                    ['Player', 'Team', 'Role', 'Class', 'Scout', 'Fit', 'Minutes', 'Read'],
+                    ['Player', 'Team', 'Role', 'Class', 'Minutes', 'Scout base', 'Need', 'Division', 'Conference', 'Final fit', 'Why Toledo'],
                     compareRows,
                   )}
                 </section>
@@ -2375,7 +2827,9 @@
     const profilePlayer = getProfilePlayer(selectedPlayer)
 
     document.getElementById('minutesValue').textContent = wholeNumber.format(state.minMinutes)
-    document.getElementById('boardFootnote').textContent = `Public school roster pages and cumulative stat pages power this view. Showing up to ${wholeNumber.format(tableRowLimit)} rows for speed out of ${wholeNumber.format(filteredPlayers.length)} filtered matches.`
+    document.getElementById('boardFootnote').textContent = `Public school roster pages and cumulative stat pages power this view. Showing up to ${wholeNumber.format(tableRowLimit)} rows for speed out of ${wholeNumber.format(filteredPlayers.length)} filtered matches. Archetype lens: ${
+      state.archetype === 'All' ? 'open' : getArchetypeLabel(state.archetype, 'open')
+    }.`
 
     renderPositionTabs()
     renderOverview(filteredPlayers)
@@ -2437,6 +2891,11 @@
       renderAll()
     })
 
+    document.getElementById('archetypeFilter').addEventListener('change', (event) => {
+      state.archetype = event.target.value
+      renderAll()
+    })
+
     document.getElementById('statsFilter').addEventListener('change', (event) => {
       state.statsFilter = event.target.value
       renderAll()
@@ -2473,6 +2932,11 @@
       renderAll()
     })
 
+    document.getElementById('fitArchetypeNeed').addEventListener('change', (event) => {
+      state.fitArchetypeNeed = event.target.value
+      renderAll()
+    })
+
     document.getElementById('fitMinutesRange').addEventListener('input', (event) => {
       state.fitMinMinutes = Number(event.target.value)
       renderAll()
@@ -2485,6 +2949,7 @@
       state.teamId = 'All'
       state.position = 'All'
       state.classYear = 'All'
+      state.archetype = 'All'
       state.statsFilter = 'With stats'
       state.sort = 'scouting'
       state.minMinutes = 250
@@ -2499,6 +2964,7 @@
       state.fitClassNeed = 'Any'
       state.fitDivisionPref = 'Any'
       state.fitConferencePref = 'Any'
+      state.fitArchetypeNeed = 'Any'
       state.fitMinMinutes = 540
       document.getElementById('fitMinutesRange').value = String(state.fitMinMinutes)
       renderAll()
@@ -2507,6 +2973,16 @@
     document.getElementById('clearCompareBtn').addEventListener('click', clearCompare)
     document.getElementById('exportFitCsvBtn').addEventListener('click', exportFitCsv)
     document.getElementById('exportReportBtn').addEventListener('click', openReport)
+
+    const filterGrid = document.getElementById('filterGrid')
+    const toggleFiltersBtn = document.getElementById('toggleFiltersBtn')
+    if (toggleFiltersBtn && filterGrid) {
+      toggleFiltersBtn.addEventListener('click', () => {
+        const isHidden = filterGrid.style.display === 'none'
+        filterGrid.style.display = isHidden ? '' : 'none'
+        toggleFiltersBtn.textContent = isHidden ? 'Hide filters' : 'Show filters'
+      })
+    }
 
     document.getElementById('jumpToBoardBtn').addEventListener('click', () => {
       setActivePage('pageBoard')
