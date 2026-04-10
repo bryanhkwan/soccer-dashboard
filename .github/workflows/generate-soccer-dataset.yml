@@ -1,0 +1,255 @@
+name: Generate Soccer Dataset
+
+on:
+  workflow_dispatch:
+    inputs:
+      clear_cache:
+        description: Delete `.cache/soccer` before generating for a fresh scrape
+        required: true
+        default: true
+        type: boolean
+  schedule:
+    - cron: '17 5 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-soccer-dataset
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    # Keep the probe bounded so one bad run does not burn too many free minutes.
+    timeout-minutes: 240
+    env:
+      DATASET_PATH: data/soccer-dataset.js
+      MAX_AGE_HOURS: '72'
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Decide refresh mode
+        id: refresh
+        shell: bash
+        env:
+          INPUT_CLEAR_CACHE: ${{ inputs.clear_cache }}
+        run: |
+          node --input-type=module <<'EOF'
+          import { appendFileSync, readFileSync } from 'node:fs'
+
+          const outputPath = process.env.GITHUB_OUTPUT
+          const eventName = process.env.GITHUB_EVENT_NAME
+          const datasetPath = process.env.DATASET_PATH
+          const maxAgeHours = Number(process.env.MAX_AGE_HOURS ?? '72')
+          const now = Date.now()
+
+          let shouldRefresh = eventName === 'workflow_dispatch'
+          let clearCache =
+            eventName === 'workflow_dispatch'
+              ? String(process.env.INPUT_CLEAR_CACHE).toLowerCase() === 'true'
+              : false
+          let reason = eventName === 'workflow_dispatch' ? 'manual run' : 'dataset still fresh'
+          let generatedAt = ''
+          let ageHours = ''
+
+          if (eventName !== 'workflow_dispatch') {
+            try {
+              const fileContents = readFileSync(datasetPath, 'utf8').trim()
+              const prefix = 'window.SOCCER_DATASET = '
+
+              if (!fileContents.startsWith(prefix)) {
+                throw new Error(`Unexpected dataset prefix in ${datasetPath}`)
+              }
+
+              const dataset = JSON.parse(fileContents.slice(prefix.length))
+              generatedAt = String(dataset.generatedAt ?? '')
+              const generatedAtMs = Date.parse(generatedAt)
+
+              if (!generatedAt || Number.isNaN(generatedAtMs)) {
+                throw new Error(`Missing or invalid generatedAt in ${datasetPath}`)
+              }
+
+              const calculatedAgeHours = (now - generatedAtMs) / (1000 * 60 * 60)
+              ageHours = calculatedAgeHours.toFixed(2)
+
+              if (calculatedAgeHours >= maxAgeHours) {
+                shouldRefresh = true
+                clearCache = true
+                reason = `dataset older than ${maxAgeHours} hours`
+              } else {
+                shouldRefresh = false
+                clearCache = false
+                reason = 'dataset still fresh'
+              }
+            } catch (error) {
+              shouldRefresh = true
+              clearCache = true
+              reason = `dataset unreadable: ${error.message}`
+            }
+          }
+
+          const outputs = [
+            `should_refresh=${shouldRefresh}`,
+            `clear_cache=${clearCache}`,
+            `generated_at=${generatedAt}`,
+            `age_hours=${ageHours}`,
+            `reason=${reason}`,
+          ]
+
+          appendFileSync(outputPath, `${outputs.join('\n')}\n`)
+          console.log(
+            `Refresh decision: ${shouldRefresh ? 'run scraper' : 'skip'} | clear cache: ${clearCache} | reason: ${reason}`
+          )
+          EOF
+
+      - name: Install dependencies
+        if: steps.refresh.outputs.should_refresh == 'true'
+        run: npm ci
+
+      - name: Clear scraper cache
+        if: steps.refresh.outputs.should_refresh == 'true' && steps.refresh.outputs.clear_cache == 'true'
+        shell: bash
+        run: rm -rf .cache/soccer
+
+      - name: Capture start time
+        if: steps.refresh.outputs.should_refresh == 'true'
+        id: timing
+        shell: bash
+        run: echo "started_at=$(date +%s)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate dataset
+        if: steps.refresh.outputs.should_refresh == 'true'
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p workflow-artifacts
+          npm run generate:soccer 2>&1 | tee workflow-artifacts/generate-soccer.log
+
+      - name: Stage dataset changes
+        if: steps.refresh.outputs.should_refresh == 'true'
+        id: changes
+        shell: bash
+        run: |
+          git add "$DATASET_PATH"
+
+          if git diff --cached --quiet -- "$DATASET_PATH"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No dataset changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Dataset changes detected."
+          fi
+
+      - name: Commit updated dataset
+        if: steps.refresh.outputs.should_refresh == 'true' && steps.changes.outputs.changed == 'true'
+        id: commit_dataset
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh soccer dataset [skip ci]"
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push updated dataset
+        if: steps.refresh.outputs.should_refresh == 'true' && steps.changes.outputs.changed == 'true'
+        id: push_dataset
+        shell: bash
+        run: |
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Build run summary
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p workflow-artifacts
+
+          refresh="${{ steps.refresh.outputs.should_refresh }}"
+          clear_cache="${{ steps.refresh.outputs.clear_cache }}"
+          reason="${{ steps.refresh.outputs.reason }}"
+          previous_generated_at="${{ steps.refresh.outputs.generated_at }}"
+          previous_age_hours="${{ steps.refresh.outputs.age_hours }}"
+          changed="${{ steps.changes.outputs.changed }}"
+          committed="${{ steps.commit_dataset.outputs.committed }}"
+          pushed="${{ steps.push_dataset.outputs.pushed }}"
+          finished_at=$(date +%s)
+          started_at="${{ steps.timing.outputs.started_at }}"
+
+          if [[ -z "$refresh" ]]; then
+            refresh="false"
+          fi
+
+          if [[ -z "$clear_cache" ]]; then
+            clear_cache="false"
+          fi
+
+          if [[ -z "$changed" ]]; then
+            changed="false"
+          fi
+
+          if [[ -z "$committed" ]]; then
+            committed="false"
+          fi
+
+          if [[ -z "$pushed" ]]; then
+            pushed="false"
+          fi
+
+          if [[ -z "$started_at" ]]; then
+            duration_seconds=0
+          else
+            duration_seconds=$((finished_at - started_at))
+          fi
+
+          duration_minutes=$(((duration_seconds + 59) / 60))
+          dataset_size="missing"
+          current_generated_at="missing"
+
+          if [[ -f "$DATASET_PATH" ]]; then
+            dataset_size=$(wc -c < "$DATASET_PATH")
+            current_generated_at=$(node --input-type=module -e "import { readFileSync } from 'node:fs'; const fileContents = readFileSync(process.env.DATASET_PATH, 'utf8').trim(); const prefix = 'window.SOCCER_DATASET = '; if (!fileContents.startsWith(prefix)) { console.log('invalid'); process.exit(0); } const dataset = JSON.parse(fileContents.slice(prefix.length)); console.log(String(dataset.generatedAt ?? 'missing'));")
+          fi
+
+          cat <<EOF > workflow-artifacts/run-summary.md
+          ## Soccer dataset run
+
+          - Event: ${{ github.event_name }}
+          - Refresh triggered: $refresh
+          - Refresh reason: $reason
+          - Cache cleared: $clear_cache
+          - Previous generatedAt: ${previous_generated_at:-unknown}
+          - Previous age (hours): ${previous_age_hours:-unknown}
+          - Dataset changed: $changed
+          - Commit created: $committed
+          - Push completed: $pushed
+          - Duration (seconds): $duration_seconds
+          - Duration (rounded minutes): $duration_minutes
+          - Dataset path: $DATASET_PATH
+          - Dataset size (bytes): $dataset_size
+          - Current generatedAt: $current_generated_at
+          EOF
+
+          cat workflow-artifacts/run-summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload dataset and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: soccer-dataset-run-${{ github.run_number }}
+          if-no-files-found: warn
+          retention-days: 7
+          path: |
+            data/soccer-dataset.js
+            workflow-artifacts/generate-soccer.log
+            workflow-artifacts/run-summary.md
