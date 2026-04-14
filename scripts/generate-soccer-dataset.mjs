@@ -293,7 +293,8 @@ function humanizeDivision(value) {
   if (value === 'd1') return 'Division I'
   if (value === 'd2') return 'Division II'
   if (value === 'd3') return 'Division III'
-  return value.toUpperCase()
+  if (value === 'naia') return 'NAIA'
+  return String(value ?? '').toUpperCase()
 }
 
 function humanizeConferenceSeo(value) {
@@ -337,6 +338,68 @@ function humanizeConferenceSeo(value) {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+const mergeTeamsConfigUrl = new URL('./merge-teams.json', import.meta.url)
+
+async function loadMergeTeams() {
+  try {
+    const raw = await readFile(mergeTeamsConfigUrl, 'utf8')
+    const parsed = JSON.parse(raw)
+    const teams = Array.isArray(parsed.teams) ? parsed.teams : []
+    const required = [
+      'scoreboardSeo',
+      'id',
+      'schoolSlug',
+      'name',
+      'longName',
+      'division',
+      'conferenceSeo',
+      'conference',
+      'location',
+      'domain',
+    ]
+
+    for (const team of teams) {
+      for (const key of required) {
+        if (team[key] === undefined || team[key] === '') {
+          throw new Error(`merge-teams.json: missing "${key}" for scoreboardSeo "${team.scoreboardSeo ?? '?'}"`)
+        }
+      }
+    }
+
+    return teams
+  } catch (error) {
+    if (error && error.code === 'ENOENT') {
+      return []
+    }
+
+    throw error
+  }
+}
+
+function buildTeamOverridesFromMerge(mergeTeams) {
+  return Object.fromEntries(mergeTeams.map((entry) => [entry.scoreboardSeo, entry]))
+}
+
+function buildActiveTeamsWithMerge(discovered, mergeTeams) {
+  const bySeo = new Map(discovered.map((team) => [team.scoreboardSeo, team]))
+
+  for (const entry of mergeTeams) {
+    if (!entry?.scoreboardSeo || bySeo.has(entry.scoreboardSeo)) {
+      continue
+    }
+
+    bySeo.set(entry.scoreboardSeo, {
+      scoreboardSeo: entry.scoreboardSeo,
+      shortName: entry.name,
+      fullName: entry.longName,
+      division: entry.division,
+      conferenceSeo: entry.conferenceSeo,
+    })
+  }
+
+  return [...bySeo.values()]
 }
 
 function unique(values) {
@@ -1460,8 +1523,8 @@ async function discoverTeamPages(team) {
   return { rosterPage, statsPage }
 }
 
-function resolveSchoolSlug(activeTeam, lookups) {
-  const manualOverride = manualTeamOverrides[activeTeam.scoreboardSeo]
+function resolveSchoolSlug(activeTeam, lookups, teamOverrides) {
+  const manualOverride = teamOverrides[activeTeam.scoreboardSeo]
   if (manualOverride?.schoolSlug) {
     return manualOverride.schoolSlug
   }
@@ -1485,10 +1548,11 @@ function resolveSchoolSlug(activeTeam, lookups) {
   return candidates.length === 1 ? candidates[0] : ''
 }
 
-async function hydrateTeam(activeTeam, lookups, conferenceMaps) {
-  const manualOverride = manualTeamOverrides[activeTeam.scoreboardSeo]
+async function hydrateTeam(activeTeam, lookups, conferenceMaps, teamOverrides) {
+  const manualOverride = teamOverrides[activeTeam.scoreboardSeo]
 
   if (manualOverride) {
+    const fromCode = Boolean(manualTeamOverrides[activeTeam.scoreboardSeo])
     return {
       id: manualOverride.id,
       scoreboardSeo: activeTeam.scoreboardSeo,
@@ -1496,7 +1560,7 @@ async function hydrateTeam(activeTeam, lookups, conferenceMaps) {
       name: manualOverride.name,
       longName: manualOverride.longName,
       division: manualOverride.division,
-      divisionLabel: humanizeDivision(manualOverride.division),
+      divisionLabel: manualOverride.divisionLabel ?? humanizeDivision(manualOverride.division),
       conferenceSeo: manualOverride.conferenceSeo,
       conference:
         manualOverride.conference ||
@@ -1511,11 +1575,11 @@ async function hydrateTeam(activeTeam, lookups, conferenceMaps) {
         ? `https://ncaa-api.henrygd.me/logo/${manualOverride.logoSlug}.svg?dark=true`
         : '',
       sportPaths: manualOverride.sportPaths ?? [],
-      sourceType: 'manual',
+      sourceType: fromCode ? 'manual' : 'merge-list',
     }
   }
 
-  const schoolSlug = resolveSchoolSlug(activeTeam, lookups)
+  const schoolSlug = resolveSchoolSlug(activeTeam, lookups, teamOverrides)
   if (!schoolSlug) {
     return null
   }
@@ -1711,16 +1775,26 @@ async function runPool(items, concurrency, worker) {
 }
 
 async function main() {
-  const [rawSchools, conferenceMaps, activeTeams] = await Promise.all([
+  const mergeTeams = await loadMergeTeams()
+  const mergeOverrideMap = buildTeamOverridesFromMerge(mergeTeams)
+  const teamOverrides = { ...mergeOverrideMap, ...manualTeamOverrides }
+
+  if (mergeTeams.length > 0) {
+    process.stdout.write(`Loaded ${mergeTeams.length} team(s) from merge-teams.json (code manualTeamOverrides win on duplicate scoreboardSeo).\n`)
+  }
+
+  const [rawSchools, conferenceMaps, discoveredTeams] = await Promise.all([
     fetchJson('https://www.ncaa.com/json/schools'),
     fetchConferenceMaps(),
     fetchActiveTeams(),
   ])
 
+  const activeTeams = buildActiveTeamsWithMerge(discoveredTeams, mergeTeams)
+
   const lookups = buildSchoolLookups(rawSchools)
   const hydratedTeams = (
     await runPool(activeTeams, 12, async (activeTeam, index) => {
-      const result = await hydrateTeam(activeTeam, lookups, conferenceMaps)
+      const result = await hydrateTeam(activeTeam, lookups, conferenceMaps, teamOverrides)
       if ((index + 1) % 100 === 0) {
         process.stdout.write(`Resolved ${index + 1} / ${activeTeams.length} teams...\n`)
       }
@@ -1793,7 +1867,10 @@ async function main() {
     players: builtPlayers.sort((left, right) => left.name.localeCompare(right.name)),
     conferences,
     coverage: {
-      activeScoreboardTeams: activeTeams.length,
+      activeScoreboardTeams: discoveredTeams.length,
+      mergeTeamsFileCount: mergeTeams.length,
+      mergeTeamsAddedToPool: Math.max(0, activeTeams.length - discoveredTeams.length),
+      activeTeamsTotal: activeTeams.length,
       ncaaTeamsResolved: hydratedTeams.length,
       teamsBuilt: builtTeams.length,
       teamsWithRosterData: builtTeams.filter((team) => team.playerCount > 0).length,

@@ -1,0 +1,46 @@
+name: Update Transfer Portal Dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily ~06:45 UTC (after typical US night; adjust as needed)
+    - cron: '45 6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-transfer-portal-dataset
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch FieldLevel transfer portal data
+        run: node scripts/fetch-transfer-portal.mjs
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/transfer-portal-dataset.js
+          if git diff --cached --quiet; then
+            echo "No changes to transfer portal dataset."
+          else
+            git commit -m "chore: refresh transfer portal dataset [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

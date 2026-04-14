@@ -1212,11 +1212,53 @@ tbody tr.isActive td {
 
 .fitWorkbench,
 .compareWorkbench,
-.turnoverWorkbench {
+.turnoverWorkbench,
+.transferPortalWorkbench {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.transferPortalIntro {
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 920px;
+}
+
+.transferPortalSearchCell {
+  max-width: 480px;
+}
+
+.transferPortalSearchCell input {
+  width: 100%;
+}
+
+.transferAnnouncementCell {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+  max-width: 420px;
+}
+
+.transferPortalNameBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--accent-rgb), 0.35);
+  text-underline-offset: 2px;
+}
+
+.transferPortalNameBtn:hover {
+  color: var(--accent-dark);
+  text-decoration-color: rgba(var(--accent-rgb), 0.65);
 }
 
 .fitWorkbenchGrid {

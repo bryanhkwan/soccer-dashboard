@@ -38,6 +38,7 @@
     <button type="button" class="pageNavBtn" data-page="pageFitBoard">Fit board</button>
     <button type="button" class="pageNavBtn" data-page="pageCompare">Compare</button>
     <button type="button" class="pageNavBtn" data-page="pageTurnover">Turnover</button>
+    <button type="button" class="pageNavBtn" data-page="pageTransferPortal">Transfer portal</button>
   </nav>
 
   <!-- ═══════════════════  MAIN CONTENT  ═══════════════════ -->
@@ -272,6 +273,53 @@
         </div>
       </div>
     </section>
+
+    <!-- ───── PAGE: TRANSFER PORTAL ───── -->
+    <section id="pageTransferPortal" class="pageSection">
+      <div class="transferPortalWorkbench">
+        <div class="playersCompactHead">
+          <div class="playersCompactLabelGroup">
+            <span class="playersCompactTitle">NCAA women’s soccer — transfer portal</span>
+            <span class="playersCompactHint muted" id="transferPortalMeta">Loading…</span>
+          </div>
+          <div class="row">
+            <button type="button" class="secondary" id="transferPortalExportBtn">Export CSV</button>
+          </div>
+        </div>
+
+        <p class="transferPortalIntro muted" id="transferPortalIntro">
+          Listings are synced from FieldLevel’s public transfer portal feed for this sport. When a name matches your roster
+          snapshot (name + prior school), it links to that player’s scouting profile. Use the search box to filter by name,
+          school, division, or keywords in the announcement.
+        </p>
+
+        <div class="playersControlCell transferPortalSearchCell">
+          <label for="transferPortalSearch">Search</label>
+          <input type="search" id="transferPortalSearch" placeholder="Name, prior school, division, announcement text…" autocomplete="off" />
+        </div>
+
+        <div class="card">
+          <div class="turnoverTableShell scrollY">
+            <table>
+              <thead>
+                <tr>
+                  <th>Player</th>
+                  <th>Pos</th>
+                  <th>Prior program</th>
+                  <th>Div</th>
+                  <th>From</th>
+                  <th>Elig.</th>
+                  <th>Announced</th>
+                  <th>Announcement</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody id="transferPortalTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ───── PROFILE MODAL ───── -->
@@ -290,6 +338,7 @@
 
   <!-- ───── DATA + APP ───── -->
   <script src="./data/soccer-dataset.js"></script>
+  <script src="./data/transfer-portal-dataset.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

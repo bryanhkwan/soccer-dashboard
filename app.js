@@ -1,5 +1,6 @@
 (function () {
   const dataset = window.SOCCER_DATASET || window.MAC_DATASET
+  const transferPortalDataset = window.TRANSFER_PORTAL_DATASET || null
 
   if (!dataset) {
     window.addEventListener('DOMContentLoaded', () => {
@@ -269,6 +270,7 @@
     fitArchetypeNeed: 'Any',
     fitMinMinutes: 540,
     activePage: 'pageBoard',
+    transferPortalSearch: '',
   }
 
   function escapeHtml(value) {
@@ -327,6 +329,181 @@
   function displayValue(value, fallback) {
     const text = String(value ?? '').trim()
     return text.length ? text : fallback
+  }
+
+  function truncateTransferText(text, max) {
+    const t = String(text ?? '')
+      .replace(/\s+/g, ' ')
+      .trim()
+    if (t.length <= max) return t
+    return `${t.slice(0, max - 1)}…`
+  }
+
+  function formatTransferDate(iso) {
+    if (!iso) return '—'
+    const d = new Date(iso)
+    if (Number.isNaN(d.getTime())) return '—'
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+  }
+
+  function getFilteredTransferPlayers() {
+    if (!transferPortalDataset?.players?.length) return []
+    const q = state.transferPortalSearch.trim().toLowerCase()
+    if (!q) return transferPortalDataset.players
+
+    return transferPortalDataset.players.filter((entry) => {
+      const a = entry.athlete || {}
+      const s = entry.priorSchool || {}
+      const hay = [
+        a.displayName,
+        a.firstName,
+        a.lastName,
+        a.city,
+        a.state,
+        a.positions,
+        s.displayName,
+        s.division,
+        s.city,
+        s.state,
+        entry.announcementText,
+      ]
+        .join(' ')
+        .toLowerCase()
+      return hay.includes(q)
+    })
+  }
+
+  function renderTransferPortal() {
+    const meta = document.getElementById('transferPortalMeta')
+    const intro = document.getElementById('transferPortalIntro')
+    const tbody = document.getElementById('transferPortalTableBody')
+
+    if (!transferPortalDataset || !transferPortalDataset.players) {
+      meta.textContent = 'No transfer portal data loaded'
+      intro.style.display = 'none'
+      tbody.innerHTML =
+        '<tr><td colspan="9"><div class="emptyState compactEmpty"><p>Run <code>npm run generate:transfer-portal</code> to build <code>data/transfer-portal-dataset.js</code>, then refresh.</p></div></td></tr>'
+      return
+    }
+
+    intro.style.display = ''
+    const generated = new Date(transferPortalDataset.generatedAt)
+    const generatedLabel = Number.isNaN(generated.getTime())
+      ? 'unknown time'
+      : generated.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })
+
+    const filtered = getFilteredTransferPlayers()
+    const linkedTotal = ensureTransferPortalDashboardMap().size
+    meta.textContent = `${wholeNumber.format(filtered.length)} shown · ${wholeNumber.format(
+      transferPortalDataset.players.length,
+    )} in snapshot · ${wholeNumber.format(linkedTotal)} linked to roster · synced ${generatedLabel} · source: ${transferPortalDataset.sourceName}`
+
+    if (!transferPortalDataset.players.length) {
+      tbody.innerHTML =
+        '<tr><td colspan="9"><div class="emptyState compactEmpty"><p>No transfer listings in this snapshot.</p></div></td></tr>'
+      return
+    }
+
+    if (!filtered.length) {
+      tbody.innerHTML =
+        '<tr><td colspan="9"><div class="emptyState compactEmpty"><p>No players match this search.</p></div></td></tr>'
+      return
+    }
+
+    tbody.innerHTML = filtered
+      .map((entry) => {
+        const a = entry.athlete || {}
+        const s = entry.priorSchool
+        const fromLoc = [a.city, a.state].filter(Boolean).join(', ') || '—'
+        const prior = s?.displayName || '—'
+        const div = s?.division || '—'
+        const elig =
+          entry.yearsOfEligibility === null || entry.yearsOfEligibility === undefined
+            ? '—'
+            : String(entry.yearsOfEligibility)
+        const url = safeUrl(entry.fieldLevelUrl)
+        const linkCell = url
+          ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">FieldLevel</a>`
+          : '—'
+
+        const dashboardPlayerId = getTransferPortalDashboardPlayerId(entry.id)
+        const nameCell = dashboardPlayerId
+          ? `<button type="button" class="transferPortalNameBtn" data-action="open-dashboard-player" data-player-id="${escapeHtml(dashboardPlayerId)}">${escapeHtml(
+              a.displayName || '—',
+            )}</button>`
+          : `<strong>${escapeHtml(a.displayName || '—')}</strong>`
+
+        return `
+          <tr>
+            <td>${nameCell}</td>
+            <td>${escapeHtml(a.positions || '—')}</td>
+            <td>${escapeHtml(prior)}</td>
+            <td>${escapeHtml(div)}</td>
+            <td>${escapeHtml(fromLoc)}</td>
+            <td>${escapeHtml(elig)}</td>
+            <td>${escapeHtml(formatTransferDate(entry.announcementDateUtc))}</td>
+            <td class="transferAnnouncementCell" title="${escapeHtml(entry.announcementText)}">${escapeHtml(
+              truncateTransferText(entry.announcementText, 140),
+            )}</td>
+            <td>${linkCell}</td>
+          </tr>
+        `
+      })
+      .join('')
+  }
+
+  function exportTransferPortalCsv() {
+    const filtered = getFilteredTransferPlayers()
+    if (!filtered.length) {
+      return
+    }
+
+    const headers = [
+      'Player',
+      'Positions',
+      'Prior program',
+      'Division',
+      'Hometown',
+      'Eligibility years',
+      'Announced date (UTC)',
+      'Announcement',
+      'FieldLevel URL',
+      'Dashboard roster id',
+    ]
+
+    const lines = [headers.join(',')]
+    for (const entry of filtered) {
+      const a = entry.athlete || {}
+      const s = entry.priorSchool
+      const rosterId = getTransferPortalDashboardPlayerId(entry.id) || ''
+      const row = [
+        a.displayName,
+        a.positions,
+        s?.displayName,
+        s?.division,
+        [a.city, a.state].filter(Boolean).join(', '),
+        entry.yearsOfEligibility,
+        entry.announcementDateUtc,
+        entry.announcementText,
+        entry.fieldLevelUrl,
+        rosterId,
+      ].map((cell) => {
+        const text = String(cell ?? '')
+        if (/[",\n]/.test(text)) {
+          return `"${text.replace(/"/g, '""')}"`
+        }
+        return text
+      })
+      lines.push(row.join(','))
+    }
+
+    const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8' })
+    const link = document.createElement('a')
+    const stamp = new Date().toISOString().slice(0, 10)
+    link.href = URL.createObjectURL(blob)
+    link.download = `transfer-portal-wsoc-${stamp}.csv`
+    link.click()
+    URL.revokeObjectURL(link.href)
   }
 
   function getRawPlayerMinutes(player) {
@@ -657,6 +834,148 @@
     .sort((left, right) => (right.scoutingScore || -1) - (left.scoutingScore || -1))
 
   const playerMap = new Map(players.map((player) => [player.id, player]))
+
+  function normalizeTextForMatch(value) {
+    return String(value ?? '').replace(/\s+/g, ' ').trim()
+  }
+
+  function slugifyForMatch(value) {
+    return normalizeTextForMatch(value)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+  }
+
+  function normalizeDisplayNameForMatch(value) {
+    const normalized = normalizeTextForMatch(value)
+    if (!normalized.includes(',')) {
+      return normalized
+    }
+
+    const [lastName, ...firstParts] = normalized.split(',').map((piece) => normalizeTextForMatch(piece))
+    return normalizeTextForMatch(`${firstParts.join(' ')} ${lastName}`)
+  }
+
+  function buildRosterNameKey(value) {
+    const normalized = normalizeDisplayNameForMatch(value)
+      .replace(/\./g, '')
+      .replace(/[''\u2019]/g, '')
+    const folded = normalized.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    return slugifyForMatch(folded)
+  }
+
+  function normalizeSchoolForMatch(value) {
+    return normalizeTextForMatch(value)
+      .toLowerCase()
+      .replace(/women'?s|men'?s/g, '')
+      .replace(/\bsoccer\b/g, '')
+      .replace(/\bteam\b/g, '')
+      .replace(/\bathletics\b/g, '')
+      .replace(/\buniversity\b/g, 'u')
+      .replace(/\bcollege\b/g, 'col')
+      .replace(/\bof\b/g, '')
+      .replace(/[^a-z0-9]+/g, '')
+  }
+
+  function schoolMatchScore(priorNorm, teamNorm) {
+    if (!priorNorm || !teamNorm) {
+      return 0
+    }
+
+    if (priorNorm === teamNorm) {
+      return 1
+    }
+
+    const shorter = priorNorm.length <= teamNorm.length ? priorNorm : teamNorm
+    const longer = priorNorm.length > teamNorm.length ? priorNorm : teamNorm
+
+    if (shorter.length >= 8 && longer.includes(shorter)) {
+      return 0.92
+    }
+
+    if (shorter.length >= 6 && longer.includes(shorter)) {
+      return 0.82
+    }
+
+    let common = 0
+    const n = Math.min(priorNorm.length, teamNorm.length)
+    for (let index = 0; index < n; index += 1) {
+      if (priorNorm[index] === teamNorm[index]) {
+        common += 1
+      } else {
+        break
+      }
+    }
+
+    if (common >= 8) {
+      return Math.min(0.88, 0.45 + common / (2 * Math.max(priorNorm.length, teamNorm.length)))
+    }
+
+    return 0
+  }
+
+  function findDashboardPlayerForTransfer(entry) {
+    const nameKey = buildRosterNameKey(entry.athlete?.displayName ?? '')
+    if (!nameKey) {
+      return null
+    }
+
+    const priorNorm = normalizeSchoolForMatch(entry.priorSchool?.displayName ?? '')
+    const sameName = players.filter((player) => buildRosterNameKey(player.name) === nameKey)
+
+    if (sameName.length === 0) {
+      return null
+    }
+
+    if (sameName.length === 1) {
+      return sameName[0]
+    }
+
+    let best = null
+    let bestScore = -1
+
+    for (const player of sameName) {
+      const team = teamMap.get(player.teamId)
+      const teamNorm = normalizeSchoolForMatch(`${team?.name || ''} ${team?.longName || ''}`)
+      const score = schoolMatchScore(priorNorm, teamNorm)
+      if (score > bestScore) {
+        bestScore = score
+        best = player
+      }
+    }
+
+    if (bestScore >= 0.45 && best) {
+      return best
+    }
+
+    return null
+  }
+
+  let transferPortalDashboardMap = null
+
+  function ensureTransferPortalDashboardMap() {
+    if (transferPortalDashboardMap) {
+      return transferPortalDashboardMap
+    }
+
+    transferPortalDashboardMap = new Map()
+    if (!transferPortalDataset?.players?.length) {
+      return transferPortalDashboardMap
+    }
+
+    for (const entry of transferPortalDataset.players) {
+      const match = findDashboardPlayerForTransfer(entry)
+      if (match) {
+        transferPortalDashboardMap.set(entry.id, match.id)
+      }
+    }
+
+    return transferPortalDashboardMap
+  }
+
+  function getTransferPortalDashboardPlayerId(entryId) {
+    return ensureTransferPortalDashboardMap().get(entryId) || null
+  }
 
   function getArchetypeScore(player, archetypeId) {
     return player?.archetypeScores?.[archetypeId] ?? null
@@ -2459,6 +2778,16 @@
     document.getElementById('profileModalBack').style.display = 'none'
   }
 
+  function openDashboardFromTransferPortal(playerId) {
+    if (!playerId || !playerMap.has(playerId)) {
+      return
+    }
+
+    state.selectedPlayerId = playerId
+    openProfile(playerId)
+    renderAll()
+  }
+
   function toggleCompare(playerId) {
     const index = state.compareIds.indexOf(playerId)
 
@@ -2838,6 +3167,7 @@
     renderFitBoard(fitCandidates)
     renderCompare(comparePlayers)
     renderTurnover()
+    renderTransferPortal()
     renderBoard(filteredPlayers)
     renderLeaders(filteredPlayers, fitCandidates)
     renderDetail(selectedPlayer)
@@ -2973,6 +3303,33 @@
     document.getElementById('clearCompareBtn').addEventListener('click', clearCompare)
     document.getElementById('exportFitCsvBtn').addEventListener('click', exportFitCsv)
     document.getElementById('exportReportBtn').addEventListener('click', openReport)
+
+    const transferPortalSearch = document.getElementById('transferPortalSearch')
+    if (transferPortalSearch) {
+      transferPortalSearch.value = state.transferPortalSearch
+      transferPortalSearch.addEventListener('input', (event) => {
+        state.transferPortalSearch = event.target.value
+        renderTransferPortal()
+      })
+    }
+
+    const transferPortalExportBtn = document.getElementById('transferPortalExportBtn')
+    if (transferPortalExportBtn) {
+      transferPortalExportBtn.addEventListener('click', exportTransferPortalCsv)
+    }
+
+    const transferPortalTableBody = document.getElementById('transferPortalTableBody')
+    if (transferPortalTableBody) {
+      transferPortalTableBody.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-action="open-dashboard-player"]')
+        if (!button) {
+          return
+        }
+
+        const playerId = button.getAttribute('data-player-id')
+        openDashboardFromTransferPortal(playerId)
+      })
+    }
 
     const filterGrid = document.getElementById('filterGrid')
     const toggleFiltersBtn = document.getElementById('toggleFiltersBtn')

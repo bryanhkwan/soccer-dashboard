@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "generate:mac": "node scripts/generate-mac-dataset.mjs",
-    "generate:soccer": "node scripts/generate-soccer-dataset.mjs"
+    "generate:soccer": "node scripts/generate-soccer-dataset.mjs",
+    "generate:transfer-portal": "node scripts/fetch-transfer-portal.mjs",
+    "analyze:transfer-unlinked": "node scripts/analyze-transfer-unlinked.mjs",
+    "list-missing-transfer-schools": "node scripts/list-missing-transfer-schools.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.2.0"
