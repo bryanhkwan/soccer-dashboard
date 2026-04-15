@@ -1,11 +1,61 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-14T14:14:39.749Z",
+  "generatedAt": "2026-04-15T08:16:41.626Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 121,
+  "totalCount": 123,
   "players": [
+    {
+      "id": 2594,
+      "announcementDateUtc": "2026-04-14T16:49:21.543",
+      "announcementText": "Due to a coaching change at my current school I have decided to enter into the transfer portal as of May 1.  I have 2 years of eligibility left and would like to continue my soccer journey. I primarily play outside back but also forward. I’m excited to see what’s next and can’t wait to connect. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Ella Farkas",
+        "firstName": "Ella",
+        "lastName": "Farkas",
+        "username": "ella.farkas.2549074",
+        "city": "Saint Clair",
+        "state": "MI",
+        "positions": "D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Accounting ",
+        "profileId": 2549074
+      },
+      "priorSchool": {
+        "displayName": "Central Michigan University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Mount Pleasant",
+        "state": "MI"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ella.farkas.2549074/soccerwomen/2594"
+    },
+    {
+      "id": 2592,
+      "announcementDateUtc": "2026-04-14T15:16:33.203",
+      "announcementText": "NAIA or D2, Computer Science, east or west coast ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Annika Maringer",
+        "firstName": "Annika",
+        "lastName": "Maringer",
+        "username": "annika.maringer",
+        "city": "",
+        "state": "FL",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Computer Science B.S.",
+        "profileId": 2079830
+      },
+      "priorSchool": {
+        "displayName": "New College of Florida Women's Soccer",
+        "division": "NAIA",
+        "city": "Sarasota",
+        "state": "FL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/annika.maringer/soccerwomen/2592"
+    },
     {
       "id": 2571,
       "announcementDateUtc": "2026-04-12T07:15:09.253",
