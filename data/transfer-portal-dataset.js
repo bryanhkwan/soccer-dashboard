@@ -1,11 +1,136 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-14T14:14:39.749Z",
+  "generatedAt": "2026-04-16T08:17:15.464Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 121,
+  "totalCount": 125,
   "players": [
+    {
+      "id": 2613,
+      "announcementDateUtc": "2026-04-15T18:36:04.433",
+      "announcementText": "I am a center back looking for a place that I can make an impact. I want to compete against a higher level of competition. My primary position is center back and I’ve played that for over 4 years. I can play outside back if needed but would prefer center back. I am a competitive, driven, strong, and determined player. I am leaving Eureka due to my coach leaving. At my high school, we won conference 3/4 years, sectionals 4 years in a row, and regionals once during my senior year. I am very open to going anywhere and distance is not an issue for me!",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Lexi Smith",
+        "firstName": "Lexi",
+        "lastName": "Smith",
+        "username": "lexi.smith.1849075",
+        "city": "Dyer",
+        "state": "IN",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Sports management ",
+        "profileId": 1849075
+      },
+      "priorSchool": {
+        "displayName": "Eureka College Women's Soccer",
+        "division": "NCAA D3",
+        "city": "Eureka",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/lexi.smith.1849075/soccerwomen/2613"
+    },
+    {
+      "id": 2612,
+      "announcementDateUtc": "2026-04-15T18:30:06.747",
+      "announcementText": "Due to circumstances I have officially entered the Transfer Portal!!\nI am really looking for a school with a competitive conference, and support systems within the academics along with student-athletes mental health.\n\nDuring my time at Neumann, I had an early season non-conference game season ending injury. Not much film from my time at Neumann but have tons from my Junior, and Senior years of Highschool which is still a very good reference of my playing style. \n\nhttps://www.fieldlevel.com/app/profile/aubrey.patterson/soccerwomen/videos/2062050?m=3\n\nhttps://www.fieldlevel.com/app/profile/aubrey.patterson/soccerwomen/videos/2062049?m=3",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Aubrey Patterson",
+        "firstName": "Aubrey",
+        "lastName": "Patterson",
+        "username": "aubrey.patterson",
+        "city": "Drexel Hill",
+        "state": "PA",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Business",
+        "profileId": 1878705
+      },
+      "priorSchool": {
+        "displayName": "Neumann University Women's Soccer",
+        "division": "NCAA D3",
+        "city": "UPPR CHICHSTR",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aubrey.patterson/soccerwomen/2612"
+    },
+    {
+      "id": 2611,
+      "announcementDateUtc": "2026-04-15T15:03:44.987",
+      "announcementText": "I’m excited to announce that I’ve officially entered the transfer portal and am looking for a new opportunity to continue my academic and athletic career.\nI am a versatile player with experience as both a center midfielder and outside back, bringing strong field awareness, work rate, and the ability to impact the game on both sides of the ball. As a midfielder, I pride myself on distribution, vision, and controlling tempo. As an outside back, I bring speed, defensive discipline, and the ability to contribute to the attack.\nI am seeking a program that values competitive growth, strong team culture, and academic excellence as I continue pursuing my degree in Biomedical Chemistry with the goal of becoming a Physician Assistant.\nGPA: 3.79\nPositions: Center Back / Outside Back\nGrad Year: 2029\nFilm, stats, and references are available upon request.\nThank you to my current coaches and teammates for their support throughout this journey. I’m excited for what’s ahead and ready to contribute immediately Please feel free to reach out via DM or email: *****@*****.*** ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Ella Pettit",
+        "firstName": "Ella",
+        "lastName": "Pettit",
+        "username": "ella.pettit",
+        "city": "Loveland",
+        "state": "CO",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Biology ",
+        "profileId": 2503521
+      },
+      "priorSchool": {
+        "displayName": "Kansas Wesleyan University Women's Soccer",
+        "division": "NAIA",
+        "city": "Salina",
+        "state": "KS"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ella.pettit/soccerwomen/2611"
+    },
+    {
+      "id": 2594,
+      "announcementDateUtc": "2026-04-14T16:49:21.543",
+      "announcementText": "Due to a coaching change at my current school I have decided to enter into the transfer portal as of May 1.  I have 2 years of eligibility left and would like to continue my soccer journey. I primarily play outside back but also forward. I’m excited to see what’s next and can’t wait to connect. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Ella Farkas",
+        "firstName": "Ella",
+        "lastName": "Farkas",
+        "username": "ella.farkas.2549074",
+        "city": "Saint Clair",
+        "state": "MI",
+        "positions": "D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Accounting ",
+        "profileId": 2549074
+      },
+      "priorSchool": {
+        "displayName": "Central Michigan University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Mount Pleasant",
+        "state": "MI"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ella.farkas.2549074/soccerwomen/2594"
+    },
+    {
+      "id": 2592,
+      "announcementDateUtc": "2026-04-14T15:16:33.203",
+      "announcementText": "NAIA or D2, Computer Science, east or west coast ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Annika Maringer",
+        "firstName": "Annika",
+        "lastName": "Maringer",
+        "username": "annika.maringer",
+        "city": "",
+        "state": "BW",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Computer Science B.S.",
+        "profileId": 2079830
+      },
+      "priorSchool": {
+        "displayName": "New College of Florida Women's Soccer",
+        "division": "NAIA",
+        "city": "Sarasota",
+        "state": "FL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/annika.maringer/soccerwomen/2592"
+    },
     {
       "id": 2571,
       "announcementDateUtc": "2026-04-12T07:15:09.253",
@@ -930,31 +1055,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/brianna.harris.2476611/soccerwomen/1911"
-    },
-    {
-      "id": 1903,
-      "announcementDateUtc": "2026-01-18T02:19:34.567",
-      "announcementText": "Im transferring because my coach lest. I am currently not enrolled this semester. I am looking for a place to make an impact at as at center back. I want a welcoming environment and I want to play. ",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "Lexi Smith",
-        "firstName": "Lexi",
-        "lastName": "Smith",
-        "username": "lexi.smith.1849075",
-        "city": "Dyer",
-        "state": "IN",
-        "positions": "D",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Sports management ",
-        "profileId": 1849075
-      },
-      "priorSchool": {
-        "displayName": "Eureka College Women's Soccer",
-        "division": "NCAA D3",
-        "city": "Eureka",
-        "state": "IL"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/lexi.smith.1849075/soccerwomen/1903"
     },
     {
       "id": 1876,
