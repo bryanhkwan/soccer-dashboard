@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-17T08:16:03.632Z",
+  "generatedAt": "2026-04-18T07:45:22.710Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 125,
+  "totalCount": 126,
   "players": [
+    {
+      "id": 2635,
+      "announcementDateUtc": "2026-04-17T19:08:52.903",
+      "announcementText": "I’m very grateful for the experience, training, and relationships I built at Florida Tech this past semester. After thoughtful consideration, I’ve decided to enter the transfer portal to pursue an opportunity that better aligns with my playing style and long-term goals.\n\nI’m seeking a program at the NCAA DII level or higher where I can make an immediate impact. As a striker, I thrive in holding play and creating scoring opportunities. I bring a positive, vocal presence and leadership experience from serving as a captain on both my club and high school teams.\n\nI pride myself on being competitive, coachable, and having a strong work ethic. I’m also a dedicated student-athlete, maintaining a 4.0 GPA while balancing academics and athletics.\n\nFor recruiting inquiries, please contact:\n*****@*****.***\n\n(***) *** ****\n\nThank you for your time and consideration.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Bailey Springman",
+        "firstName": "Bailey",
+        "lastName": "Springman",
+        "username": "bailey.springman",
+        "city": "Sarasota",
+        "state": "FL",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Undecided",
+        "profileId": 1364895
+      },
+      "priorSchool": {
+        "displayName": "Florida Tech Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Melbourne",
+        "state": "FL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/bailey.springman/soccerwomen/2635"
+    },
     {
       "id": 2613,
       "announcementDateUtc": "2026-04-15T18:36:04.433",
