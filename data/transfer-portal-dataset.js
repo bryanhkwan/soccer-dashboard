@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-19T07:57:26.536Z",
+  "generatedAt": "2026-04-20T09:00:26.487Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 126,
+  "totalCount": 127,
   "players": [
+    {
+      "id": 2650,
+      "announcementDateUtc": "2026-04-19T23:23:02.187",
+      "announcementText": "I am seeking a competitive D2 program with a strong training environment, a team-first culture, and coaches who emphasize player development, communication, and tactical growth. I want to compete for meaningful minutes while continuing to improve my decision-making, consistency, and overall impact in the attack. I am a versatile forward who plays as both a striker and winger, using my speed to stretch defenses and create attacking opportunities. I’m a technical player who values connecting play, distributing effectively, and contributing to build-up as well as finishing in the final third all while also enjoying sharing the field with teammates and bring contribution to the team! ",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Ashley Estrada",
+        "firstName": "Ashley",
+        "lastName": "Estrada",
+        "username": "ashley.2015779",
+        "city": "Dalton",
+        "state": "GA",
+        "positions": "F",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Psychology",
+        "profileId": 2015779
+      },
+      "priorSchool": {
+        "displayName": "Reinhardt University Women's Soccer",
+        "division": "NAIA",
+        "city": "Waleska",
+        "state": "GA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ashley.2015779/soccerwomen/2650"
+    },
     {
       "id": 2635,
       "announcementDateUtc": "2026-04-17T19:08:52.903",
