@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-20T09:00:26.487Z",
+  "generatedAt": "2026-04-21T08:22:20.912Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 127,
+  "totalCount": 126,
   "players": [
     {
       "id": 2650,
@@ -641,7 +641,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "firstName": "Grace",
         "lastName": "Marrero",
         "username": "grace.marrero",
-        "city": "Sarasota",
+        "city": "Winter Garden",
         "state": "FL",
         "positions": "D",
         "highSchoolGraduationYear": 2024,
@@ -2030,31 +2030,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "KS"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jeulz.dean/soccerwomen/1396"
-    },
-    {
-      "id": 1389,
-      "announcementDateUtc": "2025-11-16T18:36:50.813",
-      "announcementText": "I want to play D1/D2/D3 soccer at an high academic institution that has a Biomedical Science Major. I am a fullback, who can play both sides with good stamina, work ethic and player IQ. I want to come to a winning team where I can contribute with my competitiveness. I am mostly looking for schools at the East Coast. ",
-      "yearsOfEligibility": 2,
-      "athlete": {
-        "displayName": "Louise Borgudd",
-        "firstName": "Louise",
-        "lastName": "Borgudd",
-        "username": "louise.borgudd",
-        "city": "Stockholm",
-        "state": "Stockholm County",
-        "positions": "D",
-        "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Biomedical Science ",
-        "profileId": 2425675
-      },
-      "priorSchool": {
-        "displayName": "Mars Hill University Women's Soccer",
-        "division": "NCAA D2",
-        "city": "Mars Hill",
-        "state": "NC"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/louise.borgudd/soccerwomen/1389"
     },
     {
       "id": 1386,
