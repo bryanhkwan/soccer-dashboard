@@ -1,11 +1,61 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-21T08:22:20.912Z",
+  "generatedAt": "2026-04-22T08:20:00.865Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 126,
+  "totalCount": 128,
   "players": [
+    {
+      "id": 2678,
+      "announcementDateUtc": "2026-04-21T20:41:42.553",
+      "announcementText": "Looking for any location/ level",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Alex Kelly",
+        "firstName": "Alex",
+        "lastName": "Kelly",
+        "username": "alex.kelly.2555074",
+        "city": "Whitburn",
+        "state": "England",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Mass Communication",
+        "profileId": 2555074
+      },
+      "priorSchool": {
+        "displayName": "Louisiana State University - Shreveport Women's Soccer",
+        "division": "NAIA",
+        "city": "Caspiana",
+        "state": "LA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alex.kelly.2555074/soccerwomen/2678"
+    },
+    {
+      "id": 2669,
+      "announcementDateUtc": "2026-04-21T12:49:28.737",
+      "announcementText": "I am incredibly grateful for my time at Queens but after much thought and consideration i have decided to enter the transfer portal on May 1st with 3 years of eligibility remaining.\n\nI am looking for a competitive environment to elevate my game further after a successful freshman year.\n\nIm excited to see what is next!",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Hannah Dike-Lawlor",
+        "firstName": "Hannah",
+        "lastName": "Dike-Lawlor",
+        "username": "hannah.dikelawlor",
+        "city": "London",
+        "state": "England",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Exercise and Sport science ",
+        "profileId": 2113693
+      },
+      "priorSchool": {
+        "displayName": "Queens University of Charlotte Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Charlotte",
+        "state": "NC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/hannah.dikelawlor/soccerwomen/2669"
+    },
     {
       "id": 2650,
       "announcementDateUtc": "2026-04-19T23:23:02.187",
