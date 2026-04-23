@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-22T08:20:00.865Z",
+  "generatedAt": "2026-04-23T08:24:31.215Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -45,7 +45,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "England",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Exercise and Sport science ",
+        "plannedMajor": "Exercise and Sport science / Political Science",
         "profileId": 2113693
       },
       "priorSchool": {
