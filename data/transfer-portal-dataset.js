@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-23T08:24:31.215Z",
+  "generatedAt": "2026-04-24T08:35:42.194Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 128,
+  "totalCount": 129,
   "players": [
+    {
+      "id": 2708,
+      "announcementDateUtc": "2026-04-23T21:18:41.593",
+      "announcementText": "I am a central/attacking midfielder and winger currently competing at the NCAA Division I level with USC Upstate. I am seeking a competitive program where I can make an immediate impact, continue to develop technically and tactically, and compete for championships. Open to opportunities across strong Division I/II programs in the U.S. \nMy Major is Sports Management.\n",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Phoebe Davidson",
+        "firstName": "Phoebe",
+        "lastName": "Davidson",
+        "username": "phoebe.davidson",
+        "city": "Wilmslow",
+        "state": "England",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Sports Management",
+        "profileId": 2167574
+      },
+      "priorSchool": {
+        "displayName": "USC - Upstate Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Spartanburg",
+        "state": "SC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/phoebe.davidson/soccerwomen/2708"
+    },
     {
       "id": 2678,
       "announcementDateUtc": "2026-04-21T20:41:42.553",
