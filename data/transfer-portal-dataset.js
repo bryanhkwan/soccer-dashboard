@@ -1,11 +1,111 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-27T09:08:17.109Z",
+  "generatedAt": "2026-04-28T09:07:39.468Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 129,
+  "totalCount": 133,
   "players": [
+    {
+      "id": 2785,
+      "announcementDateUtc": "2026-04-27T23:05:33.873",
+      "announcementText": "Entering the transfer portal with one year of eligibility due to injury. Graduating with Accounting MBA this semester but need two more accounting classes to start pursuing my CPA. ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Arianna Diemer",
+        "firstName": "Arianna",
+        "lastName": "Diemer",
+        "username": "arianna.diemer",
+        "city": "Hudsonville",
+        "state": "MI",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "Accounting",
+        "profileId": 1198605
+      },
+      "priorSchool": {
+        "displayName": "Davenport University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Grand Rapids",
+        "state": "MI"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/arianna.diemer/soccerwomen/2785"
+    },
+    {
+      "id": 2766,
+      "announcementDateUtc": "2026-04-27T18:27:35.48",
+      "announcementText": "I am an attacking mid (10) who is looking to transfer somewhere that I can continue my biology degree at a high level program that has a heavy focus on offense and creating goal scoring opportunities while also maintaining a strong culture within the team!",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Chelsea Hartmann",
+        "firstName": "Chelsea",
+        "lastName": "Hartmann",
+        "username": "chelsea.hartmann",
+        "city": "Alpine",
+        "state": "UT",
+        "positions": "M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Biology",
+        "profileId": 1374788
+      },
+      "priorSchool": {
+        "displayName": "Westminster University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Salt Lake City",
+        "state": "UT"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/chelsea.hartmann/soccerwomen/2766"
+    },
+    {
+      "id": 2763,
+      "announcementDateUtc": "2026-04-27T18:11:38.373",
+      "announcementText": "Hi! I am a versatile center back looking for a new program to better myself as a student athlete and compete at a level that allows me to reach my fullest potential as a soccer player. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Maggie Oduor",
+        "firstName": "Maggie",
+        "lastName": "Oduor",
+        "username": "maggie.oduor.1249666",
+        "city": "Hurricane",
+        "state": "WV",
+        "positions": "D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "MBA",
+        "profileId": 1249666
+      },
+      "priorSchool": {
+        "displayName": "Point Park University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Pitts",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/maggie.oduor.1249666/soccerwomen/2763"
+    },
+    {
+      "id": 2761,
+      "announcementDateUtc": "2026-04-27T17:07:14.303",
+      "announcementText": "I am a versatile CB looking for a new home. I am looking for coaches willing to make good relationships and a good team culture. After having a great freshman Spring season I am ready to showcase more of my talent.",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Imani Williams",
+        "firstName": "Imani",
+        "lastName": "Williams",
+        "username": "imani.williams",
+        "city": "Lawrenceville",
+        "state": "GA",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Studio Art",
+        "profileId": 1599847
+      },
+      "priorSchool": {
+        "displayName": "Queens University of Charlotte Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Charlotte",
+        "state": "NC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/imani.williams/soccerwomen/2761"
+    },
     {
       "id": 2708,
       "announcementDateUtc": "2026-04-23T21:18:41.593",
