@@ -1,11 +1,61 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-28T09:07:39.468Z",
+  "generatedAt": "2026-04-29T09:00:17.129Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 133,
+  "totalCount": 135,
   "players": [
+    {
+      "id": 2812,
+      "announcementDateUtc": "2026-04-29T01:53:50.163",
+      "announcementText": "My name is Avery Alves and I am currently a Freshman at Hawaii Pacific University. After thoughtful consideration, I have decided to enter the transfer portal. I am very grateful for the trainings and experiences I have gained at HPU but I am looking to find a school that better aligns with my long term goals both career and athletics wise.   I am looking for a program at the NCAA DII level or higher where I can make an impact on the field. As a goalkeeper, I am very communicative with not only my fellow teammates but also coaches. Team camaraderie is a very important aspect to me and I pride myself in bringing a positive energy into the environment.   I am a competitive, coachable, and hardworking player. I'm also a dedicated student-athlete, maintaining a 4.0 GPA while balancing academics and athletics.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Avery Alves",
+        "firstName": "Avery",
+        "lastName": "Alves",
+        "username": "avery.alves",
+        "city": "Riverbank",
+        "state": "CA",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Communication/Sports Journalism",
+        "profileId": 2375411
+      },
+      "priorSchool": {
+        "displayName": "Hawaii Pacific University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Honolulu",
+        "state": "HI"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.alves/soccerwomen/2812"
+    },
+    {
+      "id": 2805,
+      "announcementDateUtc": "2026-04-28T21:33:12.653",
+      "announcementText": "Hi my name is Avery Poole! I am entering the transfer portal to find a program that better fits my goals as both a student and a soccer player. Coming from a Division II school, I’ve developed my skills and grown competitively, but I’m ready for an environment that offers more opportunities. I take pride in my agility, work rate, and technical ability, and I’m looking for a team where my style of play can make an impact. I’m motivated to continue improving, compete at any level, and be part of a program that aligns with my long-term development.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Avery Poole",
+        "firstName": "Avery",
+        "lastName": "Poole",
+        "username": "avery.poole.2015998",
+        "city": "Owingsville",
+        "state": "KY",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Psychology/criminal justice",
+        "profileId": 2015998
+      },
+      "priorSchool": {
+        "displayName": "Kentucky Wesleyan College Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Owensboro",
+        "state": "KY"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.poole.2015998/soccerwomen/2805"
+    },
     {
       "id": 2785,
       "announcementDateUtc": "2026-04-27T23:05:33.873",
@@ -2020,7 +2070,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Business ",
+        "plannedMajor": "Communication/Sports Journalism",
         "profileId": 2375411
       },
       "priorSchool": {
@@ -2067,7 +2117,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "lastName": "Broyles",
         "username": "christin.broyles.2401757",
         "city": "",
-        "state": "",
+        "state": "CA",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2024,
         "plannedMajor": "BS Exercise Science with a minor in Business",
