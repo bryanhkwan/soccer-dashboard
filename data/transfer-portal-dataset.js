@@ -1,15 +1,15 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-29T09:00:17.129Z",
+  "generatedAt": "2026-04-30T09:01:05.403Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 135,
+  "totalCount": 136,
   "players": [
     {
-      "id": 2812,
-      "announcementDateUtc": "2026-04-29T01:53:50.163",
-      "announcementText": "My name is Avery Alves and I am currently a Freshman at Hawaii Pacific University. After thoughtful consideration, I have decided to enter the transfer portal. I am very grateful for the trainings and experiences I have gained at HPU but I am looking to find a school that better aligns with my long term goals both career and athletics wise.   I am looking for a program at the NCAA DII level or higher where I can make an impact on the field. As a goalkeeper, I am very communicative with not only my fellow teammates but also coaches. Team camaraderie is a very important aspect to me and I pride myself in bringing a positive energy into the environment.   I am a competitive, coachable, and hardworking player. I'm also a dedicated student-athlete, maintaining a 4.0 GPA while balancing academics and athletics.",
+      "id": 2830,
+      "announcementDateUtc": "2026-04-29T20:58:49.177",
+      "announcementText": "My name is Avery Alves and I am currently a Freshman at Hawaii Pacific University. After thoughtful consideration, I have decided to enter the transfer portal. I am very grateful for the trainings and experiences I have gained at HPU but I am looking to find a school that better aligns with my long term goals both career and athletics wise. \n\nI am looking for a program at the NCAA DII level or higher where I can make an impact on the field. As a goalkeeper, I am very communicative with not only my fellow teammates but also coaches. Team camaraderie is a very important aspect to me and I pride myself in bringing a positive energy into the environment. \n\nI am a competitive, coachable, and hardworking player. I'm also a dedicated student-athlete, maintaining a 4.0 GPA while balancing academics and athletics.",
       "yearsOfEligibility": 3,
       "athlete": {
         "displayName": "Avery Alves",
@@ -29,7 +29,32 @@ window.TRANSFER_PORTAL_DATASET = {
         "city": "Honolulu",
         "state": "HI"
       },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.alves/soccerwomen/2812"
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.alves/soccerwomen/2830"
+    },
+    {
+      "id": 2827,
+      "announcementDateUtc": "2026-04-29T18:30:20.22",
+      "announcementText": "My ideal transfer opportunity is to play at a competitive level in a positive environment. ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Kareena Rodriguez",
+        "firstName": "Kareena",
+        "lastName": "Rodriguez",
+        "username": "kareena.kayrodriguez",
+        "city": "San Marcos",
+        "state": "TX",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Kinesiology ",
+        "profileId": 1325119
+      },
+      "priorSchool": {
+        "displayName": "Howard Payne University Women's Soccer",
+        "division": "NCAA D3",
+        "city": "Brownwood",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/kareena.kayrodriguez/soccerwomen/2827"
     },
     {
       "id": 2805,
@@ -716,8 +741,8 @@ window.TRANSFER_PORTAL_DATASET = {
         "firstName": "Lola",
         "lastName": "Downer",
         "username": "lola.downer",
-        "city": "",
-        "state": "",
+        "city": "Thibodaux",
+        "state": "LA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
         "plannedMajor": "Kinesiology",
