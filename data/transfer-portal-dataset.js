@@ -1,11 +1,86 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-04-30T09:01:05.403Z",
+  "generatedAt": "2026-05-01T08:31:44.976Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 136,
+  "totalCount": 139,
   "players": [
+    {
+      "id": 2841,
+      "announcementDateUtc": "2026-04-30T19:13:35.853",
+      "announcementText": "I am grateful for the opportunities and lessons I received through New Mexico Highlands University and head coach Amanda Evans. My primary position is L/R winger but I also have experience playing forward, attacking midfield, and even outside back. This past Fall I was a starter with 811 minutes. I am excited for the next opportunity where I can continue to learn and elevate my game. ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Mia Roybal",
+        "firstName": "Mia",
+        "lastName": "Roybal",
+        "username": "mia.roybal",
+        "city": "Albuquerque",
+        "state": "NM",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Engineering ",
+        "profileId": 2565107
+      },
+      "priorSchool": {
+        "displayName": "New Mexico Highlands University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Las Vegas",
+        "state": "NM"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/mia.roybal/soccerwomen/2841"
+    },
+    {
+      "id": 2840,
+      "announcementDateUtc": "2026-04-30T18:12:20.88",
+      "announcementText": "I will have two years of eligibility remaining. I’m am primarily an outside but have had experience in various positions. I was a two year starter with 1731 minutes. I am excited for the next opportunity and ready to contribute at a high level. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Viviana Munoz",
+        "firstName": "Viviana",
+        "lastName": "Munoz",
+        "username": "viviana.munoz",
+        "city": "Albuquerque",
+        "state": "NM",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Health",
+        "profileId": 1746753
+      },
+      "priorSchool": {
+        "displayName": "New Mexico Highlands University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Las Vegas",
+        "state": "NM"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/viviana.munoz/soccerwomen/2840"
+    },
+    {
+      "id": 2835,
+      "announcementDateUtc": "2026-04-30T14:31:39.267",
+      "announcementText": "Hi my name is London. After thoughtful consideration I have decided to enter the transfer portal with 3 years of eligibility left. I am looking to make an impact at another program as a versatile forward/wing.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "London Schulte",
+        "firstName": "London",
+        "lastName": "Schulte",
+        "username": "london.schulte",
+        "city": "Chicago Precinct",
+        "state": "NE",
+        "positions": "F",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Nursing",
+        "profileId": 2422087
+      },
+      "priorSchool": {
+        "displayName": "William Jewell College Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Liberty",
+        "state": "MO"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/london.schulte/soccerwomen/2835"
+    },
     {
       "id": 2830,
       "announcementDateUtc": "2026-04-29T20:58:49.177",
