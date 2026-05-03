@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-02T08:13:01.200Z",
+  "generatedAt": "2026-05-03T08:23:58.698Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 141,
+  "totalCount": 142,
   "players": [
+    {
+      "id": 2894,
+      "announcementDateUtc": "2026-05-02T20:40:37.287",
+      "announcementText": "I'm looking for a competitive program, with a family like culture, a great nursing school, opportunity to grow as an athlete/person, and a place I can compete for a starting spot.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Emmy Finlinson",
+        "firstName": "Emmy",
+        "lastName": "Finlinson",
+        "username": "emmy.finlinson",
+        "city": "Eagle Mountain",
+        "state": "UT",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Nursing",
+        "profileId": 1811516
+      },
+      "priorSchool": {
+        "displayName": "Sul Ross State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Alpine",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/emmy.finlinson/soccerwomen/2894"
+    },
     {
       "id": 2863,
       "announcementDateUtc": "2026-05-01T15:25:14.81",
@@ -2270,7 +2295,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "BS Exercise Science with a minor in Business",
+        "plannedMajor": "BS Kinesiology with a minor in Business",
         "profileId": 2401757
       },
       "priorSchool": {
