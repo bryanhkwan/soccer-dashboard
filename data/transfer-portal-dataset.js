@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-04T09:09:18.094Z",
+  "generatedAt": "2026-05-05T08:59:38.756Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 142,
+  "totalCount": 143,
   "players": [
+    {
+      "id": 2951,
+      "announcementDateUtc": "2026-05-05T03:17:54.623",
+      "announcementText": "After much thought, I have decided to enter the transfer portal due to my head coach leaving. I am grateful for my time at Caldwell University and for all the experiences, teammates, and support I’ve had along the way.\n\nI am excited for the opportunity to continue growing both academically and athletically and am looking for the best fit moving forward.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Maria Frazier",
+        "firstName": "Maria",
+        "lastName": "Frazier",
+        "username": "maria.frazier",
+        "city": "Leander",
+        "state": "TX",
+        "positions": "D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Political Science",
+        "profileId": 1558924
+      },
+      "priorSchool": {
+        "displayName": "Caldwell University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Caldwell",
+        "state": "NJ"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/maria.frazier/soccerwomen/2951"
+    },
     {
       "id": 2894,
       "announcementDateUtc": "2026-05-02T20:40:37.287",
