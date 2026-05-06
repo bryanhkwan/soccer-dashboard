@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-05T08:59:38.756Z",
+  "generatedAt": "2026-05-06T09:12:25.371Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -1143,7 +1143,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "username": "hailey.hawthorne",
         "city": "Richardson",
         "state": "TX",
-        "positions": "PG, SG, SF",
+        "positions": "F, M, D",
         "highSchoolGraduationYear": 2023,
         "plannedMajor": "Business/Education ",
         "profileId": 825156
