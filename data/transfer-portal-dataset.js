@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-07T09:16:05.996Z",
+  "generatedAt": "2026-05-08T08:13:24.370Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 143,
+  "totalCount": 144,
   "players": [
+    {
+      "id": 3029,
+      "announcementDateUtc": "2026-05-08T08:01:56.58",
+      "announcementText": "\nI am looking for a transfer opportunity where I can continue developing both academically and athletically at a competitive level. Ideally, I would like to play at a strong collegiate program that values hard work, discipline, and player development. I am open to NCAA or NAIA opportunities.\n\nAcademically, I am interested in majors related to Fitness and Exercise.\n\nIn terms of location, I am open-minded. My priority is finding a program and environment where I can contribute, improve, and succeed both on and off the field.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Claudia Perez Brito",
+        "firstName": "Claudia",
+        "lastName": "Perez Brito",
+        "username": "claudia.perezbrito",
+        "city": "",
+        "state": "",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "Health & Physical EDUC: Applied Health & Fitness",
+        "profileId": 2201466
+      },
+      "priorSchool": {
+        "displayName": "Oakland City University Women's Soccer",
+        "division": "NAIA",
+        "city": "Oakland City",
+        "state": "IN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/claudia.perezbrito/soccerwomen/3029"
+    },
     {
       "id": 2951,
       "announcementDateUtc": "2026-05-05T03:17:54.623",
@@ -1143,7 +1168,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "username": "hailey.hawthorne",
         "city": "Richardson",
         "state": "TX",
-        "positions": "F, M, D",
+        "positions": "PG, SG, SF",
         "highSchoolGraduationYear": 2023,
         "plannedMajor": "Business/Education ",
         "profileId": 825156
