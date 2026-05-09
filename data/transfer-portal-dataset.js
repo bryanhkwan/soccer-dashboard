@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-08T08:13:24.370Z",
+  "generatedAt": "2026-05-09T08:22:24.685Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 144,
+  "totalCount": 143,
   "players": [
     {
       "id": 3029,
@@ -2780,31 +2780,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "VC"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/emily.stefik/soccerwomen/1294"
-    },
-    {
-      "id": 1292,
-      "announcementDateUtc": "2025-11-06T01:46:59.007",
-      "announcementText": " I am a hardworking and competitive player currently looking to transfer for this upcoming semester. I was originally recruited as an outside back but also gained experience as a striker, which helped me see the game from both sides of the field. I take pride in being disciplined and coachable. I value programs that emphasize culture, accountability, and constant improvement. My goal is to continue developing as a defender while also continuing to succeed in academics. I’m also pursuing a degree in Exercise Science, with a GPA of 4.0.",
-      "yearsOfEligibility": 4,
-      "athlete": {
-        "displayName": "Eve Russell",
-        "firstName": "Eve",
-        "lastName": "Russell",
-        "username": "eve.russell",
-        "city": "Fort Erie",
-        "state": "ON",
-        "positions": "D",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Exercise science ",
-        "profileId": 1936271
-      },
-      "priorSchool": {
-        "displayName": "Upper Iowa University Women's Soccer",
-        "division": "NCAA D2",
-        "city": "Fayette",
-        "state": "IA"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/eve.russell/soccerwomen/1292"
     },
     {
       "id": 1285,
