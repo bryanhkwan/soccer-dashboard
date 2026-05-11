@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-10T08:29:14.591Z",
+  "generatedAt": "2026-05-11T10:25:26.931Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 143,
+  "totalCount": 144,
   "players": [
+    {
+      "id": 3073,
+      "announcementDateUtc": "2026-05-11T04:18:29.327",
+      "announcementText": "After a great freshman year and our coach announcing his departure, I decided to enter the transfer portal. I am a versatile defender with experience in a 3-back and 4-back. I have 3 remaining years of eligibility, and would love to find my future home where I can build solid connections and have strong major opportunities. ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Cara Davidson",
+        "firstName": "Cara",
+        "lastName": "Davidson",
+        "username": "cara.davidson",
+        "city": "Peoria",
+        "state": "AZ",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Biomedical",
+        "profileId": 1750007
+      },
+      "priorSchool": {
+        "displayName": "Gardner-Webb University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Boiling Springs",
+        "state": "NC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/cara.davidson/soccerwomen/3073"
+    },
     {
       "id": 3029,
       "announcementDateUtc": "2026-05-08T08:01:56.58",
