@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-11T10:25:26.931Z",
+  "generatedAt": "2026-05-12T09:21:58.848Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 144,
+  "totalCount": 143,
   "players": [
     {
       "id": 3073,
@@ -580,31 +580,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "PA"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aubrey.patterson/soccerwomen/2612"
-    },
-    {
-      "id": 2611,
-      "announcementDateUtc": "2026-04-15T15:03:44.987",
-      "announcementText": "I’m excited to announce that I’ve officially entered the transfer portal and am looking for a new opportunity to continue my academic and athletic career.\nI am a versatile player with experience as both a center midfielder and outside back, bringing strong field awareness, work rate, and the ability to impact the game on both sides of the ball. As a midfielder, I pride myself on distribution, vision, and controlling tempo. As an outside back, I bring speed, defensive discipline, and the ability to contribute to the attack.\nI am seeking a program that values competitive growth, strong team culture, and academic excellence as I continue pursuing my degree in Biomedical Chemistry with the goal of becoming a Physician Assistant.\nGPA: 3.79\nPositions: Center Back / Outside Back\nGrad Year: 2029\nFilm, stats, and references are available upon request.\nThank you to my current coaches and teammates for their support throughout this journey. I’m excited for what’s ahead and ready to contribute immediately Please feel free to reach out via DM or email: *****@*****.*** ",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "Ella Pettit",
-        "firstName": "Ella",
-        "lastName": "Pettit",
-        "username": "ella.pettit",
-        "city": "Loveland",
-        "state": "CO",
-        "positions": "D",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Biology ",
-        "profileId": 2503521
-      },
-      "priorSchool": {
-        "displayName": "Kansas Wesleyan University Women's Soccer",
-        "division": "NAIA",
-        "city": "Salina",
-        "state": "KS"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ella.pettit/soccerwomen/2611"
     },
     {
       "id": 2594,
