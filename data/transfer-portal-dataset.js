@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-12T09:21:58.848Z",
+  "generatedAt": "2026-05-13T09:31:48.949Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 143,
+  "totalCount": 142,
   "players": [
     {
       "id": 3073,
@@ -130,31 +130,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/eva.vespa/soccerwomen/2863"
-    },
-    {
-      "id": 2858,
-      "announcementDateUtc": "2026-05-01T12:00:17.97",
-      "announcementText": "I am grateful for my time at Queens but I have decided to enter the transfer portal. I am currently studying Sports Management but I am hoping to find a place where I can pursue Fashion Design or Marketing, either Sports or Fashion focused, while continuing to pursue my love for soccer. ",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "Mason Riley",
-        "firstName": "Mason",
-        "lastName": "Riley",
-        "username": "mason.riley.2565731",
-        "city": "Vint Hill Farms",
-        "state": "VA",
-        "positions": "GK",
-        "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Sports Management ",
-        "profileId": 2565731
-      },
-      "priorSchool": {
-        "displayName": "Queens University of Charlotte Women's Soccer",
-        "division": "NCAA D1",
-        "city": "Charlotte",
-        "state": "NC"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/mason.riley.2565731/soccerwomen/2858"
     },
     {
       "id": 2841,
