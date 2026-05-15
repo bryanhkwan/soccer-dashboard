@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-14T09:19:20.547Z",
+  "generatedAt": "2026-05-15T09:35:21.399Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -2374,7 +2374,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "profileId": 1364895
       },
       "priorSchool": {
-        "displayName": "Emory & Henry College Women's Soccer",
+        "displayName": "Emory & Henry University Women's Soccer",
         "division": "NCAA D2",
         "city": "Emory",
         "state": "VA"
