@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-16T08:27:56.370Z",
+  "generatedAt": "2026-05-17T08:54:58.010Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 142,
+  "totalCount": 143,
   "players": [
+    {
+      "id": 3160,
+      "announcementDateUtc": "2026-05-16T19:10:49.387",
+      "announcementText": "4x gk of the year, 3x all state GK, and 4x academic all state who is a leader on and off the field. I will make your team better. I redshirted my freshman year due to some injuries but am fully healthy and ready to make an impact and compete. I am open to visiting with schools who are looking for a GK who is as good with her feet as she is with her hands. I pride myself on my vocalizing and distribution. Let’s go win some games.",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Madissyn Harris",
+        "firstName": "Madissyn",
+        "lastName": "Harris",
+        "username": "madissyn.harris",
+        "city": "San Antonio",
+        "state": "TX",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "TBD",
+        "profileId": 1296383
+      },
+      "priorSchool": {
+        "displayName": "St. Mary's University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "San Antonio",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/madissyn.harris/soccerwomen/3160"
+    },
     {
       "id": 3073,
       "announcementDateUtc": "2026-05-11T04:18:29.327",
