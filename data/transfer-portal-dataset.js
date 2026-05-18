@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-17T08:54:58.010Z",
+  "generatedAt": "2026-05-18T10:49:17.383Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 143,
+  "totalCount": 144,
   "players": [
+    {
+      "id": 3175,
+      "announcementDateUtc": "2026-05-18T05:43:44.63",
+      "announcementText": "Excited to continue playing at high level for the next two years!",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Sienna Powell",
+        "firstName": "Sienna",
+        "lastName": "Powell",
+        "username": "sienna.powell",
+        "city": "Clontarf",
+        "state": "QLD",
+        "positions": "D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Sports Management ",
+        "profileId": 2580176
+      },
+      "priorSchool": {
+        "displayName": "Monroe University (New Rochelle) Women's Soccer",
+        "division": "NCAA D2",
+        "city": "New York",
+        "state": "NY"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/sienna.powell/soccerwomen/3175"
+    },
     {
       "id": 3160,
       "announcementDateUtc": "2026-05-16T19:10:49.387",
