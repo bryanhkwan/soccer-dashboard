@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-19T10:27:22.406Z",
+  "generatedAt": "2026-05-20T10:03:55.160Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 144,
+  "totalCount": 145,
   "players": [
+    {
+      "id": 3209,
+      "announcementDateUtc": "2026-05-19T20:57:13.98",
+      "announcementText": "Looking for a new home with good chemistry and a good criminal justice program.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Kalliyan Gnem",
+        "firstName": "Kalliyan",
+        "lastName": "Gnem",
+        "username": "kalliyan.gnem",
+        "city": "Columbus",
+        "state": "GA",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Criminal Justice, Forensic Science",
+        "profileId": 2182168
+      },
+      "priorSchool": {
+        "displayName": "Andrew College Women's Soccer",
+        "division": "NAIA",
+        "city": "Cuthbert",
+        "state": "GA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/kalliyan.gnem/soccerwomen/3209"
+    },
     {
       "id": 3175,
       "announcementDateUtc": "2026-05-18T05:43:44.63",
@@ -2799,7 +2824,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "profileId": 1671124
       },
       "priorSchool": {
-        "displayName": "Odisea University Women's Soccer",
+        "displayName": "FC Odisea Women's Soccer",
         "division": "Other - Collegiate",
         "city": "Castellón de la Plana",
         "state": "VC"
