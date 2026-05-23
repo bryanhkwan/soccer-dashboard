@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-22T10:00:29.028Z",
+  "generatedAt": "2026-05-23T08:37:36.542Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 145,
+  "totalCount": 146,
   "players": [
+    {
+      "id": 3255,
+      "announcementDateUtc": "2026-05-22T19:45:39.653",
+      "announcementText": "After much thought and discussion with my family, I have decided to enter the NCAA Transfer Portal with 3 years of eligibility remaining.\n\nI’m grateful for my time at Fordham University and for everyone who has supported me throughout my journey so far.\n\nPosition: Centre Back\nGPA: Dean’s Honour List\nFilm available upon request\n\nExcited for the next chapter",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Scarlett Cofie",
+        "firstName": "Scarlett",
+        "lastName": "Cofie",
+        "username": "sarah.cofie",
+        "city": "",
+        "state": "England",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Tbc",
+        "profileId": 2584326
+      },
+      "priorSchool": {
+        "displayName": "Fordham University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Bronx",
+        "state": "NY"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/sarah.cofie/soccerwomen/3255"
+    },
     {
       "id": 3209,
       "announcementDateUtc": "2026-05-19T20:57:13.98",
