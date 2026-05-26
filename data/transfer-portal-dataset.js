@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-25T10:59:20.768Z",
+  "generatedAt": "2026-05-26T10:37:23.468Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -1766,8 +1766,8 @@ window.TRANSFER_PORTAL_DATASET = {
         "firstName": "Celine",
         "lastName": "Loraine",
         "username": "celine.loraine",
-        "city": "",
-        "state": "",
+        "city": "Mason Hall",
+        "state": "Tobago",
         "positions": "F, M",
         "highSchoolGraduationYear": 2019,
         "plannedMajor": "Psychology ",
