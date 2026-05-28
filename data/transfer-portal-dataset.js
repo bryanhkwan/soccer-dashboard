@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-05-27T10:41:58.812Z",
+  "generatedAt": "2026-05-28T08:06:48.827Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
   "totalCount": 146,
   "players": [
+    {
+      "id": 3302,
+      "announcementDateUtc": "2026-05-27T19:38:11.127",
+      "announcementText": "I’m currently in the transfer portal with a 3.49 GPA looking for a competitive program where I can continue growing both academically and athletically. Open to NCAA D1, D2, and NAIA opportunities. Looking for a strong team culture, great coaching staff, and a program focused on development and competing at a high level. Open to different locations.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Jordyn Keene",
+        "firstName": "Jordyn",
+        "lastName": "Keene",
+        "username": "jordyn.keene",
+        "city": "San Antonio",
+        "state": "FL",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Sports Medicine ",
+        "profileId": 970646
+      },
+      "priorSchool": {
+        "displayName": "Albany State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Albany",
+        "state": "GA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jordyn.keene/soccerwomen/3302"
+    },
     {
       "id": 3255,
       "announcementDateUtc": "2026-05-22T19:45:39.653",
@@ -905,31 +930,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "KS"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/londyn.salinas/soccerwomen/2451"
-    },
-    {
-      "id": 2416,
-      "announcementDateUtc": "2026-03-30T03:37:08.803",
-      "announcementText": "My name is CaylynnJoe Cox, a transfer playing at Central Christian College of Kansas. I’m exploring opportunities and am very interested in a college that will help me better my studies while playing the sport of soccer that I love. \n\nI play winger, striker, and defender for CCCK. I’m a business major and looking for a competitive program closer to my home state of Texas.",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "CaylynnJoe Cox",
-        "firstName": "CaylynnJoe",
-        "lastName": "Cox",
-        "username": "caylynnjoe.cox.2517891",
-        "city": "Sweetwater",
-        "state": "TX",
-        "positions": "F, M",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Business",
-        "profileId": 2517891
-      },
-      "priorSchool": {
-        "displayName": "Central Christian College Women's Soccer",
-        "division": "NAIA",
-        "city": "McPherson",
-        "state": "KS"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/caylynnjoe.cox.2517891/soccerwomen/2416"
     },
     {
       "id": 2415,
