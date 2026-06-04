@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-03T08:29:37.275Z",
+  "generatedAt": "2026-06-04T08:10:29.225Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
   "totalCount": 145,
   "players": [
+    {
+      "id": 3374,
+      "announcementDateUtc": "2026-06-04T02:31:08.443",
+      "announcementText": "I have decided to continue my academic and athletic career at a different university. I have officially entered the transfer portal with 4 years of eligibility. Please feel free to reach out with any possibilities to impact your university!",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Isabel Oferosky",
+        "firstName": "Isabel",
+        "lastName": "Oferosky",
+        "username": "isabel.oferosky",
+        "city": "Woodbury",
+        "state": "MN",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Pre medical",
+        "profileId": 2153712
+      },
+      "priorSchool": {
+        "displayName": "University of North Dakota Women's Soccer",
+        "division": "NCAA D1",
+        "city": "GF",
+        "state": "ND"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/isabel.oferosky/soccerwomen/3374"
+    },
     {
       "id": 3302,
       "announcementDateUtc": "2026-05-27T19:38:11.127",
@@ -2455,31 +2480,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "VA"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/bailey.springman/soccerwomen/1404"
-    },
-    {
-      "id": 1398,
-      "announcementDateUtc": "2025-11-17T18:05:24.223",
-      "announcementText": "I have decided to continue my academic and athletic career at a different university. I have officially entered the transfer portal with 4 years of eligibility. I am currently injured but I am expected to be back to fully contact by April. Please feel free to reach out with any possibilities to impact your university!",
-      "yearsOfEligibility": 4,
-      "athlete": {
-        "displayName": "Isabel Oferosky",
-        "firstName": "Isabel",
-        "lastName": "Oferosky",
-        "username": "isabel.oferosky",
-        "city": "Woodbury",
-        "state": "MN",
-        "positions": "GK",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Pre medical",
-        "profileId": 2153712
-      },
-      "priorSchool": {
-        "displayName": "University of North Dakota Women's Soccer",
-        "division": "NCAA D1",
-        "city": "GF",
-        "state": "ND"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/isabel.oferosky/soccerwomen/1398"
     },
     {
       "id": 1397,
