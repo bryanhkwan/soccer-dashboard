@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-07T08:01:41.937Z",
+  "generatedAt": "2026-06-08T08:25:44.976Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
   "totalCount": 145,
   "players": [
+    {
+      "id": 3405,
+      "announcementDateUtc": "2026-06-07T16:41:35.973",
+      "announcementText": "Thank you so much for all the coaches that reached out involving my transfer post. I have decided to continue at Hesston for another year. However, I am undecided on my senior year, so would love to still keep contact with coaches for the 2027 fall season. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Brooke Tafoya",
+        "firstName": "Brooke",
+        "lastName": "Tafoya",
+        "username": "brooke.tafoya",
+        "city": "Fort Collins",
+        "state": "CO",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Nursing ",
+        "profileId": 2421413
+      },
+      "priorSchool": {
+        "displayName": "Hesston College Women's Soccer",
+        "division": "NAIA",
+        "city": "Hesston",
+        "state": "KS"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/brooke.tafoya/soccerwomen/3405"
+    },
     {
       "id": 3382,
       "announcementDateUtc": "2026-06-04T17:24:53.767",
@@ -2680,31 +2705,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MT"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jamie.maas/soccerwomen/1354"
-    },
-    {
-      "id": 1344,
-      "announcementDateUtc": "2025-11-12T19:29:42.813",
-      "announcementText": "Hey coaches. After 2 years at Hesston I have made the decision to join the transfer portal. I originally signed to Hesston just to be able to play soccer while attending school, I didn’t care about the level and was just looking for something to make time at school go faster. Over the past two years I have had opportunities to play for NOCO RAIN and I’ve found the love to compete again. I believe I could be a great fit for a higher level program as I tend to play to the level of my surroundings as pointed out by several coaches. I am currently a fullback, most comfortable on the left side, but I can play up as a midfield as well with my speed and I played attacking mid up until my senior year of high school. I am looking for a school with a great nursing program and a welcoming soccer program preferably at a higher level that is going to challenge me and push me to be the best athlete I can. Thank you Hesston college for everything. ",
-      "yearsOfEligibility": 2,
-      "athlete": {
-        "displayName": "Brooke Tafoya",
-        "firstName": "Brooke",
-        "lastName": "Tafoya",
-        "username": "brooke.tafoya",
-        "city": "Fort Collins",
-        "state": "CO",
-        "positions": "M, D",
-        "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Nursing ",
-        "profileId": 2421413
-      },
-      "priorSchool": {
-        "displayName": "Hesston College Women's Soccer",
-        "division": "NAIA",
-        "city": "Hesston",
-        "state": "KS"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/brooke.tafoya/soccerwomen/1344"
     },
     {
       "id": 1340,
