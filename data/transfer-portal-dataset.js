@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-09T08:01:07.931Z",
+  "generatedAt": "2026-06-10T08:07:48.065Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 145,
+  "totalCount": 144,
   "players": [
     {
       "id": 3405,
@@ -430,31 +430,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "KY"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.poole.2015998/soccerwomen/2805"
-    },
-    {
-      "id": 2785,
-      "announcementDateUtc": "2026-04-27T23:05:33.873",
-      "announcementText": "Entering the transfer portal with one year of eligibility due to injury. Graduating with Accounting MBA this semester but need two more accounting classes to start pursuing my CPA. ",
-      "yearsOfEligibility": 1,
-      "athlete": {
-        "displayName": "Arianna Diemer",
-        "firstName": "Arianna",
-        "lastName": "Diemer",
-        "username": "arianna.diemer",
-        "city": "Hudsonville",
-        "state": "MI",
-        "positions": "M, D",
-        "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Accounting",
-        "profileId": 1198605
-      },
-      "priorSchool": {
-        "displayName": "Davenport University Women's Soccer",
-        "division": "NCAA D2",
-        "city": "Grand Rapids",
-        "state": "MI"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/arianna.diemer/soccerwomen/2785"
     },
     {
       "id": 2766,
