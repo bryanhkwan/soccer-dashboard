@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-12T08:12:47.365Z",
+  "generatedAt": "2026-06-13T07:58:09.351Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
