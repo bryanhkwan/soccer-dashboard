@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-17T08:34:57.678Z",
+  "generatedAt": "2026-06-18T08:23:43.690Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 144,
+  "totalCount": 145,
   "players": [
+    {
+      "id": 3474,
+      "announcementDateUtc": "2026-06-17T17:55:09.263",
+      "announcementText": "Hello, I’m Yvette Secundino. I have entered the transfer portal with intention to compete and continue my athletic and academic career, with 3 years left of eligibility. I’m primarily a centerback with the ability to play in both a 4 or 3 back. ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Yvette Secundino",
+        "firstName": "Yvette",
+        "lastName": "Secundino",
+        "username": "yvette.secundino",
+        "city": "Fresno",
+        "state": "CA",
+        "positions": "F, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Forensics science, Criminal Justice ",
+        "profileId": 1886685
+      },
+      "priorSchool": {
+        "displayName": "King University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Bristol",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/yvette.secundino/soccerwomen/3474"
+    },
     {
       "id": 3405,
       "announcementDateUtc": "2026-06-07T16:41:35.973",
