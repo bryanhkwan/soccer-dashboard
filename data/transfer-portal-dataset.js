@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-18T08:23:43.690Z",
+  "generatedAt": "2026-06-19T08:36:35.461Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 145,
+  "totalCount": 146,
   "players": [
+    {
+      "id": 3483,
+      "announcementDateUtc": "2026-06-18T23:19:59.243",
+      "announcementText": "Hello this is Maria I am from bogota , Colombia currently playing as a right winger. I am player which characteristics it is go in attacking and win 1-1 with creativity and passing decision. My goal it is to play professional soccer and graduate. \nMy perfect place or environment to place it is to find an university and team which like to compite and win and doesn’t stop work harder. As well as I am studying Studio art with focused on graphic design. As I have one year of eligibility left I am looking to finish my degree at the same time being my last year. ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Maria Hernandez Diaz",
+        "firstName": "Maria",
+        "lastName": "Hernandez Diaz",
+        "username": "maria.alejandrahernandezdiaz",
+        "city": "Institute",
+        "state": "WV",
+        "positions": "F, D",
+        "highSchoolGraduationYear": 2019,
+        "plannedMajor": "Studio Art ",
+        "profileId": 2064590
+      },
+      "priorSchool": {
+        "displayName": "West Virginia State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Institute",
+        "state": "WV"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/maria.alejandrahernandezdiaz/soccerwomen/3483"
+    },
     {
       "id": 3474,
       "announcementDateUtc": "2026-06-17T17:55:09.263",
