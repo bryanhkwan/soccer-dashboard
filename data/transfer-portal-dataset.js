@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-06-22T08:44:26.848Z",
+  "generatedAt": "2026-06-23T07:59:01.658Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 146,
+  "totalCount": 145,
   "players": [
     {
       "id": 3483,
@@ -1680,31 +1680,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/brianna.harris.2476611/soccerwomen/1911"
-    },
-    {
-      "id": 1876,
-      "announcementDateUtc": "2026-01-12T14:53:47.737",
-      "announcementText": "Experienced goalkeeper seeking a competitive NCAA D2 program for Fall 2026. Strong communicator and leader with a proven work ethic and ability to contribute immediately. I am looking to complete my MBA and am interested in a graduate assistant opportunity while continuing to develop in a positive, ambitious environment.",
-      "yearsOfEligibility": 1,
-      "athlete": {
-        "displayName": "Julie Derenemesnil",
-        "firstName": "Julie",
-        "lastName": "Derenemesnil",
-        "username": "julie.derenemesnil",
-        "city": "Portsmouth",
-        "state": "OH",
-        "positions": "D, GK",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "MBA or Master in sports Management ",
-        "profileId": 1507859
-      },
-      "priorSchool": {
-        "displayName": "Southeast Missouri State University Women's Soccer",
-        "division": "NCAA D1",
-        "city": "Cape Girardeau",
-        "state": "MO"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/julie.derenemesnil/soccerwomen/1876"
     },
     {
       "id": 1852,
