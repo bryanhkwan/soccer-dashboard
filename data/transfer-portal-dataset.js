@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-07-02T07:51:14.376Z",
+  "generatedAt": "2026-07-03T07:48:58.927Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
   "totalCount": 145,
   "players": [
+    {
+      "id": 3538,
+      "announcementDateUtc": "2026-07-02T17:11:45.617",
+      "announcementText": "After the program at ASU has been shut down, I have decided to officially enter the transfer portal with 2 years of eligibility remaining. I’ve played 1,041 minutes the past 2 years. I’m grateful for the experiences, relationships, and growth at ASU. Excited to see what the next chapter holds! \n",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Imani Mays",
+        "firstName": "Imani",
+        "lastName": "Mays",
+        "username": "imani.mays.2595172",
+        "city": "Douglasville",
+        "state": "GA",
+        "positions": "D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Exercise science",
+        "profileId": 2595172
+      },
+      "priorSchool": {
+        "displayName": "Albany State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Albany",
+        "state": "GA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/imani.mays.2595172/soccerwomen/3538"
+    },
     {
       "id": 3483,
       "announcementDateUtc": "2026-06-18T23:19:59.243",
@@ -80,31 +105,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "KS"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/brooke.tafoya/soccerwomen/3405"
-    },
-    {
-      "id": 3382,
-      "announcementDateUtc": "2026-06-04T17:24:53.767",
-      "announcementText": "After the program at ASU has been shut down, I have decided to officially enter the transfer portal with 2 years of eligibility remaining. I’m grateful for the experiences, relationships, and growth at ASU. Excited to see what the next chapter holds!\n",
-      "yearsOfEligibility": 2,
-      "athlete": {
-        "displayName": "Imani Mays",
-        "firstName": "Imani",
-        "lastName": "Mays",
-        "username": "imani.mays.2595172",
-        "city": "Douglasville",
-        "state": "GA",
-        "positions": "D",
-        "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Exercise science",
-        "profileId": 2595172
-      },
-      "priorSchool": {
-        "displayName": "Albany State University Women's Soccer",
-        "division": "NCAA D2",
-        "city": "Albany",
-        "state": "GA"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/imani.mays.2595172/soccerwomen/3382"
     },
     {
       "id": 3374,
