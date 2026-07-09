@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-07-08T07:36:06.002Z",
+  "generatedAt": "2026-07-09T07:56:29.253Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -70,7 +70,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "F, D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Forensics science, Criminal Justice ",
+        "plannedMajor": "",
         "profileId": 1886685
       },
       "priorSchool": {
@@ -120,7 +120,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MN",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Pre medical",
+        "plannedMajor": "",
         "profileId": 2153712
       },
       "priorSchool": {
@@ -145,7 +145,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "FL",
         "positions": "F, M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Sports Medicine ",
+        "plannedMajor": "",
         "profileId": 970646
       },
       "priorSchool": {
@@ -170,7 +170,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Criminal Justice, Forensic Science",
+        "plannedMajor": "",
         "profileId": 2182168
       },
       "priorSchool": {
@@ -195,7 +195,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "TBD",
+        "plannedMajor": "",
         "profileId": 1296383
       },
       "priorSchool": {
@@ -220,7 +220,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "AZ",
         "positions": "D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Biomedical",
+        "plannedMajor": "",
         "profileId": 1750007
       },
       "priorSchool": {
@@ -245,7 +245,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "",
         "positions": "GK",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Health & Physical EDUC: Applied Health & Fitness",
+        "plannedMajor": "",
         "profileId": 2201466
       },
       "priorSchool": {
@@ -295,7 +295,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "UT",
         "positions": "GK",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Nursing",
+        "plannedMajor": "",
         "profileId": 1811516
       },
       "priorSchool": {
@@ -320,7 +320,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "QC",
         "positions": "F",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business",
+        "plannedMajor": "",
         "profileId": 2559692
       },
       "priorSchool": {
@@ -345,7 +345,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NM",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Engineering ",
+        "plannedMajor": "",
         "profileId": 2565107
       },
       "priorSchool": {
@@ -370,7 +370,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NM",
         "positions": "M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Health",
+        "plannedMajor": "",
         "profileId": 1746753
       },
       "priorSchool": {
@@ -395,7 +395,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NE",
         "positions": "F",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Nursing",
+        "plannedMajor": "",
         "profileId": 2422087
       },
       "priorSchool": {
@@ -420,7 +420,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Communication/Sports Journalism",
+        "plannedMajor": "",
         "profileId": 2375411
       },
       "priorSchool": {
@@ -445,7 +445,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "M, D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Kinesiology ",
+        "plannedMajor": "",
         "profileId": 1325119
       },
       "priorSchool": {
@@ -470,7 +470,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "KY",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Psychology/criminal justice",
+        "plannedMajor": "",
         "profileId": 2015998
       },
       "priorSchool": {
@@ -495,7 +495,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "UT",
         "positions": "M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Biology",
+        "plannedMajor": "",
         "profileId": 1374788
       },
       "priorSchool": {
@@ -570,7 +570,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "England",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Sports Management",
+        "plannedMajor": "",
         "profileId": 2167574
       },
       "priorSchool": {
@@ -595,7 +595,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "England",
         "positions": "M, D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Mass Communication",
+        "plannedMajor": "",
         "profileId": 2555074
       },
       "priorSchool": {
@@ -620,7 +620,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "England",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Exercise and Sport science / Political Science",
+        "plannedMajor": "",
         "profileId": 2113693
       },
       "priorSchool": {
@@ -645,7 +645,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "F",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Psychology",
+        "plannedMajor": "",
         "profileId": 2015779
       },
       "priorSchool": {
@@ -695,7 +695,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IN",
         "positions": "D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Sports management ",
+        "plannedMajor": "",
         "profileId": 1849075
       },
       "priorSchool": {
@@ -745,7 +745,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MI",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Accounting ",
+        "plannedMajor": "",
         "profileId": 2549074
       },
       "priorSchool": {
@@ -820,7 +820,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "FL",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2019,
-        "plannedMajor": "Liberal Arts",
+        "plannedMajor": "",
         "profileId": 1806232
       },
       "priorSchool": {
@@ -845,7 +845,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "Région wallonne",
         "positions": "GK",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Masters in (clinical) Psychology",
+        "plannedMajor": "",
         "profileId": 2543080
       },
       "priorSchool": {
@@ -895,7 +895,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TN",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Finance ",
+        "plannedMajor": "",
         "profileId": 1591036
       },
       "priorSchool": {
@@ -945,7 +945,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "AZ",
         "positions": "F",
         "highSchoolGraduationYear": 2021,
-        "plannedMajor": "Nursing ",
+        "plannedMajor": "",
         "profileId": 1724126
       },
       "priorSchool": {
@@ -970,7 +970,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Undecided",
+        "plannedMajor": "",
         "profileId": 2065227
       },
       "priorSchool": {
@@ -1020,7 +1020,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Zoology/Wildlife",
+        "plannedMajor": "",
         "profileId": 1365825
       },
       "priorSchool": {
@@ -1045,7 +1045,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "M, D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Sport psychology/ psychology ",
+        "plannedMajor": "",
         "profileId": 1749390
       },
       "priorSchool": {
@@ -1095,7 +1095,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CO",
         "positions": "M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Sports and Exercise Science or Psychology",
+        "plannedMajor": "",
         "profileId": 2058173
       },
       "priorSchool": {
@@ -1120,7 +1120,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "AZ",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Nutrition",
+        "plannedMajor": "",
         "profileId": 1724130
       },
       "priorSchool": {
@@ -1145,7 +1145,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CO",
         "positions": "F",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Political Science",
+        "plannedMajor": "",
         "profileId": 1785673
       },
       "priorSchool": {
@@ -1195,7 +1195,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "QC",
         "positions": "GK",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Electrical Engineering Technology minor in Physics",
+        "plannedMajor": "",
         "profileId": 2521939
       },
       "priorSchool": {
@@ -1220,7 +1220,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "FL",
         "positions": "D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business",
+        "plannedMajor": "",
         "profileId": 2504442
       },
       "priorSchool": {
@@ -1270,7 +1270,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Athletic Trainer",
+        "plannedMajor": "",
         "profileId": 1563187
       },
       "priorSchool": {
@@ -1295,7 +1295,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "PG, SG, SF",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Business/Education ",
+        "plannedMajor": "",
         "profileId": 825156
       },
       "priorSchool": {
@@ -1320,7 +1320,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL",
         "positions": "F",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Graphic Design",
+        "plannedMajor": "",
         "profileId": 1414872
       },
       "priorSchool": {
@@ -1345,7 +1345,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CO",
         "positions": "F",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Political Science",
+        "plannedMajor": "",
         "profileId": 1785673
       },
       "priorSchool": {
@@ -1420,7 +1420,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MI",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Education",
+        "plannedMajor": "",
         "profileId": 1483936
       },
       "priorSchool": {
@@ -1445,7 +1445,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NRW",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "International Relations/Pre-Law/Legal Studies",
+        "plannedMajor": "",
         "profileId": 2494744
       },
       "priorSchool": {
@@ -1520,7 +1520,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "M, D, GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Exercise Science (Pre-Physical Therapy)",
+        "plannedMajor": "",
         "profileId": 1940597
       },
       "priorSchool": {
@@ -1545,7 +1545,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "UT",
         "positions": "F, M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "STEM",
+        "plannedMajor": "",
         "profileId": 1619394
       },
       "priorSchool": {
@@ -1570,7 +1570,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TN",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Exercise science ",
+        "plannedMajor": "",
         "profileId": 2476674
       },
       "priorSchool": {
@@ -1595,7 +1595,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "ON",
         "positions": "M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Communications ",
+        "plannedMajor": "",
         "profileId": 2478468
       },
       "priorSchool": {
@@ -1620,7 +1620,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Business Administration ",
+        "plannedMajor": "",
         "profileId": 2478179
       },
       "priorSchool": {
@@ -1695,7 +1695,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Sports Science",
+        "plannedMajor": "",
         "profileId": 2068981
       },
       "priorSchool": {
@@ -1720,7 +1720,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business/Sports Management& M. Business/Sports Law",
+        "plannedMajor": "",
         "profileId": 972713
       },
       "priorSchool": {
@@ -1820,7 +1820,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "England",
         "positions": "GK",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "History",
+        "plannedMajor": "",
         "profileId": 2422351
       },
       "priorSchool": {
@@ -1870,7 +1870,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL",
         "positions": "F, D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Nursing",
+        "plannedMajor": "",
         "profileId": 1724336
       },
       "priorSchool": {
@@ -1895,7 +1895,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Health, Nursing Pre-Clinical ",
+        "plannedMajor": "",
         "profileId": 1477044
       },
       "priorSchool": {
@@ -1920,7 +1920,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "WV",
         "positions": "F, M",
         "highSchoolGraduationYear": 2021,
-        "plannedMajor": "Masters in Forensics",
+        "plannedMajor": "",
         "profileId": 2432251
       },
       "priorSchool": {
@@ -1945,7 +1945,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TN",
         "positions": "F, M",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Exercise Science ",
+        "plannedMajor": "",
         "profileId": 2444329
       },
       "priorSchool": {
@@ -1970,7 +1970,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MA",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "English",
+        "plannedMajor": "",
         "profileId": 1874684
       },
       "priorSchool": {
@@ -1995,7 +1995,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NY",
         "positions": "F, M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Psychology ",
+        "plannedMajor": "",
         "profileId": 1455965
       },
       "priorSchool": {
@@ -2020,7 +2020,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Business Administration ",
+        "plannedMajor": "",
         "profileId": 2414198
       },
       "priorSchool": {
@@ -2045,7 +2045,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Criminal Justice",
+        "plannedMajor": "",
         "profileId": 1587735
       },
       "priorSchool": {
@@ -2070,7 +2070,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL",
         "positions": "F, D, GK",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Grad in Exercise Science focused on PT (May26)",
+        "plannedMajor": "",
         "profileId": 1649485
       },
       "priorSchool": {
@@ -2095,7 +2095,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "RP",
         "positions": "M",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Exercise Science ",
+        "plannedMajor": "",
         "profileId": 2437033
       },
       "priorSchool": {
@@ -2145,7 +2145,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "PA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Biology ",
+        "plannedMajor": "",
         "profileId": 2425893
       },
       "priorSchool": {
@@ -2195,7 +2195,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "Saipan",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Kinesiology ",
+        "plannedMajor": "",
         "profileId": 1899433
       },
       "priorSchool": {
@@ -2220,7 +2220,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MN",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Psychology",
+        "plannedMajor": "",
         "profileId": 2431842
       },
       "priorSchool": {
@@ -2245,7 +2245,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "RI",
         "positions": "F, D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Health science ",
+        "plannedMajor": "",
         "profileId": 1212242
       },
       "priorSchool": {
@@ -2267,10 +2267,10 @@ window.TRANSFER_PORTAL_DATASET = {
         "lastName": "Stallings",
         "username": "riley.stallings",
         "city": "",
-        "state": "",
+        "state": "NC",
         "positions": "M, D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Criminal Justice/Sociology ",
+        "plannedMajor": "",
         "profileId": 2139045
       },
       "priorSchool": {
@@ -2320,7 +2320,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "England",
         "positions": "F",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Psychology ",
+        "plannedMajor": "",
         "profileId": 2430749
       },
       "priorSchool": {
@@ -2370,7 +2370,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business/Sports Management& M. Business/Sports Law",
+        "plannedMajor": "",
         "profileId": 972713
       },
       "priorSchool": {
@@ -2395,7 +2395,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "GK",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Communication/Sports Journalism",
+        "plannedMajor": "",
         "profileId": 2375411
       },
       "priorSchool": {
@@ -2420,7 +2420,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NC",
         "positions": "D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business",
+        "plannedMajor": "",
         "profileId": 2429310
       },
       "priorSchool": {
@@ -2445,7 +2445,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "BS Kinesiology with a minor in Business",
+        "plannedMajor": "",
         "profileId": 2401757
       },
       "priorSchool": {
@@ -2470,7 +2470,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "PA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Finance/Business Analytics ",
+        "plannedMajor": "",
         "profileId": 1504149
       },
       "priorSchool": {
@@ -2545,7 +2545,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "KS",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Criminal Justice",
+        "plannedMajor": "",
         "profileId": 2421411
       },
       "priorSchool": {
@@ -2595,7 +2595,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Sports Science",
+        "plannedMajor": "",
         "profileId": 2068981
       },
       "priorSchool": {
@@ -2620,7 +2620,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "WV",
         "positions": "F, D",
         "highSchoolGraduationYear": 2020,
-        "plannedMajor": "Management of Information systems ",
+        "plannedMajor": "",
         "profileId": 2426039
       },
       "priorSchool": {
@@ -2645,7 +2645,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "PA",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Biology, Pre-Med",
+        "plannedMajor": "",
         "profileId": 2424899
       },
       "priorSchool": {
@@ -2670,7 +2670,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "Skåne County",
         "positions": "M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Psychology",
+        "plannedMajor": "",
         "profileId": 2423897
       },
       "priorSchool": {
@@ -2695,7 +2695,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "WA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Environmental Studies",
+        "plannedMajor": "",
         "profileId": 1565081
       },
       "priorSchool": {
@@ -2720,7 +2720,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business Administration",
+        "plannedMajor": "",
         "profileId": 1715101
       },
       "priorSchool": {
@@ -2745,7 +2745,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "AZ",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Education ",
+        "plannedMajor": "",
         "profileId": 1575252
       },
       "priorSchool": {
@@ -2770,7 +2770,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "Hallands län",
         "positions": "F, M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Chemistry ",
+        "plannedMajor": "",
         "profileId": 2416754
       },
       "priorSchool": {
@@ -2795,7 +2795,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "Hallands län",
         "positions": "F, M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Chemistry ",
+        "plannedMajor": "",
         "profileId": 2416754
       },
       "priorSchool": {
@@ -2820,7 +2820,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NY",
         "positions": "F, M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Dietetics, Nutrition",
+        "plannedMajor": "",
         "profileId": 1671124
       },
       "priorSchool": {
@@ -2845,7 +2845,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "SN",
         "positions": "M",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Business Administration ",
+        "plannedMajor": "",
         "profileId": 1625193
       },
       "priorSchool": {
@@ -2870,7 +2870,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "law",
+        "plannedMajor": "",
         "profileId": 1832317
       },
       "priorSchool": {
@@ -2920,7 +2920,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "M, D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Psychology",
+        "plannedMajor": "",
         "profileId": 1005182
       },
       "priorSchool": {
@@ -2970,7 +2970,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "Stockholm County",
         "positions": "M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Sports marketing and managment",
+        "plannedMajor": "",
         "profileId": 2337665
       },
       "priorSchool": {
@@ -2995,7 +2995,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "D",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Sports management",
+        "plannedMajor": "",
         "profileId": 2101303
       },
       "priorSchool": {
@@ -3020,7 +3020,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA",
         "positions": "M, D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Sport psychology/ psychology ",
+        "plannedMajor": "",
         "profileId": 1749390
       },
       "priorSchool": {
@@ -3045,7 +3045,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IN",
         "positions": "M",
         "highSchoolGraduationYear": 2025,
-        "plannedMajor": "Biology",
+        "plannedMajor": "",
         "profileId": 1690738
       },
       "priorSchool": {
@@ -3070,7 +3070,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MD",
         "positions": "F",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Business",
+        "plannedMajor": "",
         "profileId": 1729376
       },
       "priorSchool": {
@@ -3095,7 +3095,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "SC",
         "positions": "F, D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Sports Medicine/Physical Therapy",
+        "plannedMajor": "",
         "profileId": 1492313
       },
       "priorSchool": {
@@ -3120,7 +3120,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "MS",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Sports Psychologist ",
+        "plannedMajor": "",
         "profileId": 1911062
       },
       "priorSchool": {
@@ -3145,7 +3145,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "OH",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2020,
-        "plannedMajor": "KINE/PSY",
+        "plannedMajor": "",
         "profileId": 787029
       },
       "priorSchool": {
@@ -3170,7 +3170,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TN",
         "positions": "M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Nursing",
+        "plannedMajor": "",
         "profileId": 1687088
       },
       "priorSchool": {
@@ -3195,7 +3195,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "WY",
         "positions": "M, GK",
         "highSchoolGraduationYear": 2021,
-        "plannedMajor": "Exercise Science",
+        "plannedMajor": "",
         "profileId": 1482388
       },
       "priorSchool": {
@@ -3220,7 +3220,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "AB",
         "positions": "M",
         "highSchoolGraduationYear": 2018,
-        "plannedMajor": "Null",
+        "plannedMajor": "",
         "profileId": 1238137
       },
       "priorSchool": {
@@ -3242,10 +3242,10 @@ window.TRANSFER_PORTAL_DATASET = {
         "lastName": "Harrison",
         "username": "moriah.harrison",
         "city": "",
-        "state": "",
+        "state": "SD",
         "positions": "D",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Undecided ",
+        "plannedMajor": "",
         "profileId": 2181331
       },
       "priorSchool": {
@@ -3270,7 +3270,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Criminal Justice",
+        "plannedMajor": "",
         "profileId": 1653639
       },
       "priorSchool": {
@@ -3295,7 +3295,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "WV",
         "positions": "F, M",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Math (willing to change)",
+        "plannedMajor": "",
         "profileId": 2261760
       },
       "priorSchool": {
@@ -3320,7 +3320,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Criminal Justice",
+        "plannedMajor": "",
         "profileId": 1587735
       },
       "priorSchool": {
@@ -3345,7 +3345,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "UT",
         "positions": "F, M, D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "Sociology",
+        "plannedMajor": "",
         "profileId": 1773249
       },
       "priorSchool": {
@@ -3420,7 +3420,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TN",
         "positions": "F, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Psychology ",
+        "plannedMajor": "",
         "profileId": 1582827
       },
       "priorSchool": {
@@ -3445,7 +3445,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "VA",
         "positions": "GK",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Exercise Science, Sports Med, or Athletic Training",
+        "plannedMajor": "",
         "profileId": 2243241
       },
       "priorSchool": {
@@ -3470,7 +3470,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "OK",
         "positions": "M",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "PTA, Exercise Science , Kinesiology",
+        "plannedMajor": "",
         "profileId": 1294021
       },
       "priorSchool": {
@@ -3495,7 +3495,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "LA",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Exercise Science ",
+        "plannedMajor": "",
         "profileId": 1334009
       },
       "priorSchool": {
@@ -3520,7 +3520,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "IL",
         "positions": "D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "nursing",
+        "plannedMajor": "",
         "profileId": 1460774
       },
       "priorSchool": {
@@ -3545,7 +3545,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "M, D",
         "highSchoolGraduationYear": 2022,
-        "plannedMajor": "kinesiology",
+        "plannedMajor": "",
         "profileId": 1013727
       },
       "priorSchool": {
@@ -3570,7 +3570,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "GA",
         "positions": "GK",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Psychology",
+        "plannedMajor": "",
         "profileId": 1495464
       },
       "priorSchool": {
@@ -3620,7 +3620,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "F, M",
         "highSchoolGraduationYear": 2023,
-        "plannedMajor": "Marketing/ Buisness",
+        "plannedMajor": "",
         "profileId": 2175134
       },
       "priorSchool": {
