@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-07-21T07:36:18.725Z",
+  "generatedAt": "2026-07-22T07:37:00.305Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 145,
+  "totalCount": 146,
   "players": [
+    {
+      "id": 3607,
+      "announcementDateUtc": "2026-07-22T02:00:48.077",
+      "announcementText": "I’m a 2024 graduate and current sophomore transfer from Greenville University with two years of collegiate experience. I’m looking for a program where I can make an immediate impact as a defensive midfielder (#6) or center back. I’m seeking a competitive, team-oriented environment with strong coaching, a positive culture, and opportunities for both athletic and academic success. My major is Elementary Education, and I’m looking for a school that offers strong academic support and allows my credits to transfer well. I’m open to NCAA, NAIA, or other competitive opportunities. Thank you! ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Addisyn Green",
+        "firstName": "Addisyn",
+        "lastName": "Green",
+        "username": "addy.green",
+        "city": "Paducah",
+        "state": "KY",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Elementary Education",
+        "profileId": 1347356
+      },
+      "priorSchool": {
+        "displayName": "Greenville University Women's Soccer",
+        "division": "NCAA D3",
+        "city": "Greenville",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/addy.green/soccerwomen/3607"
+    },
     {
       "id": 3538,
       "announcementDateUtc": "2026-07-02T17:11:45.617",
