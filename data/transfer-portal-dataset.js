@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-07-29T07:38:48.386Z",
+  "generatedAt": "2026-07-30T07:36:50.310Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 146,
+  "totalCount": 147,
   "players": [
+    {
+      "id": 3621,
+      "announcementDateUtc": "2026-07-30T04:41:54.25",
+      "announcementText": "I am currently playing for the University of North Texas club team and am looking to take my game to the next level.  ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Aasha Reed",
+        "firstName": "Aasha",
+        "lastName": "Reed",
+        "username": "aasha.reed",
+        "city": "Denison",
+        "state": "TX",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1845219
+      },
+      "priorSchool": {
+        "displayName": "University of North Texas Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Denton",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aasha.reed/soccerwomen/3621"
+    },
     {
       "id": 3607,
       "announcementDateUtc": "2026-07-22T02:00:48.077",
