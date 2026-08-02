@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-08-01T07:34:56.695Z",
+  "generatedAt": "2026-08-02T07:36:14.557Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 147,
+  "totalCount": 148,
   "players": [
+    {
+      "id": 3626,
+      "announcementDateUtc": "2026-08-02T01:25:09.11",
+      "announcementText": "Looking to play in state and being a online student ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Valeria Techera",
+        "firstName": "Valeria",
+        "lastName": "Techera",
+        "username": "valeria.techera",
+        "city": "Ocala",
+        "state": "FL",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Marketing/ Business ",
+        "profileId": 1915025
+      },
+      "priorSchool": {
+        "displayName": "Saint Leo University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "St Leo",
+        "state": "FL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/valeria.techera/soccerwomen/3626"
+    },
     {
       "id": 3621,
       "announcementDateUtc": "2026-07-30T04:41:54.25",
