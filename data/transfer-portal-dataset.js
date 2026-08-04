@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-08-03T07:54:16.797Z",
+  "generatedAt": "2026-08-04T07:37:49.427Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 148,
+  "totalCount": 147,
   "players": [
     {
       "id": 3626,
@@ -30,31 +30,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "FL"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/valeria.techera/soccerwomen/3626"
-    },
-    {
-      "id": 3621,
-      "announcementDateUtc": "2026-07-30T04:41:54.25",
-      "announcementText": "I am currently playing for the University of North Texas club team and am looking to take my game to the next level.  ",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "Aasha Reed",
-        "firstName": "Aasha",
-        "lastName": "Reed",
-        "username": "aasha.reed",
-        "city": "Denison",
-        "state": "TX",
-        "positions": "F, M, D",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "",
-        "profileId": 1845219
-      },
-      "priorSchool": {
-        "displayName": "University of North Texas Women's Soccer",
-        "division": "NCAA D1",
-        "city": "Denton",
-        "state": "TX"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aasha.reed/soccerwomen/3621"
     },
     {
       "id": 3607,
@@ -416,7 +391,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "firstName": "Mia",
         "lastName": "Roybal",
         "username": "mia.roybal",
-        "city": "Albuquerque",
+        "city": "",
         "state": "NM",
         "positions": "F, M",
         "highSchoolGraduationYear": 2024,
