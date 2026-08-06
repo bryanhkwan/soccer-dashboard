@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-08-05T07:37:49.367Z",
+  "generatedAt": "2026-08-06T09:28:31.858Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
   "totalCount": 147,
   "players": [
+    {
+      "id": 3633,
+      "announcementDateUtc": "2026-08-05T23:31:42.233",
+      "announcementText": "I am looking for a transfer opportunity to come in Spring 27, where I can continue developing both academically and athletically at a competitive level. Ideally, I would like to play at a strong collegiate program that values hard work, discipline, and player development. I am open to NCAA or NAIA opportunities.  \nAcademically, I am interested in majors related to Fitness and Exercise.  In terms of location, I am open-minded. \nMy priority is finding a program and environment where I can contribute, improve, and succeed both on and off the field.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Claudia Perez Brito",
+        "firstName": "Claudia",
+        "lastName": "Perez Brito",
+        "username": "claudia.perezbrito",
+        "city": "",
+        "state": "",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "",
+        "profileId": 2201466
+      },
+      "priorSchool": {
+        "displayName": "Oakland City University Women's Soccer",
+        "division": "NAIA",
+        "city": "Oakland City",
+        "state": "IN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/claudia.perezbrito/soccerwomen/3633"
+    },
     {
       "id": 3626,
       "announcementDateUtc": "2026-08-02T01:25:09.11",
@@ -280,31 +305,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NC"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/cara.davidson/soccerwomen/3073"
-    },
-    {
-      "id": 3029,
-      "announcementDateUtc": "2026-05-08T08:01:56.58",
-      "announcementText": "\nI am looking for a transfer opportunity where I can continue developing both academically and athletically at a competitive level. Ideally, I would like to play at a strong collegiate program that values hard work, discipline, and player development. I am open to NCAA or NAIA opportunities.\n\nAcademically, I am interested in majors related to Fitness and Exercise.\n\nIn terms of location, I am open-minded. My priority is finding a program and environment where I can contribute, improve, and succeed both on and off the field.",
-      "yearsOfEligibility": 2,
-      "athlete": {
-        "displayName": "Claudia Perez Brito",
-        "firstName": "Claudia",
-        "lastName": "Perez Brito",
-        "username": "claudia.perezbrito",
-        "city": "",
-        "state": "",
-        "positions": "GK",
-        "highSchoolGraduationYear": 2022,
-        "plannedMajor": "",
-        "profileId": 2201466
-      },
-      "priorSchool": {
-        "displayName": "Oakland City University Women's Soccer",
-        "division": "NAIA",
-        "city": "Oakland City",
-        "state": "IN"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/claudia.perezbrito/soccerwomen/3029"
     },
     {
       "id": 2951,
