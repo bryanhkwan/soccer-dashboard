@@ -1,10 +1,10 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-08-20T07:26:22.546Z",
+  "generatedAt": "2026-08-21T07:27:28.915Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 147,
+  "totalCount": 145,
   "players": [
     {
       "id": 3633,
@@ -380,31 +380,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/eva.vespa/soccerwomen/2863"
-    },
-    {
-      "id": 2841,
-      "announcementDateUtc": "2026-04-30T19:13:35.853",
-      "announcementText": "I am grateful for the opportunities and lessons I received through New Mexico Highlands University and head coach Amanda Evans. My primary position is L/R winger but I also have experience playing forward, attacking midfield, and even outside back. This past Fall I was a starter with 811 minutes. I am excited for the next opportunity where I can continue to learn and elevate my game. ",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "Mia Roybal",
-        "firstName": "Mia",
-        "lastName": "Roybal",
-        "username": "mia.roybal",
-        "city": "",
-        "state": "NM",
-        "positions": "F, M",
-        "highSchoolGraduationYear": 2024,
-        "plannedMajor": "",
-        "profileId": 2565107
-      },
-      "priorSchool": {
-        "displayName": "New Mexico Highlands University Women's Soccer",
-        "division": "NCAA D2",
-        "city": "Las Vegas",
-        "state": "NM"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/mia.roybal/soccerwomen/2841"
     },
     {
       "id": 2840,
@@ -1255,31 +1230,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "SC"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/emma.fleming.2521939/soccerwomen/2222"
-    },
-    {
-      "id": 2207,
-      "announcementDateUtc": "2026-03-11T02:53:14.597",
-      "announcementText": "Open to any opportunity!",
-      "yearsOfEligibility": 3,
-      "athlete": {
-        "displayName": "Grace Marrero",
-        "firstName": "Grace",
-        "lastName": "Marrero",
-        "username": "grace.marrero",
-        "city": "Winter Garden",
-        "state": "FL",
-        "positions": "D",
-        "highSchoolGraduationYear": 2024,
-        "plannedMajor": "",
-        "profileId": 2504442
-      },
-      "priorSchool": {
-        "displayName": "New College of Florida Women's Soccer",
-        "division": "NAIA",
-        "city": "Sarasota",
-        "state": "FL"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/grace.marrero/soccerwomen/2207"
     },
     {
       "id": 2191,
