@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-08-25T07:29:00.886Z",
+  "generatedAt": "2026-08-26T07:30:40.511Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 145,
+  "totalCount": 146,
   "players": [
+    {
+      "id": 3665,
+      "announcementDateUtc": "2026-08-26T03:36:28.93",
+      "announcementText": "I am currently seeking a transfer opportunity for Fall 2027 where I can continue developing both academically and athletically at a competitive level.\n\nI am looking for a strong collegiate soccer program that values hard work, discipline, commitment, and player development. I am open to both NCAA and NAIA opportunities, as well as programs both in and out of state.\n\nAcademically, I am pursuing a degree in Nursing, and I am open-minded when it comes to location. My priority is finding the right program and environment where I can contribute to the team, continue improving as a player, and succeed both on and off the field.\n\nI am excited to connect with coaches and programs that may be a good fit.",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Alaina Martindale",
+        "firstName": "Alaina",
+        "lastName": "Martindale",
+        "username": "alaina.martindale",
+        "city": "Jackson",
+        "state": "MI",
+        "positions": "M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1458128
+      },
+      "priorSchool": {
+        "displayName": "Mississippi Valley State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Itta Bena",
+        "state": "MS"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alaina.martindale/soccerwomen/3665"
+    },
     {
       "id": 3633,
       "announcementDateUtc": "2026-08-05T23:31:42.233",
