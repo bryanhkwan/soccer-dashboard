@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-08-26T07:30:40.511Z",
+  "generatedAt": "2026-08-27T17:53:57.652Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 146,
+  "totalCount": 147,
   "players": [
+    {
+      "id": 3667,
+      "announcementDateUtc": "2026-08-27T05:41:23.92",
+      "announcementText": "Juco or community college",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Jakqulin Santos",
+        "firstName": "Jakqulin",
+        "lastName": "Santos",
+        "username": "jakqulin.santos",
+        "city": "San Angelo",
+        "state": "TX",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1658168
+      },
+      "priorSchool": {
+        "displayName": "McMurry University Women's Soccer",
+        "division": "NCAA D3",
+        "city": "Abilene",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jakqulin.santos/soccerwomen/3667"
+    },
     {
       "id": 3665,
       "announcementDateUtc": "2026-08-26T03:36:28.93",
