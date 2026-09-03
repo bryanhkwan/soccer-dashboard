@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-09-02T11:43:33.164Z",
+  "generatedAt": "2026-09-03T11:42:41.954Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -74,8 +74,8 @@ window.TRANSFER_PORTAL_DATASET = {
         "profileId": 2201466
       },
       "priorSchool": {
-        "displayName": "Oakland City University Women's Soccer",
-        "division": "NAIA",
+        "displayName": "Oakland City University",
+        "division": "Club/Travel",
         "city": "Oakland City",
         "state": "IN"
       },
