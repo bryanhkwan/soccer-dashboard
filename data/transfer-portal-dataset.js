@@ -1,5 +1,5 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-09-17T12:04:16.305Z",
+  "generatedAt": "2026-09-18T11:48:13.769Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
@@ -1325,7 +1325,7 @@ window.TRANSFER_PORTAL_DATASET = {
       },
       "priorSchool": {
         "displayName": "Inter Granada CF Women's Soccer",
-        "division": "Other - Collegiate",
+        "division": "Collegiate - other (4-year)",
         "city": "Orlando",
         "state": "FL"
       },
@@ -2875,7 +2875,7 @@ window.TRANSFER_PORTAL_DATASET = {
       },
       "priorSchool": {
         "displayName": "FC Odisea Women's Soccer",
-        "division": "Other - Collegiate",
+        "division": "Collegiate - other (4-year)",
         "city": "Castellón de la Plana",
         "state": "VC"
       },
