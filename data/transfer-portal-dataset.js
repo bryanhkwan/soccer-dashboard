@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-10-28T13:31:21.511Z",
+  "generatedAt": "2026-10-29T13:42:26.847Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 147,
+  "totalCount": 148,
   "players": [
+    {
+      "id": 3749,
+      "announcementDateUtc": "2026-10-28T20:16:15.163",
+      "announcementText": "I’m looking for a university with a sense of community, a competitive program with an amazing culture and a place where I will have the opportunity to to compete for the starting goalkeeper position. Open to all divisions and locations. ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Sienna Johnson",
+        "firstName": "Sienna",
+        "lastName": "Johnson",
+        "username": "sienna.johnson.1673788",
+        "city": "Oceanside",
+        "state": "CA",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Kinesiology ",
+        "profileId": 1673788
+      },
+      "priorSchool": {
+        "displayName": "Upper Iowa University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Fayette",
+        "state": "IA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/sienna.johnson.1673788/soccerwomen/3749"
+    },
     {
       "id": 3667,
       "announcementDateUtc": "2026-08-27T05:41:23.92",
