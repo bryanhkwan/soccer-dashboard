@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-03T14:39:24.877Z",
+  "generatedAt": "2026-11-04T14:52:10.714Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 148,
+  "totalCount": 149,
   "players": [
+    {
+      "id": 3774,
+      "announcementDateUtc": "2026-11-04T14:17:59.18",
+      "announcementText": "I am currently seeking a transfer opportunity for Spring 2027 where I can continue developing both academically and athletically at a competitive level.\nI am open to both NCAA D2 and NAIA opportunities.\nAcademically, I am pursuing a degree in Physical Education non teaching track.\nMy priority is finding the right program and environment where I can contribute to the team, continue developing as a player, and grow both on and off the field. I’m excited to connect with coaches and programs that align with my goals and could be a great fit.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Maria Azevedo",
+        "firstName": "Maria",
+        "lastName": "Azevedo",
+        "username": "maria.azevedo",
+        "city": "Belo Horizonte",
+        "state": "MG",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 2113565
+      },
+      "priorSchool": {
+        "displayName": "West Liberty University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "West Liberty",
+        "state": "WV"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/maria.azevedo/soccerwomen/3774"
+    },
     {
       "id": 3749,
       "announcementDateUtc": "2026-10-28T20:16:15.163",
