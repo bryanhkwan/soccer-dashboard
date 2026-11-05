@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-04T14:52:10.714Z",
+  "generatedAt": "2026-11-05T06:46:34.858Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 149,
+  "totalCount": 150,
   "players": [
+    {
+      "id": 3775,
+      "announcementDateUtc": "2026-11-04T18:38:01.007",
+      "announcementText": "I am officially in the transfer portal and open to new opportunities. Currently playing all over the field at concord university. I’m looking to find a new program where I can make an immediate impact.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Morgan Morrisette",
+        "firstName": "Morgan",
+        "lastName": "Morrisette",
+        "username": "morgan.morrisette",
+        "city": "Chesapeake",
+        "state": "VA",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "nursing",
+        "profileId": 1743894
+      },
+      "priorSchool": {
+        "displayName": "Concord University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Athens",
+        "state": "WV"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/morgan.morrisette/soccerwomen/3775"
+    },
     {
       "id": 3774,
       "announcementDateUtc": "2026-11-04T14:17:59.18",
