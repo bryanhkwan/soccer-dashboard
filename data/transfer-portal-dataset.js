@@ -1,11 +1,86 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-05T06:46:34.858Z",
+  "generatedAt": "2026-11-06T06:46:46.078Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 150,
+  "totalCount": 153,
   "players": [
+    {
+      "id": 3786,
+      "announcementDateUtc": "2026-11-06T01:01:06.423",
+      "announcementText": "I am open to anywhere!",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Avery Suhr",
+        "firstName": "Avery",
+        "lastName": "Suhr",
+        "username": "avery.suhr",
+        "city": "Greeley",
+        "state": "CO",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 1170811
+      },
+      "priorSchool": {
+        "displayName": "Jessup University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Rocklin",
+        "state": "CA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.suhr/soccerwomen/3786"
+    },
+    {
+      "id": 3783,
+      "announcementDateUtc": "2026-11-05T22:07:55.46",
+      "announcementText": "My ideal transfer opportunity would be to play at a level where I can continue growing as a soccer player and student. I would like to pursue a major in Business Management while being part of a hardworking and supportive team. I am open to different locations and want to find a school that gives me the opportunity to succeed both academically and athletically.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Princess Gallardo",
+        "firstName": "Princess",
+        "lastName": "Gallardo",
+        "username": "princess.gallardo",
+        "city": "Laredo",
+        "state": "TX",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1897091
+      },
+      "priorSchool": {
+        "displayName": "Jarvis Christian University Women's Soccer",
+        "division": "NAIA",
+        "city": "Hawkins",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/princess.gallardo/soccerwomen/3783"
+    },
+    {
+      "id": 3779,
+      "announcementDateUtc": "2026-11-05T16:49:55.98",
+      "announcementText": "I am looking for a team that values possession-based soccer, staying composed and confident on the ball, and building play from the back. I enjoy being part of a team that uses its back line to help create attacking opportunities rather than just defending, while emphasizing communication, movement, and teamwork throughout the field. Just as important, I am looking for a team with strong chemistry and a close-knit environment where everyone supports one another and works toward a common goal. Academically, I am a nursing major, so finding a school with a strong nursing program that will allow me to succeed both on the field and in the classroom is equally important to me.",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Ella Huntress",
+        "firstName": "Ella",
+        "lastName": "Huntress",
+        "username": "ella.huntress",
+        "city": "Chula Vista",
+        "state": "CA",
+        "positions": "D",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 2194242
+      },
+      "priorSchool": {
+        "displayName": "Newberry College Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Newberry",
+        "state": "SC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ella.huntress/soccerwomen/3779"
+    },
     {
       "id": 3775,
       "announcementDateUtc": "2026-11-04T18:38:01.007",
