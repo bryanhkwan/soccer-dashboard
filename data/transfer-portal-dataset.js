@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-06T06:46:46.078Z",
+  "generatedAt": "2026-11-07T06:46:54.362Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 153,
+  "totalCount": 154,
   "players": [
+    {
+      "id": 3788,
+      "announcementDateUtc": "2026-11-06T13:28:18.343",
+      "announcementText": "Graduate Transfer for Fall 2027. \nLooking at Masters programs in Sports and Business related fields. \nOpen to all locations and levels to find the right fit to finish my college career! \n",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Holly Cowan",
+        "firstName": "Holly",
+        "lastName": "Cowan",
+        "username": "holly.cowan",
+        "city": "Reading",
+        "state": "England",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1747981
+      },
+      "priorSchool": {
+        "displayName": "Tusculum University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Greeneville",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/holly.cowan/soccerwomen/3788"
+    },
     {
       "id": 3786,
       "announcementDateUtc": "2026-11-06T01:01:06.423",
