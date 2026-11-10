@@ -1,11 +1,111 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-09T06:52:50.228Z",
+  "generatedAt": "2026-11-10T06:46:45.312Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 154,
+  "totalCount": 158,
   "players": [
+    {
+      "id": 3812,
+      "announcementDateUtc": "2026-11-10T02:17:33.53",
+      "announcementText": "I’m an NCAA DII goalkeeper from the Lone Star Conference seeking a Spring 2027 transfer opportunity with a competitive program that prioritizes strong goalkeeper development, constructive feedback, and a positive, team-first culture. I bring strong shot-stopping, communication, and a drive to improve. Ready to compete for the starting position and contribute to team success.\n\nAcademically, I’m interested in kinesiology, with the long-term goal of attending the fire academy and becoming a firefighter.\n\nOpen to all divisions and locations!\n\nhttps://youtube.com@*********",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Avery Owen",
+        "firstName": "Avery",
+        "lastName": "Owen",
+        "username": "avery.owen",
+        "city": "Conroe",
+        "state": "TX",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "Kinesiology, Fire Science",
+        "profileId": 1645293
+      },
+      "priorSchool": {
+        "displayName": "Sul Ross State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Alpine",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/avery.owen/soccerwomen/3812"
+    },
+    {
+      "id": 3807,
+      "announcementDateUtc": "2026-11-09T20:45:40.133",
+      "announcementText": "I am a first-year transfer looking for a college program that will allow me to grow, both as a student and an athlete. I am open to all levels of competition, and I am currently competing at the D2 level. Academically I am currently a Physical Therapy major and would like to keep that major or something similar in the medical field. I value good team culture, honesty, and supportiveness when it comes to what I will be looking for in a program. I am open to exploring opportunites in different locations and finding the best overall fit for my academic and athletic goals. ",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Daphney Frank",
+        "firstName": "Daphney",
+        "lastName": "Frank",
+        "username": "daphney.frank",
+        "city": "Oxford",
+        "state": "NY",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 1994320
+      },
+      "priorSchool": {
+        "displayName": "Mansfield University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Mansfield",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/daphney.frank/soccerwomen/3807"
+    },
+    {
+      "id": 3801,
+      "announcementDateUtc": "2026-11-09T18:50:09.52",
+      "announcementText": "Hello, I am looking for a school where I can still continue play soccer on a team and also have good Pre-Medicine programs for Biology majors.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Scarlett Ficco",
+        "firstName": "Scarlett",
+        "lastName": "Ficco",
+        "username": "scarlett.ficco",
+        "city": "Medford",
+        "state": "NY",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Medicine",
+        "profileId": 1444289
+      },
+      "priorSchool": {
+        "displayName": "Elms College Women's Soccer",
+        "division": "NCAA D3",
+        "city": "Chicopee",
+        "state": "MA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/scarlett.ficco/soccerwomen/3801"
+    },
+    {
+      "id": 3798,
+      "announcementDateUtc": "2026-11-09T15:16:29.26",
+      "announcementText": "I'm currently looking for a transfer opportunity where I can continue developing both athletically and academically in a competitive and supportive environment. I'm a player who is always willing to learn, improve, and give everything on the field!\n\nLooking to transfer to an NCAA Division I or Division II program for Spring or Fall 2027.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Jacqueline Carbajal Salmeron",
+        "firstName": "Jacqueline",
+        "lastName": "Carbajal Salmeron",
+        "username": "jacqueline.carbajalsalmeron",
+        "city": "McKenzie",
+        "state": "TN",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 2441293
+      },
+      "priorSchool": {
+        "displayName": "Bethel University Women's Soccer",
+        "division": "NAIA",
+        "city": "McKenzie",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jacqueline.carbajalsalmeron/soccerwomen/3798"
+    },
     {
       "id": 3788,
       "announcementDateUtc": "2026-11-06T13:28:18.343",
