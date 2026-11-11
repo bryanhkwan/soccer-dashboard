@@ -1,11 +1,161 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-10T06:46:45.312Z",
+  "generatedAt": "2026-11-11T06:46:57.747Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 158,
+  "totalCount": 164,
   "players": [
+    {
+      "id": 3832,
+      "announcementDateUtc": "2026-11-11T04:12:20.023",
+      "announcementText": "I’m Gaviota Urias, a winger transferring from Central Baptist College. I’m open to NCAA or NAIA programs anywhere and want to keep playing soccer while studying Criminal Justice.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Gaviota Urias",
+        "firstName": "Gaviota",
+        "lastName": "Urias",
+        "username": "gaviota.urias",
+        "city": "Little Rock",
+        "state": "AR",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1973465
+      },
+      "priorSchool": {
+        "displayName": "Central Baptist College Women's Soccer",
+        "division": "NAIA",
+        "city": "Conway",
+        "state": "AR"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/gaviota.urias/soccerwomen/3832"
+    },
+    {
+      "id": 3831,
+      "announcementDateUtc": "2026-11-11T03:46:27.63",
+      "announcementText": "I am looking for a graduate transfer opportunity for Fall 2027 where I can continue my academic and athletic career. I am interested in playing at a high level such as continuing at a NCAA Division II programs but open to Division I opportunities. I am a central midfielder with one year of eligibility remaining, and I plan to pursue a Master's degree in Sport Management. Finding a strong soccer program with a competitive environment, supportive coaching staff, and a good academic fit is important to me. ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Mia Van Groningen Dack",
+        "firstName": "Mia",
+        "lastName": "Van Groningen Dack",
+        "username": "mia.vangroningendack",
+        "city": "Kilkenny",
+        "state": "County Kilkenny",
+        "positions": "M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2072414
+      },
+      "priorSchool": {
+        "displayName": "King University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Bristol",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/mia.vangroningendack/soccerwomen/3831"
+    },
+    {
+      "id": 3827,
+      "announcementDateUtc": "2026-11-11T02:04:50.543",
+      "announcementText": "My name is Kirsten Sadlon, currently a junior at Tusculum University. I have entered the transfer portal with two years of eligibility left. I am looking for a competitive program with high academics.\n\nHere is my current coach's information for references!\nEmail: *****@*****.***\nPhone Number: (***) *** ****\n\nMy junior season I played 945 minutes with 15 starts in 15 games.\n\nOn the academic side, I am majoring in Sports Management, with a 3.94 GPA\n\nI am looking for a school with a strong master's program as well to take a grad year after my senior season.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Kirsten Sadlon",
+        "firstName": "Kirsten",
+        "lastName": "Sadlon",
+        "username": "kirsten.sadlon",
+        "city": "Morristown",
+        "state": "TN",
+        "positions": "M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Sports Management",
+        "profileId": 1430966
+      },
+      "priorSchool": {
+        "displayName": "Tusculum University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Greeneville",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/kirsten.sadlon/soccerwomen/3827"
+    },
+    {
+      "id": 3825,
+      "announcementDateUtc": "2026-11-11T00:17:00.873",
+      "announcementText": "I have made the difficult decision to transfer after my first fall season at D2 USC Aiken. I am looking for a school that offers Mechanical Engineering somewhere a little closer to home.  I would like the opportunity to continue to grow, learn new things, be challenged,  and earn playing time.",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Riley Sweetland",
+        "firstName": "Riley",
+        "lastName": "Sweetland",
+        "username": "riley.sweetland.1804183",
+        "city": "Bettendorf",
+        "state": "IA",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 1804183
+      },
+      "priorSchool": {
+        "displayName": "USC - Aiken Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Aiken",
+        "state": "SC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/riley.sweetland.1804183/soccerwomen/3825"
+    },
+    {
+      "id": 3823,
+      "announcementDateUtc": "2026-11-10T23:03:31.567",
+      "announcementText": " My name is Kiera Tynes, currently a freshman at Kentucky Wesleyan College. I have entered the transfer portal. I have already discussed my transfer plan with my current coach, Ty Stauffer, and he is a reference for me along with my club coach, Kevin Scott.\n\nTy Stauffer- *****@*****.***\n\nKevin Scott-(***) *** ****\n\nMy freshman season I played 964 minutes with 13 starts as either an attacking or defensive center midfielder. \n\nIn the class room I am majoring in psychology, with a  3.35 GPA. \n\nI am looking for a school to further my athletic and academic goals. ",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Kiera Tynes",
+        "firstName": "Kiera",
+        "lastName": "Tynes",
+        "username": "kiera.tynes",
+        "city": "Paducah",
+        "state": "KY",
+        "positions": "M",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 1463788
+      },
+      "priorSchool": {
+        "displayName": "Kentucky Wesleyan College Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Owensboro",
+        "state": "KY"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/kiera.tynes/soccerwomen/3823"
+    },
+    {
+      "id": 3815,
+      "announcementDateUtc": "2026-11-10T16:53:48.563",
+      "announcementText": "I have officially entered the transfer portal with 1 year of eligibility left! ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Emma Wright",
+        "firstName": "Emma",
+        "lastName": "Wright",
+        "username": "emma.wright.810955",
+        "city": "Longview",
+        "state": "TX",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "Masters in education ",
+        "profileId": 810955
+      },
+      "priorSchool": {
+        "displayName": "Lubbock Christian University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Lubbock",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/emma.wright.810955/soccerwomen/3815"
+    },
     {
       "id": 3812,
       "announcementDateUtc": "2026-11-10T02:17:33.53",
