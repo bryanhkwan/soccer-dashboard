@@ -1,11 +1,86 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-13T06:46:55.011Z",
+  "generatedAt": "2026-11-14T06:46:44.245Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 164,
+  "totalCount": 167,
   "players": [
+    {
+      "id": 3861,
+      "announcementDateUtc": "2026-11-14T05:32:36.26",
+      "announcementText": "Transferring due to a coaching change. Ideally looking for a mid major or p4 opportunity where I can compete for high minutes! ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Gabi Hislop",
+        "firstName": "Gabi",
+        "lastName": "Hislop",
+        "username": "gabi.hislop",
+        "city": "Las Cruces",
+        "state": "NM",
+        "positions": "D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 2759154
+      },
+      "priorSchool": {
+        "displayName": "New Mexico State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Las Cruces",
+        "state": "NM"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/gabi.hislop/soccerwomen/3861"
+    },
+    {
+      "id": 3857,
+      "announcementDateUtc": "2026-11-13T18:58:12.093",
+      "announcementText": "Want a bigger role, studying business. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Aly Papka",
+        "firstName": "Aly",
+        "lastName": "Papka",
+        "username": "aly.papka",
+        "city": "Henderson",
+        "state": "NV",
+        "positions": "F, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 995957
+      },
+      "priorSchool": {
+        "displayName": "Cal Poly Pomona Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Pomona",
+        "state": "CA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aly.papka/soccerwomen/3857"
+    },
+    {
+      "id": 3855,
+      "announcementDateUtc": "2026-11-13T17:33:49.68",
+      "announcementText": "Excited for the next team I can contribute to and enjoy the game I love ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Aly Papka",
+        "firstName": "Aly",
+        "lastName": "Papka",
+        "username": "aly.papka",
+        "city": "Henderson",
+        "state": "NV",
+        "positions": "F, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 995957
+      },
+      "priorSchool": {
+        "displayName": "Cal Poly Pomona Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Pomona",
+        "state": "CA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aly.papka/soccerwomen/3855"
+    },
     {
       "id": 3832,
       "announcementDateUtc": "2026-11-11T04:12:20.023",
