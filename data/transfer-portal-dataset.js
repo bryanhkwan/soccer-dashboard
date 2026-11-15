@@ -1,11 +1,86 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-14T06:46:44.245Z",
+  "generatedAt": "2026-11-15T06:46:48.770Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 167,
+  "totalCount": 170,
   "players": [
+    {
+      "id": 3865,
+      "announcementDateUtc": "2026-11-14T22:22:19.953",
+      "announcementText": "I'm looking for a program that will help me continue to develop on and off the field.\n\nhttps://www.fieldlevel.com/app/profile/mikaela.carpino/soccerwomen?m=3",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Mikaela Carpino",
+        "firstName": "Mikaela",
+        "lastName": "Carpino",
+        "username": "mikaela.carpino",
+        "city": "Milton",
+        "state": "ON",
+        "positions": "M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Physical education",
+        "profileId": 2154636
+      },
+      "priorSchool": {
+        "displayName": "University of West Alabama Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Livingston",
+        "state": "AL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/mikaela.carpino/soccerwomen/3865"
+    },
+    {
+      "id": 3864,
+      "announcementDateUtc": "2026-11-14T16:59:22.627",
+      "announcementText": "I'm looking for a college offering a graduate program in Neuroscience or Psychology. I have 2 years of eligibility remaining. On the field, I play 6/8/10 and have also played Center back before. \n\nHighlight Video: https://youtu.be/Gh_mH5cqGpQ?si=IeXnZzIc_JkMMUpJ  \n\nContact: \n*****@*****.***\n(***) *** ****",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Holly Czakert",
+        "firstName": "Holly",
+        "lastName": "Czakert",
+        "username": "holly.czakert.2757474",
+        "city": "Sarasota",
+        "state": "FL",
+        "positions": "M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2757474
+      },
+      "priorSchool": {
+        "displayName": "New College of Florida Women's Soccer",
+        "division": "NAIA",
+        "city": "Sarasota",
+        "state": "FL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/holly.czakert.2757474/soccerwomen/3864"
+    },
+    {
+      "id": 3862,
+      "announcementDateUtc": "2026-11-14T14:00:57.92",
+      "announcementText": "5’ 7” || UNCG Dean’s List || SoCon Academic Honor Roll\n\nClub Team: Baltimore Armour \n2025 Pro 23 Champions \n\nLooking for a competitive D1 or D2 program where I can contribute to the team culture, add immediate value to the goalkeeper unit,  and pursue my degree in Political Science. Ideally looking for opportunities on the east coast, but I am open to all great fits that align with my academic and athletic goals. ",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Cara Robell",
+        "firstName": "Cara",
+        "lastName": "Robell",
+        "username": "cara.robell",
+        "city": "Frederick",
+        "state": "MD",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 2546945
+      },
+      "priorSchool": {
+        "displayName": "UNC - Greensboro Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Greensboro",
+        "state": "NC"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/cara.robell/soccerwomen/3862"
+    },
     {
       "id": 3861,
       "announcementDateUtc": "2026-11-14T05:32:36.26",
