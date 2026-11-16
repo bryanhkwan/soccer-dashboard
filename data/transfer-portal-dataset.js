@@ -1,11 +1,61 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-15T06:46:48.770Z",
+  "generatedAt": "2026-11-16T07:02:37.061Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 170,
+  "totalCount": 172,
   "players": [
+    {
+      "id": 3871,
+      "announcementDateUtc": "2026-11-15T20:14:51.763",
+      "announcementText": "Versatile CB/CDM from England looking to transfer, studying Biology.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Martha Joseph",
+        "firstName": "Martha",
+        "lastName": "Joseph",
+        "username": "martha.joseph",
+        "city": "Waterbury",
+        "state": "CT",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Biology ",
+        "profileId": 2088223
+      },
+      "priorSchool": {
+        "displayName": "Post University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Waterbury",
+        "state": "CT"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/martha.joseph/soccerwomen/3871"
+    },
+    {
+      "id": 3870,
+      "announcementDateUtc": "2026-11-15T17:12:44.19",
+      "announcementText": "I'm looking for a Division I program where I can compete for the starting goalkeeper position and make an immediate impact in my final year of eligibility in fall 2027. After four years at Central Washington, I feel ready for that next challenge and know I have the experience to contribute right away.\n\nI've started 44 games, recorded 255 career saves with an 80.3% save percentage, and earned 11 shutouts. This past season, I served as team captain and earned GNAC All-Conference Honorable Mention.  My biggest strength is my shot-stopping ability, especially under pressure. I also take pride in being a vocal leader, organizing my back line, and commanding my box.\n\nFinding a program where I can compete, contribute, and help the team win matters more to me than location.\n\nMost importantly, I want to join a team that values my experience and leadership, gives me a genuine opportunity to earn the starting role, and pushes me to become an even better goalkeeper.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Danika Galbraith",
+        "firstName": "Danika",
+        "lastName": "Galbraith",
+        "username": "danika.galbraith",
+        "city": "Kennewick",
+        "state": "WA",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 2760253
+      },
+      "priorSchool": {
+        "displayName": "Central Washington University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Ellensburg",
+        "state": "WA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/danika.galbraith/soccerwomen/3870"
+    },
     {
       "id": 3865,
       "announcementDateUtc": "2026-11-14T22:22:19.953",
