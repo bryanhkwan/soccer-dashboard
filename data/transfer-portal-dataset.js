@@ -1,11 +1,111 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-17T06:48:13.942Z",
+  "generatedAt": "2026-11-18T06:48:16.619Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 172,
+  "totalCount": 176,
   "players": [
+    {
+      "id": 3903,
+      "announcementDateUtc": "2026-11-18T01:46:58.453",
+      "announcementText": "After thinking and talking with my coach, I have decided to enter the transfer portal. I want to be able to compete at a higher level, earn playing time, and continue to grow as a player on and off the field. I have 4 years of eligibility in the NCAA left, I plan to find a school that has a coaching staff and team that wants the win, and will push each other on and off the field. I am an exercise science major, and a minor in business. I want to thank Bethany college for this year and giving me the opportunity to experience my first college year. ",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Riley Sellers",
+        "firstName": "Riley",
+        "lastName": "Sellers",
+        "username": "riley.bellesellers",
+        "city": "Fort Worth",
+        "state": "TX",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 1993039
+      },
+      "priorSchool": {
+        "displayName": "Bethany College Women's Soccer",
+        "division": "NAIA",
+        "city": "Lindsborg",
+        "state": "KS"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/riley.bellesellers/soccerwomen/3903"
+    },
+    {
+      "id": 3902,
+      "announcementDateUtc": "2026-11-18T01:46:17.083",
+      "announcementText": "After playing and completing my Bachelor of Science at The University of Texas at Dallas this Spring 2027, with two years of eligibility left I have decided to enter the transfer portal. I am eligible til Spring of 2028 and will continue to pursue my graduate degree and be available to start Fall 2027. I look forward to connecting soon!",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Elizabeth Campos",
+        "firstName": "Elizabeth",
+        "lastName": "Campos",
+        "username": "elizabeth.campos",
+        "city": "Katy",
+        "state": "TX",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1412755
+      },
+      "priorSchool": {
+        "displayName": "University of Texas - Dallas Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Richardson",
+        "state": "TX"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/elizabeth.campos/soccerwomen/3902"
+    },
+    {
+      "id": 3901,
+      "announcementDateUtc": "2026-11-18T01:44:09.82",
+      "announcementText": "After careful consideration, I have decided to transfer to further my education elsewhere. I'm currently majoring in Criminal Justice and minoring in Psychology. I have 4 years of eligibility in the NCAA. I am looking for an opportunity to further my soccer career and compete at a higher level. I am always willing to put in the work and I'm looking for a team and coaching staff that will push me to become the better version of myself on and off the field. I want to thank Bethany College for the opportunity to play this season and helping me in my career. ",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Leila Jones",
+        "firstName": "Leila",
+        "lastName": "Jones",
+        "username": "leila.jones.2479455",
+        "city": "Las Cruces",
+        "state": "NM",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 2479455
+      },
+      "priorSchool": {
+        "displayName": "Bethany College Women's Soccer",
+        "division": "NAIA",
+        "city": "Lindsborg",
+        "state": "KS"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/leila.jones.2479455/soccerwomen/3901"
+    },
+    {
+      "id": 3894,
+      "announcementDateUtc": "2026-11-17T21:34:08.173",
+      "announcementText": "After careful consideration, I have decided to enter the transfer portal with two years of eligibility remaining. I would like to thank Chicago State University and the coaching staff for the opportunity and support. I am grateful for this next chapter and look forward to finding a new home where I can continue to grow both academically and athletically. Excited for what the future holds!",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Maria Frazier",
+        "firstName": "Maria",
+        "lastName": "Frazier",
+        "username": "maria.frazier",
+        "city": "Leander",
+        "state": "TX",
+        "positions": "D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "criminal Justice ",
+        "profileId": 1558924
+      },
+      "priorSchool": {
+        "displayName": "Chicago State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/maria.frazier/soccerwomen/3894"
+    },
     {
       "id": 3871,
       "announcementDateUtc": "2026-11-15T20:14:51.763",
@@ -995,7 +1095,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Political Science",
+        "plannedMajor": "criminal Justice ",
         "profileId": 1558924
       },
       "priorSchool": {
@@ -1495,7 +1595,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "TX",
         "positions": "D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Political Science",
+        "plannedMajor": "criminal Justice ",
         "profileId": 1558924
       },
       "priorSchool": {
