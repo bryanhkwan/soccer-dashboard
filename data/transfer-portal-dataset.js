@@ -1,11 +1,186 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-18T06:48:16.619Z",
+  "generatedAt": "2026-11-19T06:48:31.673Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 176,
+  "totalCount": 182,
   "players": [
+    {
+      "id": 3927,
+      "announcementDateUtc": "2026-11-19T04:38:38.117",
+      "announcementText": "I have decided to join the transfer portal with 2 years of eligibility remaining. I am looking for a new challenge for the final years of my college career. I am a 20 year old midfielder from Germany. For more info check out my profile and please reach out to me here!",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Teresa Kahlmann",
+        "firstName": "Teresa",
+        "lastName": "Kahlmann",
+        "username": "teresa.kahlmann",
+        "city": "Munich",
+        "state": "BY",
+        "positions": "M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2003052
+      },
+      "priorSchool": {
+        "displayName": "Florida Tech Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Melbourne",
+        "state": "FL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/teresa.kahlmann/soccerwomen/3927"
+    },
+    {
+      "id": 3925,
+      "announcementDateUtc": "2026-11-19T03:53:45.607",
+      "announcementText": "I am looking for a program that competes at a high level and pushes me to become the best player I can be. I want the opportunity to contribute on the field as much as possible and make a positive impact on the team’s success. I also really value a close team environment where everyone supports each other and feels like a family, both on and off the field.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Piersen Rawlin",
+        "firstName": "Piersen",
+        "lastName": "Rawlin",
+        "username": "piersen.rawlin.2764628",
+        "city": "Wekiwa Springs",
+        "state": "FL",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 2764628
+      },
+      "priorSchool": {
+        "displayName": "University of Massachusetts - Amherst Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Amherst",
+        "state": "MA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/piersen.rawlin.2764628/soccerwomen/3925"
+    },
+    {
+      "id": 3922,
+      "announcementDateUtc": "2026-11-18T22:38:50.153",
+      "announcementText": "I am looking for a Division I soccer program where I can continue competing at a high level, grow as a player, and make a positive impact in the team. I am looking for a competitive program with a strong team culture, supportive coaching staff, and an environment that will challenge me both on and off the field. Academically, I am interested in a healthcare related field. Ideally I would like to be closer to home, but am open to locations across the country and am looking for a school that offers a strong balance between academics and athletics. Ultimately, I want to find a program that is the right fit for me athletically, academically, and personally.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Jentrie Porter",
+        "firstName": "Jentrie",
+        "lastName": "Porter",
+        "username": "jentrie.porter",
+        "city": "Clearfield",
+        "state": "UT",
+        "positions": "M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 1868531
+      },
+      "priorSchool": {
+        "displayName": "University of North Dakota Women's Soccer",
+        "division": "NCAA D1",
+        "city": "GF",
+        "state": "ND"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jentrie.porter/soccerwomen/3922"
+    },
+    {
+      "id": 3917,
+      "announcementDateUtc": "2026-11-18T19:46:02.3",
+      "announcementText": "Officially entered the NCAA Transfer Portal\nVersatile Outside Back / Midfielder \nGrad Transfer | 1 Year Eligibility Remaining\nRoosevelt University Women’s Soccer\n",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Alex Creel",
+        "firstName": "Alex",
+        "lastName": "Creel",
+        "username": "alex.creel",
+        "city": "Pendleton",
+        "state": "IN",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1233419
+      },
+      "priorSchool": {
+        "displayName": "Roosevelt University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alex.creel/soccerwomen/3917"
+    },
+    {
+      "id": 3915,
+      "announcementDateUtc": "2026-11-18T19:09:52.08",
+      "announcementText": "Grad Transfer | Roosevelt University \nOutside Back/ Defensive Midfielder \n1 Year Eligibility Remaining ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Alex Creel",
+        "firstName": "Alex",
+        "lastName": "Creel",
+        "username": "alex.creel",
+        "city": "Pendleton",
+        "state": "IN",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1233419
+      },
+      "priorSchool": {
+        "displayName": "Roosevelt University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alex.creel/soccerwomen/3915"
+    },
+    {
+      "id": 3913,
+      "announcementDateUtc": "2026-11-18T18:41:38.257",
+      "announcementText": "I’m grateful for the experiences, opportunities, and people who have been part of my journey so far. I’m excited for the next chapter and looking forward to finding the right fit academically, athletically, and personally.\n\n**Position:** CM / CDM\n**Class:** Junior\n**Eligibility:** 1 year\n**Nationality:** New Zealand 🇳🇿\n\nThank you to everyone who has supported me along the way. Excited for what’s next!",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Rylee May",
+        "firstName": "Rylee",
+        "lastName": "May",
+        "username": "rylee.amay",
+        "city": "Hamilton",
+        "state": "Waikato",
+        "positions": "M",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "",
+        "profileId": 2086208
+      },
+      "priorSchool": {
+        "displayName": "Middle Georgia State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Macon",
+        "state": "GA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/rylee.amay/soccerwomen/3913"
+    },
+    {
+      "id": 3912,
+      "announcementDateUtc": "2026-11-18T18:27:24.577",
+      "announcementText": "Hello, I am looking to transfer into a D2/D3, possibly NAIA as well, down in SoCal for spring of 27 and I am interested in majoring in kinesiology.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Melanie Ramos",
+        "firstName": "Melanie",
+        "lastName": "Ramos",
+        "username": "melanie.ramos",
+        "city": "Lancaster",
+        "state": "CA",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2355219
+      },
+      "priorSchool": {
+        "displayName": "Menlo College Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Atherton",
+        "state": "CA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/melanie.ramos/soccerwomen/3912"
+    },
     {
       "id": 3903,
       "announcementDateUtc": "2026-11-18T01:46:58.453",
@@ -305,31 +480,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CA"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aly.papka/soccerwomen/3855"
-    },
-    {
-      "id": 3832,
-      "announcementDateUtc": "2026-11-11T04:12:20.023",
-      "announcementText": "I’m Gaviota Urias, a winger transferring from Central Baptist College. I’m open to NCAA or NAIA programs anywhere and want to keep playing soccer while studying Criminal Justice.",
-      "yearsOfEligibility": 2,
-      "athlete": {
-        "displayName": "Gaviota Urias",
-        "firstName": "Gaviota",
-        "lastName": "Urias",
-        "username": "gaviota.urias",
-        "city": "Little Rock",
-        "state": "AR",
-        "positions": "F, M",
-        "highSchoolGraduationYear": 2025,
-        "plannedMajor": "",
-        "profileId": 1973465
-      },
-      "priorSchool": {
-        "displayName": "Central Baptist College Women's Soccer",
-        "division": "NAIA",
-        "city": "Conway",
-        "state": "AR"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/gaviota.urias/soccerwomen/3832"
     },
     {
       "id": 3831,
