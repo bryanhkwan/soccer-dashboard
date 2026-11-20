@@ -1,11 +1,86 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-19T06:48:31.673Z",
+  "generatedAt": "2026-11-20T06:48:15.696Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 182,
+  "totalCount": 185,
   "players": [
+    {
+      "id": 3946,
+      "announcementDateUtc": "2026-11-20T00:12:58.033",
+      "announcementText": "I’m looking for a program built on accountability, discipline, competition, and player development. I like where standards are upheld, spots are earned, and character matters just as much as performance. Above all, I want to be part of a team that puts Christ at the center of everything.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Trinity Garcia",
+        "firstName": "Trinity",
+        "lastName": "Garcia",
+        "username": "trinity.garcia.1575252",
+        "city": "Gilbert",
+        "state": "AZ",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 1575252
+      },
+      "priorSchool": {
+        "displayName": "Cairn University Women's Soccer",
+        "division": "NCAA D3",
+        "city": "Holland",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/trinity.garcia.1575252/soccerwomen/3946"
+    },
+    {
+      "id": 3940,
+      "announcementDateUtc": "2026-11-19T22:14:00.883",
+      "announcementText": "Hello, \nhappy to announce this transfer! ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Alexia De Santiago",
+        "firstName": "Alexia",
+        "lastName": "De Santiago",
+        "username": "alexia.desantiago",
+        "city": "Mesquite",
+        "state": "NV",
+        "positions": "D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2526826
+      },
+      "priorSchool": {
+        "displayName": "Chicago State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alexia.desantiago/soccerwomen/3940"
+    },
+    {
+      "id": 3936,
+      "announcementDateUtc": "2026-11-19T19:18:32.397",
+      "announcementText": "Looking to transfer somewhere else for next season. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Anahi Corona",
+        "firstName": "Anahi",
+        "lastName": "Corona",
+        "username": "anahi.corona.2394629",
+        "city": "Centralia",
+        "state": "WA",
+        "positions": "M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2394629
+      },
+      "priorSchool": {
+        "displayName": "Glenville State University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Glenville",
+        "state": "WV"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/anahi.corona.2394629/soccerwomen/3936"
+    },
     {
       "id": 3927,
       "announcementDateUtc": "2026-11-19T04:38:38.117",
