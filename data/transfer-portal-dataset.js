@@ -1,11 +1,111 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-20T06:48:15.696Z",
+  "generatedAt": "2026-11-21T06:46:54.632Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 185,
+  "totalCount": 189,
   "players": [
+    {
+      "id": 3956,
+      "announcementDateUtc": "2026-11-20T21:23:47.777",
+      "announcementText": "I am currently a sophomore at Salem University, and I am looking for an opportunity to find a program where I can make an impact and truly be part of something. I want to grow as a player and as a person, be pushed outside of my comfort zone, and compete in an environment that brings the best out of me. Ultimately, I am looking for a place I can call home for the remainder of my college career, where I can contribute, develop, and finish out my eligibility.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Lexi Smith",
+        "firstName": "Lexi",
+        "lastName": "Smith",
+        "username": "lexi.smith.1849075",
+        "city": "Dyer",
+        "state": "IN",
+        "positions": "D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1849075
+      },
+      "priorSchool": {
+        "displayName": "Salem University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Salem",
+        "state": "WV"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/lexi.smith.1849075/soccerwomen/3956"
+    },
+    {
+      "id": 3955,
+      "announcementDateUtc": "2026-11-20T21:17:26.89",
+      "announcementText": "I am currently a sophomore attending Salem University, and I am majoring in Biology. My goal is to continue playing at the NCAA DII level.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Ashley Gonzalez",
+        "firstName": "Ashley",
+        "lastName": "Gonzalez",
+        "username": "ashley.1585335",
+        "city": "South Elgin",
+        "state": "IL",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1585335
+      },
+      "priorSchool": {
+        "displayName": "Salem University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Salem",
+        "state": "WV"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/ashley.1585335/soccerwomen/3955"
+    },
+    {
+      "id": 3951,
+      "announcementDateUtc": "2026-11-20T18:46:46.343",
+      "announcementText": "Versatile midfielder with strong technical ability, vision, and work ethic. Currently pursuing a Bachelor’s degree in Accounting, with the goal of completing my degree and continuing through a Master’s program.\n",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Alissa Rainon",
+        "firstName": "Alissa",
+        "lastName": "Rainon",
+        "username": "alissa.rainon",
+        "city": "Villemoyenne",
+        "state": "Grand Est",
+        "positions": "M",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "",
+        "profileId": 2755060
+      },
+      "priorSchool": {
+        "displayName": "Post University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Waterbury",
+        "state": "CT"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alissa.rainon/soccerwomen/3951"
+    },
+    {
+      "id": 3948,
+      "announcementDateUtc": "2026-11-20T15:08:46.913",
+      "announcementText": "Looking to transfer to competitive program",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Keylee Campbell",
+        "firstName": "Keylee",
+        "lastName": "Campbell",
+        "username": "keylee.campbell",
+        "city": "Newark",
+        "state": "NJ",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 2474067
+      },
+      "priorSchool": {
+        "displayName": "Lincoln University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Lincoln University",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/keylee.campbell/soccerwomen/3948"
+    },
     {
       "id": 3946,
       "announcementDateUtc": "2026-11-20T00:12:58.033",
@@ -217,7 +317,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "lastName": "May",
         "username": "rylee.amay",
         "city": "Hamilton",
-        "state": "Waikato",
+        "state": "Waikato Region",
         "positions": "M",
         "highSchoolGraduationYear": 2022,
         "plannedMajor": "",
