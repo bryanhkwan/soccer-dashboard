@@ -1,11 +1,61 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-21T06:46:54.632Z",
+  "generatedAt": "2026-11-22T06:46:45.292Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 189,
+  "totalCount": 191,
   "players": [
+    {
+      "id": 3965,
+      "announcementDateUtc": "2026-11-21T23:33:05.643",
+      "announcementText": "I am a freshman with 4 years of eligibility left, entering the transfer portal for Spring semester of 2027. I am a versatile winger/forward with experience in defense. I’m seeking a long-term home in a competitive NCAA program with a supportive coaching staff and healthy team environment that challenges me to reach my full potential. I am interested in pre-med and health studies and I am open to explore majors and pathway in the healthcare field. I’m eager to embrace challenges, earn my role, contribute to team success, and grow academically and athletically.\n\n2026 fall film will be available soon, thank you! \n\nhttps://youtube.com/@relaniwilliams2026?si=Ap_J9dcFaqdsyvxd",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Relani Williams",
+        "firstName": "Relani",
+        "lastName": "Williams",
+        "username": "relani.williams",
+        "city": "Missouri City",
+        "state": "TX",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 2031100
+      },
+      "priorSchool": {
+        "displayName": "Chicago State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/relani.williams/soccerwomen/3965"
+    },
+    {
+      "id": 3964,
+      "announcementDateUtc": "2026-11-21T22:02:52.237",
+      "announcementText": "I am excited to announce that I will be entering the NCAA Transfer Portal.\n\nI am extremely grateful for my time at Chicago State University and the opportunity to represent the program. Being trusted to serve as a captain and lead such an incredible group of girls has been one of the most meaningful experiences of my college career.\n\nI am now looking for a new opportunity where I can continue developing as a student-athlete, contribute to a competitive program, and finish my college soccer career.\n\nMy updated highlight video will be available soon.\n\nI am excited to see what the next chapter holds!",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Alana Garcia",
+        "firstName": "Alana",
+        "lastName": "Garcia",
+        "username": "alana.garcia.2402856",
+        "city": "Council Bluffs",
+        "state": "IA",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 2402856
+      },
+      "priorSchool": {
+        "displayName": "Chicago State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alana.garcia.2402856/soccerwomen/3964"
+    },
     {
       "id": 3956,
       "announcementDateUtc": "2026-11-20T21:23:47.777",
