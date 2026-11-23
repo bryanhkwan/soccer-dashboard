@@ -1,11 +1,86 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-22T06:46:45.292Z",
+  "generatedAt": "2026-11-23T06:57:51.159Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 191,
+  "totalCount": 194,
   "players": [
+    {
+      "id": 3977,
+      "announcementDateUtc": "2026-11-23T05:54:03.183",
+      "announcementText": "Due to the recent NCAA injunction, I have been granted the opportunity to compete for a 5th year of eligibility. As a fall 2026 grad from Southern University, I plan to enter the transfer portal as a graduate transfer and explore opportunities for my 5th year!",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Sydney Whitten",
+        "firstName": "Sydney",
+        "lastName": "Whitten",
+        "username": "sydney.whitten",
+        "city": "Richmond",
+        "state": "TX",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1372389
+      },
+      "priorSchool": {
+        "displayName": "Southern University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Baton Rouge",
+        "state": "LA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/sydney.whitten/soccerwomen/3977"
+    },
+    {
+      "id": 3971,
+      "announcementDateUtc": "2026-11-22T19:16:36.11",
+      "announcementText": "With my current institution shutting down, I am looking for a new competitive program to call home where I can make an immediate impact both on the field and in the classroom.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Serenity Esterline",
+        "firstName": "Serenity",
+        "lastName": "Esterline",
+        "username": "serenity.esterline",
+        "city": "Surprise",
+        "state": "AZ",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1712520
+      },
+      "priorSchool": {
+        "displayName": "Mansfield University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Mansfield",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/serenity.esterline/soccerwomen/3971"
+    },
+    {
+      "id": 3968,
+      "announcementDateUtc": "2026-11-22T07:57:41.833",
+      "announcementText": "Excited to announce that I have entered the NCAA Transfer Portal with one year of eligibility remaining!\n\nNCAA ID: (***) *** ****\n\nCB | OB",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Elise Bosanko",
+        "firstName": "Elise",
+        "lastName": "Bosanko",
+        "username": "elise.bosanko",
+        "city": "Salida",
+        "state": "CO",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "",
+        "profileId": 1310130
+      },
+      "priorSchool": {
+        "displayName": "Felician University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Rutherford",
+        "state": "NJ"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/elise.bosanko/soccerwomen/3968"
+    },
     {
       "id": 3965,
       "announcementDateUtc": "2026-11-21T23:33:05.643",
