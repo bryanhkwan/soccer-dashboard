@@ -1,11 +1,161 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-23T06:57:51.159Z",
+  "generatedAt": "2026-11-24T06:49:07.405Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 194,
+  "totalCount": 200,
   "players": [
+    {
+      "id": 3998,
+      "announcementDateUtc": "2026-11-24T04:39:16.41",
+      "announcementText": "My name is Lamya Foughal, I am from France. I am a Junior currently playing at Alabama State university (NCAA D1). I play winger and wing back in both sides. I am interested and ready to talk with teams from NCAA D1, D2 and NAIA. I am a player with international experiences with the Algerian national team and have been player of the week SWAC. ",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Lamya Foughal",
+        "firstName": "Lamya",
+        "lastName": "Foughal",
+        "username": "lamya.foughal",
+        "city": "Montgomery",
+        "state": "AL",
+        "positions": "F, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2769927
+      },
+      "priorSchool": {
+        "displayName": "Alabama State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Montgomery",
+        "state": "AL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/lamya.foughal/soccerwomen/3998"
+    },
+    {
+      "id": 3993,
+      "announcementDateUtc": "2026-11-23T23:41:16.567",
+      "announcementText": "With two years of eligibility left, I am looking to transfer to a high level, competitive program that has a championship winning mentality at a nationally established academic institution. As I continue my collegiate career, I can offer proven scoring ability at the D1 level alongside a high soccer IQ and play making ability. \nContact:\n(***) *** ****\n*****@*****.***",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Devin Greer",
+        "firstName": "Devin",
+        "lastName": "Greer",
+        "username": "devin.greer",
+        "city": "Sacramento",
+        "state": "CA",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2769357
+      },
+      "priorSchool": {
+        "displayName": "University of California - Santa Barbara Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Santa Barbara",
+        "state": "CA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/devin.greer/soccerwomen/3993"
+    },
+    {
+      "id": 3990,
+      "announcementDateUtc": "2026-11-23T21:31:46.74",
+      "announcementText": "I will graduate in May 2027 with a Bachelor of Health Services Administration degree along with minors in Psychology and Marketing, and I have one remaining season of eligibility. Throughout my career competing in the Mid-American Conference, I have gained experience across multiple positions, including the 6, 8, 10, 7, 11, and 9. During my final two seasons, I primarily played in more of a playmaker role, developing valuable skills in defensive organization, transition play, and ball distribution. \n\nI am looking for an opportunity to challenge myself in an even more competitive environment, continue developing as a player, and contribute to a successful program.",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Jaimason Brooker",
+        "firstName": "Jaimason",
+        "lastName": "Brooker",
+        "username": "jaimason.brooker",
+        "city": "Powell",
+        "state": "OH",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 1306246
+      },
+      "priorSchool": {
+        "displayName": "Ohio University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Athens",
+        "state": "OH"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jaimason.brooker/soccerwomen/3990"
+    },
+    {
+      "id": 3988,
+      "announcementDateUtc": "2026-11-23T21:04:29.757",
+      "announcementText": "I’m open to most division levels (D1, D2, or NAIA) and want a competitive women’s soccer program where I have a realistic opportunity to play. I’m looking to major in Nutrition, Dietetics, Sports Nutrition, or a related field. Ideally, I want a program that offers hands-on experience and a pathway to becoming a sports dietitian, working with college or professional athletes, similar to Level Nutrition.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Selena Poveda",
+        "firstName": "Selena",
+        "lastName": "Poveda",
+        "username": "selena.poveda",
+        "city": "Mono",
+        "state": "ON",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Nutrition",
+        "profileId": 2769700
+      },
+      "priorSchool": {
+        "displayName": "Chicago State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/selena.poveda/soccerwomen/3988"
+    },
+    {
+      "id": 3985,
+      "announcementDateUtc": "2026-11-23T16:13:22.763",
+      "announcementText": "I am now looking for new challenges and an environment where I can continue developing as a player, push myself to reach my full potential, and make a meaningful contribution to a competitive program. I am excited to take the next step in my academic and athletic journey.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Annamaria Benke",
+        "firstName": "Annamaria",
+        "lastName": "Benke",
+        "username": "annamaria.benke",
+        "city": "Telki",
+        "state": "Pest",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "data science",
+        "profileId": 1955540
+      },
+      "priorSchool": {
+        "displayName": "Middle Tennessee State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Murfreesboro",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/annamaria.benke/soccerwomen/3985"
+    },
+    {
+      "id": 3978,
+      "announcementDateUtc": "2026-11-23T07:01:41.78",
+      "announcementText": "I am officially entering the transfer portal with 2 years of eligibility remaining. I am currently a student-athlete at Chicago State University, competing at the NCAA Division I level. I am a forward/midfielder with a 3.59 GPA, pursuing opportunities to continue my academic and athletic career at a university that is the right fit for me. I am open to NCAA Division I, Division II, and other competitive programs across the country. I am interested in schools offering majors in Kinesiology, Psychology, or any related fields.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Arlene Plata",
+        "firstName": "Arlene",
+        "lastName": "Plata",
+        "username": "arlene.plata",
+        "city": "Huntington Park",
+        "state": "CA",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "Psychology ",
+        "profileId": 1793853
+      },
+      "priorSchool": {
+        "displayName": "Chicago State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Chicago",
+        "state": "IL"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/arlene.plata/soccerwomen/3978"
+    },
     {
       "id": 3977,
       "announcementDateUtc": "2026-11-23T05:54:03.183",
@@ -268,7 +418,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "username": "alexia.desantiago",
         "city": "Mesquite",
         "state": "NV",
-        "positions": "D",
+        "positions": "M, D",
         "highSchoolGraduationYear": 2024,
         "plannedMajor": "",
         "profileId": 2526826
@@ -945,7 +1095,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "NY",
         "positions": "GK",
         "highSchoolGraduationYear": 2026,
-        "plannedMajor": "",
+        "plannedMajor": "Physical Therapy",
         "profileId": 1994320
       },
       "priorSchool": {
