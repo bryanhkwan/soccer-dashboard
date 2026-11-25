@@ -1,11 +1,136 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-24T06:49:07.405Z",
+  "generatedAt": "2026-11-25T06:49:48.291Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 200,
+  "totalCount": 204,
   "players": [
+    {
+      "id": 4010,
+      "announcementDateUtc": "2026-11-24T20:15:09.95",
+      "announcementText": "I’m looking for a competitive soccer program where I can continue developing as a player while also pursuing my major academically. I’m pretty flexible with location and open to different opportunities. I’m hoping to find a school that’s a good fit for me both athletically and academically.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Isabella Calderon",
+        "firstName": "Isabella",
+        "lastName": "Calderon",
+        "username": "isabella.calderon.2769516",
+        "city": "Corvallis",
+        "state": "OR",
+        "positions": "M",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 2769516
+      },
+      "priorSchool": {
+        "displayName": "Oregon State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Corvallis",
+        "state": "OR"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/isabella.calderon.2769516/soccerwomen/4010"
+    },
+    {
+      "id": 4009,
+      "announcementDateUtc": "2026-11-24T20:08:37.217",
+      "announcementText": "I'm currently looking for a transfer opportunity where I can continue developing both athletically and academically in a competitive and supportive environment.\n\n I'm a player who is always willing to learn, improve, and give everything on the field!  \n\nLooking to transfer to an NCAA Division I or Division II program for Spring or Fall 2027.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Jacqueline Carbajal Salmeron",
+        "firstName": "Jacqueline",
+        "lastName": "Carbajal Salmeron",
+        "username": "jacqueline.carbajalsalmeron",
+        "city": "McKenzie",
+        "state": "TN",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 2441293
+      },
+      "priorSchool": {
+        "displayName": "Bethel University Women's Soccer",
+        "division": "NAIA",
+        "city": "McKenzie",
+        "state": "TN"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/jacqueline.carbajalsalmeron/soccerwomen/4009"
+    },
+    {
+      "id": 4007,
+      "announcementDateUtc": "2026-11-24T18:06:12.93",
+      "announcementText": "Coachable player looking for a place to grow and develop both as a as an athlete and academically. Looking forward to connecting.",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Madison Haney",
+        "firstName": "Madison",
+        "lastName": "Haney",
+        "username": "madison.haney",
+        "city": "St. Cloud",
+        "state": "FL",
+        "positions": "GK",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "Business ",
+        "profileId": 1310913
+      },
+      "priorSchool": {
+        "displayName": "Delaware State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Leipsic",
+        "state": "DE"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/madison.haney/soccerwomen/4007"
+    },
+    {
+      "id": 4003,
+      "announcementDateUtc": "2026-11-24T15:53:37.427",
+      "announcementText": "Forward (#9/#10) from Spain looking for a transfer opportunity for the spring 2027 semester. Junior with 2 years of eligibility remaining, currently in the transfer portal from Hampton University (NCAA D1). Previously captained Ranger College (JUCO), where we won the conference championship, with 19 goals and 10 assists in two seasons.\nLooking for: NCAA D1 or D2 programs (open to NAIA) offering an athletic scholarship.\nMajor: Business (GPA 3.5+).\nI bring strong attacking vision, a reliable first touch, and a goal-scoring mindset. I am ready to contribute from day one.\nFeel free to message me to schedule a call.\n*****@*****.*** | (***) *** ****",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Nuria Alejo",
+        "firstName": "Nuria",
+        "lastName": "Alejo",
+        "username": "nuria.alejo",
+        "city": "Sevilla",
+        "state": "AN",
+        "positions": "F, M",
+        "highSchoolGraduationYear": 2024,
+        "plannedMajor": "",
+        "profileId": 2353772
+      },
+      "priorSchool": {
+        "displayName": "Hampton University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Hampton",
+        "state": "VA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/nuria.alejo/soccerwomen/4003"
+    },
+    {
+      "id": 4001,
+      "announcementDateUtc": "2026-11-24T12:13:58.887",
+      "announcementText": "My name is Keylee Campbell, I’m from Jamaica. I play with both feet as well I play wingback on both sides and also dmf. I’m looking to transfer to a NCAA d1,NCAA d2 or NAIA program. Majoring in health science or health administration.",
+      "yearsOfEligibility": 2,
+      "athlete": {
+        "displayName": "Keylee Campbell",
+        "firstName": "Keylee",
+        "lastName": "Campbell",
+        "username": "keylee.campbell",
+        "city": "Newark",
+        "state": "NJ",
+        "positions": "M, D",
+        "highSchoolGraduationYear": 2023,
+        "plannedMajor": "",
+        "profileId": 2474067
+      },
+      "priorSchool": {
+        "displayName": "Lincoln University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Lincoln University",
+        "state": "PA"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/keylee.campbell/soccerwomen/4001"
+    },
     {
       "id": 3998,
       "announcementDateUtc": "2026-11-24T04:39:16.41",
@@ -355,31 +480,6 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "CT"
       },
       "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alissa.rainon/soccerwomen/3951"
-    },
-    {
-      "id": 3948,
-      "announcementDateUtc": "2026-11-20T15:08:46.913",
-      "announcementText": "Looking to transfer to competitive program",
-      "yearsOfEligibility": 2,
-      "athlete": {
-        "displayName": "Keylee Campbell",
-        "firstName": "Keylee",
-        "lastName": "Campbell",
-        "username": "keylee.campbell",
-        "city": "Newark",
-        "state": "NJ",
-        "positions": "M, D",
-        "highSchoolGraduationYear": 2023,
-        "plannedMajor": "",
-        "profileId": 2474067
-      },
-      "priorSchool": {
-        "displayName": "Lincoln University Women's Soccer",
-        "division": "NCAA D2",
-        "city": "Lincoln University",
-        "state": "PA"
-      },
-      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/keylee.campbell/soccerwomen/3948"
     },
     {
       "id": 3946,
