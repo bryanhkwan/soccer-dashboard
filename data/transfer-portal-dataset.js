@@ -1,11 +1,61 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-25T06:49:48.291Z",
+  "generatedAt": "2026-11-26T06:49:49.409Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 204,
+  "totalCount": 206,
   "players": [
+    {
+      "id": 4019,
+      "announcementDateUtc": "2026-11-26T00:36:40.27",
+      "announcementText": "I am officially entering the transfer portal after completing my 2026 outdoor season with Conestoga College. I am a defensive and central midfielder with a 3.6 GPA, looking for an opportunity to continue developing both academically and athletically at the collegiate level.\n\nAs a player, I pride myself on my work ethic, versatility, composure on the ball, tactical awareness, and ability to contribute on both ends of the field. I am a dedicated, coachable, and team-oriented athlete who is always looking to improve.\n\nI am looking for a competitive program that will challenge me, support my development, and provide an opportunity to make a meaningful impact on and off the field. I am open to exploring opportunities in both Canada and the United States across U SPORTS, NCAA, NAIA, and other collegiate programs.\n\nI am excited for this next chapter and look forward to connecting with coaches and exploring potential opportunities!",
+      "yearsOfEligibility": 4,
+      "athlete": {
+        "displayName": "Mercedes Lopez",
+        "firstName": "Mercedes",
+        "lastName": "Lopez",
+        "username": "mercedes.lopez.2263336",
+        "city": "Cambridge",
+        "state": "ON",
+        "positions": "M",
+        "highSchoolGraduationYear": 2026,
+        "plannedMajor": "",
+        "profileId": 2263336
+      },
+      "priorSchool": {
+        "displayName": "Conestoga College Women's Soccer",
+        "division": "U SPORTS",
+        "city": "Kitchener",
+        "state": "ON"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/mercedes.lopez.2263336/soccerwomen/4019"
+    },
+    {
+      "id": 4014,
+      "announcementDateUtc": "2026-11-25T14:28:12.91",
+      "announcementText": "I am a French student athlete, versatile midfielder with strong technical ability, vision, and work ethic. Currently pursuing a Bachelor’s degree in Accounting, with the goal of completing a Master’s program. ",
+      "yearsOfEligibility": 1,
+      "athlete": {
+        "displayName": "Alissa Rainon",
+        "firstName": "Alissa",
+        "lastName": "Rainon",
+        "username": "alissa.rainon",
+        "city": "Villemoyenne",
+        "state": "Grand Est",
+        "positions": "M",
+        "highSchoolGraduationYear": 2022,
+        "plannedMajor": "",
+        "profileId": 2755060
+      },
+      "priorSchool": {
+        "displayName": "Post University Women's Soccer",
+        "division": "NCAA D2",
+        "city": "Waterbury",
+        "state": "CT"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/alissa.rainon/soccerwomen/4014"
+    },
     {
       "id": 4010,
       "announcementDateUtc": "2026-11-24T20:15:09.95",
