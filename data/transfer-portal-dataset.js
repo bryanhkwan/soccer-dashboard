@@ -1,11 +1,36 @@
 window.TRANSFER_PORTAL_DATASET = {
-  "generatedAt": "2026-11-27T06:50:22.486Z",
+  "generatedAt": "2026-11-28T06:47:09.129Z",
   "sourceName": "FieldLevel",
   "sourceListUrl": "https://www.fieldlevel.com/app/portal-announcements?sportEnum=soccerwomen",
   "apiNote": "Data is aggregated from FieldLevel public transfer portal listings for NCAA women’s soccer. Availability and terms are controlled by FieldLevel.",
   "sportEnum": "soccerwomen",
-  "totalCount": 206,
+  "totalCount": 207,
   "players": [
+    {
+      "id": 4027,
+      "announcementDateUtc": "2026-11-27T16:52:19.017",
+      "announcementText": "I am a sophomore majoring in Sports Management with 3 years of eligibility left. I can play multiple positions but my main position is midfield. As a midfielder, I have a high work rate and relentless competitiveness, I have a strong ability to read the field, and I am composed and confident on the ball. Feel free to contact me if you feel I would be a good fit for your program!\n\nAryanna Peregrino\n(***) *** ****\n*****@*****.***",
+      "yearsOfEligibility": 3,
+      "athlete": {
+        "displayName": "Aryanna Peregrino",
+        "firstName": "Aryanna",
+        "lastName": "Peregrino",
+        "username": "aryanna.peregrino",
+        "city": "Peoria",
+        "state": "AZ",
+        "positions": "F, M, D",
+        "highSchoolGraduationYear": 2025,
+        "plannedMajor": "",
+        "profileId": 1511734
+      },
+      "priorSchool": {
+        "displayName": "Delaware State University Women's Soccer",
+        "division": "NCAA D1",
+        "city": "Leipsic",
+        "state": "DE"
+      },
+      "fieldLevelUrl": "https://www.fieldlevel.com/app/portal-announcements/aryanna.peregrino/soccerwomen/4027"
+    },
     {
       "id": 4019,
       "announcementDateUtc": "2026-11-26T00:36:40.27",
@@ -270,7 +295,7 @@ window.TRANSFER_PORTAL_DATASET = {
         "state": "ON",
         "positions": "M, D",
         "highSchoolGraduationYear": 2024,
-        "plannedMajor": "Nutrition",
+        "plannedMajor": "Psychology ",
         "profileId": 2769700
       },
       "priorSchool": {
